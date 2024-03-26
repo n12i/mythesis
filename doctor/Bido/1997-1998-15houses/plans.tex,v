@@ -1,0 +1,175 @@
+head	1.1;
+access;
+symbols;
+locks
+	nakaji:1.1; strict;
+comment	@% @;
+
+
+1.1
+date	99.05.27.04.34.50;	author nakaji;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@\begin{figure}[htbp]
+\begin{center}
+  \rotatebox{0}{%
+    \includegraphics[width=\textwidth]{%
+      Bido/1997-1998-15houses/EPS/misawa-y.eps}}
+  \caption{ø·≈ƒMI≈°}
+  \label{fig:Suita-Misawa}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=.9\textwidth]{%
+    Bido/1997-1998-15houses/EPS/ootsuka.eps}
+  \caption{ø·≈ƒO≈°}
+  \label{fig:Suita-Otsuka}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \rotatebox{0}{%
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/shimazaki.eps}}
+  \caption{ø·≈ƒSI≈°}
+  \label{fig:Suita-Shimazaki}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \rotatebox{0}{%
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/kinoshita.eps}}
+  \caption{ø·≈ƒKI≈°}
+  \label{fig:Suita-Kinoshita}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \rotatebox{0}{%
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/yamamoto.eps}}
+  \caption{ÀÁ ˝YA≈°}
+  \label{fig:Hirakata-Yamamoto}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \rotatebox{0}{%
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/misawa-k.eps}}
+  \caption{∫Â∆ÓMI≈°}
+  \label{fig:Hannan-Misawa}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \rotatebox{0}{%
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/SUMIKURA.eps}}
+  \caption{∫Â∆ÓKA≈°}
+  \label{fig:Hannan-Kobata}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \rotatebox{0}{%
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/kodai.eps}}
+  \caption{∫Â∆ÓKO≈°}
+  \label{fig:Hannan-Kodai}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/arichi.eps}
+  \caption{¿Ù∆ÓAR≈°}
+  \label{fig:Sennan-Arichi}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/Suzuki.eps}
+  \caption{¬Á∫ÂSU≈°}
+  \label{fig:Osaka-Suzuki}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \rotatebox{0}{%
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/aoto.eps}}
+  \caption{¬Á∫ÂAO≈°}
+  \label{fig:Osaka-Aoto}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \rotatebox{0}{%
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/yasufuku.eps}}
+  \caption{ø¿∏ÕYA≈°}
+  \label{fig:Kobe-Yasufuku}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \rotatebox{0}{%
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/shirai.eps}}
+  \caption{ø¿∏ÕSI≈°}
+  \label{fig:Kobe-Shirai}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \rotatebox{0}{%
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/kobata.eps}}
+  \caption{ø¿∏ÕMO≈°}
+  \label{fig:Kobe-Mo}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+  \rotatebox{0}{%
+  \includegraphics[width=\textwidth]{%
+    Bido/1997-1998-15houses/EPS/nagata.eps}}
+  \caption{ÃÁøøNA≈°}
+  \label{fig:Kadoma-Na}
+\end{center}
+\end{figure}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "/home/nakaji/paper/phD/paper"
+%%% End: 
+@

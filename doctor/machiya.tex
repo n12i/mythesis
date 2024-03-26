@@ -1,0 +1,135 @@
+\subsection{京の町家}
+\label{sec:machiya}
+
+京都には、伝統的な構法の住宅である町家がある。鰻の寝床とも呼ばれる奥行
+きの長い平面構成であり、張間方向の壁が少ないため、耐震上不利であると考
+えられる。しかし、町家の振動特性はよくわかっておらず、把握する必要があ
+る。本節では、京都の伝統的木造建築である町家の振動特性を把握するために
+行った常時微動計測について、その概要と建物の振動特性について述べる。
+
+
+\subsubsection{常時微動計測の概要}
+
+1995年6月4日に2棟(H邸、K邸)、1996年2月26日に1棟(S邸)の町家を対象に、常
+時微動計測を行った。%表\ref{tab:bido-machiya}に、建物の概要を示す。
+H邸は、額縁付のむしこ窓の前に屋根付の大きな看板を出す薬屋で、表の店舗
+部分と奥の居住部を玄関部で結んだ表屋造の形式、明治時代初期の建築である
+\cite{Kyoto-kenchiku-map}。
+いずれの町家も、大きく「表」・「中」・「奥」の3つの部分にわかれており、
+いわばこの3戸が1体となったような平面となっているが、2階部分は床や廊下
+で「表」と「中」が結ばれている。
+微動計測は「中」の部分について行っている。
+
+常時微動計測は、建物周辺地盤、2階床及び小屋梁の3個所に
+\ref{sec:damaged-houses-in-Hanshin-area}節と同じ速度計((株)東京測振製、
+VSE-15)を置き、張間、桁行、鉛直方向毎の振動を3点同時に計測した。サンプ
+リング周波数は100Hz、フィルターは0.1Hzのハイパス、計測時間は、H邸、K邸
+では5分間、S邸では10分間であった。
+
+
+%\begin{table}[htbp]
+%  \begin{center}
+%    \caption{町家の概要}
+%    \label{tab:bido-machiya}
+%    \begin{tabular}{|c|c|c|c|c|}\hline
+%      建物名称 & 建築年代 & 
+%      H邸 & 
+%      K邸
+%      S邸
+%    \end{tabular}
+%  \end{center}
+%\end{table}
+
+
+\subsubsection{スペクトル特性及び固有周期}
+
+建物の周波数特性を調べるため、常時微動計測で得られた速度波形のフーリエ
+スペクトル及びパワースペクトルを求めた。常時微動計測波形から、10.24秒
+分のデータを10〜15個所取り、それらのスペクトルの平均を求め、更にParzen
+ウィンドウによる平滑化\cite{shibata}を行っている。各建物の2階床及び小
+屋梁位置での、張間及び桁行方向のフーリエスペクトルを図
+\ref{fig:hata-fourier-spectrum}〜\ref{fig:surugaya-fourier-spectrum}
+に示す。横軸は
+周期(秒)であり、波線が2階床位置の、実線が小屋梁位置のスペクトルを表
+している。また、表\ref{tab:machiya-natural-period}
+に、各建物の張間及び桁行方向の固有周期を示す。
+
+1次固有周期を見ると、いずれの町家も張間方向で0.32〜0.44秒と長くなって
+いる。鰻の寝床と呼ばれるほど奥行きの長い平面であるので、張間方向の固有
+周期が長いのは仕方のないところであるが、桁行方向の固有周期も0.18〜0.25
+秒とやや長い。
+H邸の張間方向のフーリエスペクトルには、ねじれ振動によるものと考えられ
+る小さなピークが見られる。
+%S邸では、2階床の2個所に速度計を設置して計測を行った。その2個所の速度差
+%のフーリエスペクトルを図 に示す。
+
+\begin{table}[htbp]
+  \begin{center}
+    \caption{各町家の固有周期(秒)}
+    \label{tab:machiya-natural-period}
+    \begin{tabular}{|c|c|c|c|c|}\hline
+      &\multicolumn{2}{c|}{桁行方向}&\multicolumn{2}{c|}{張間方向}
+      \\\cline{2-5}
+      &1次&2次&1次&2次\\\hline
+      H邸 & 0.25 & 0.13 & 0.32 & 0.14 \\\hline
+      K邸 & 0.18 & 0.11 & 0.44 & 0.20 \\\hline
+      S邸 & 0.20 & 0.09 & 0.35 & 0.16 \\\hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[width=\textwidth]{%
+      Bido/machiya/Hata/omoya/omoya.eps}
+    \caption{H邸 フーリエスペクトル (左:桁行方向、右:張間方向)}
+    \label{fig:hata-fourier-spectrum}
+  \end{center}
+\end{figure}
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[width=\textwidth]{%
+      Bido/machiya/Kojima/omoya/omoya.eps}
+    \caption{K邸 フーリエスペクトル (左:桁行方向、右:張間方向)}
+    \label{fig:kojima-fourier-spectrum}
+  \end{center}
+\end{figure}
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[width=\textwidth]{%
+      Bido/machiya/Surugaya/omoya.eps}
+    \caption{S邸 フーリエスペクトル (左:桁行方向、右:張間方向)}
+    \label{fig:surugaya-fourier-spectrum}
+  \end{center}
+\end{figure}
+%\begin{figure}[htbp]
+%  \begin{center}
+    
+%    \caption{S邸 フーリエスペクトル (ねじれ振動)}
+%    \label{fig:surugaya-nejire-spectrum}
+%  \end{center}
+%\end{figure}
+
+\subsubsection{まとめ}
+
+京都の伝統的木造建築である町家3棟を対象に常時微動計測を行った。
+桁行・張間方向の卓越周期に関する検討のみ行ったが、特に張間方向の固有周
+期が長くなっている。張間方向の剛性が極めて小さいと言える。桁行方向につ
+いても、固有周期は長めであり、剛性は小さいと考えられる。また、
+奥行きが長いので、張間方向の振動には建物のねじれ振動も含まれている。
+
+床面の面内剛性も小さいので、床面が上下に振動するなど、建物全体ではとて
+も複雑な動きをしていると思われるが、本計測では十分な計測ができていない。
+床面の上下動や、平面的にも何カ所か同時に計測を行う必要がある。
+
+対象とした町家はすべて、保存建物として認定されている
+\cite{Kyoto-DenKen}が、常時微動計測の結果からは、耐震上不利となる傾向
+が見られるので、何らかの耐震性向上の対処をする必要がある。しかし、建物
+の形状が複雑であるので、耐震上不利な個所や補強のしどころなどを判定する
+ことが難しいのが現状であり、この問題も重要である。
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "paper"
+%%% End: 

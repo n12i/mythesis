@@ -1,0 +1,156 @@
+\mbox{}\pagebreak
+\section{地震応答解析}\label{sec4}
+  \subsection{振動モデル}
+%第\ref{sec3}章で算定された建物重量$w_1,w_2$を用いて固有値解析を行ない、
+%常時微動測定得られた建物の1次および2次の固有周期と
+%一致するように各層の載荷方向の剛性$k_1,k_2$を定める(付録\ref{app-C}参照)
+%と、各実験対象建物の剛性は表\ref{gousei}のようになる。
+%%k2は破壊実験の荷重〜変位関係から求められるものに近いはず。どうかな？
+%\input gousei
+
+1995年兵庫県南部地震では数多くの木造建物が倒壊または大破した。被害の原因
+を解明するためには、第\ref{sec3}章で述べたような各種の実験による動特性の
+把握とともに地震時の挙動を明らかにする必要がある。ここでは5種類の木造建
+物モデルを想定して、応答解析例を示す。
+
+case 1として、まず西宮市で被害を受けた建物である\杉浦邸 の桁行方向を考える。復元力特性は剛性の
+低下を考慮してClough型(図\ref{clough})とし、重量は第\ref{juryo-santei}節
+(pp.\pageref{juryo-santei})で算定したものを用いる。
+\杉浦邸 の場合はすでに地震被害を受けて(大破)剛性が低下しているため、実験
+をおこなった時点での剛性をそのまま用いることは適当ではない。そのため、他
+の4種の破壊実験の結果から得られた、大変形経験後の剛性低下率(表
+\ref{gouseiteika})を考慮に入れて、上で算定された剛性を20\%増したものを初
+期剛性とする。
+\begin{figure}[htbp]
+\begin{minipage}[t]{0.47\textwidth}
+ \centering\leavevmode
+ \includegraphics[height=1.9in]{figs/clough.eps}
+ \caption{復元力特性}
+ \label{clough}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\textwidth}
+ \centering\leavevmode
+ \includegraphics[height=1.9in]{figs/2dof.eps}
+ \caption{剪断型2質点系振動モデル}
+ \label{2dof}
+\end{minipage}
+\end{figure}
+つぎに、case 2として、例えば京都市にある図\ref{so2kai}のような比較的整形
+な2階建ての住宅を考える。全面
+壁のみを考えて、文献\cite{hoyu-tairyoku81}に示されている「水平耐力を求め
+る際、耐力壁の水平耐力の和に乗ずる係数」をもちいて変形角が1/200radのとき
+の耐力で剛性を推定した。
+case 3からcase 5は京都市内で典型的に見られる伝統的な建物を想定したモデル
+であり、\harima 方向と桁行方向で固有周期が著しくことなることが別に行なっ
+た常時微動計測から明らかにされている。case 3からcase 5の剛性は次のように
+算定した。
+case 5以外はすべて桁行方向である。
+case 1--5について詳しく説明すると、次のようになる。
+\begin{description}
+ \item[case 1] 上で述べた理由により常時微動計測の結果から算定された剛性
+      $k_1,k_2$を1.2倍したものを初期剛性として桁行方向の地震応答解析を行
+      なった。
+ \item[case 2] \harima ・桁行方向で壁率の差があまりない総2階建て住宅の図
+      面から第\ref{sec3}章の方法で重量を算定し、初期剛性を上述の方法で算
+      定した。桁行方向について地震応答解析を行なった。
+ \item[case 3] 京都市内にある、いわゆる「たんざく型」住宅の桁行方向。
+      図面上は外壁がラスモルタルとなっているがその寄与を無視し
+      て、筋かい壁と土壁のみとして剛性を算定した。
+ \item[case 4] case 3の住宅で、ラスモルタル外壁がその耐力を十分発揮する
+      (剥がれ落ちたりしない)として、ラスモルタルの耐力を加算して剛性を算
+      定した。その時
+      の桁行方向である。
+ \item[case 5] case 3と同じ住宅である。\harima 方向について、case 4と同
+      様に算定した。
+\end{description}
+
+これら5つのcaseの振動モデルのパラメータを表\ref{params}に示す。
+\input params
+\begin{figure}[htbp]
+ \centering\leavevmode
+ \includegraphics[width=0.9\textheight,angle=90]{figs/plan/shikkari.eps}
+  \caption{総2階建て住宅の例}
+  \label{so2kai}
+\end{figure}
+
+\subsection{解析結果}
+地震応答解析に用いる地震動入力の想定には種々の条件が考えられるが、case 1
+が西宮市で被害を受けた建物であること、今回の地震の規模に対しての応答を概
+括的に把握できることを考慮して、
+神戸海洋気象台で観測された兵庫県南部地震の加速度(NS方向、図
+\ref{kobe-wav})を入力用地震波とした。
+\begin{figure}[htbp]
+ \centering\leavevmode
+  \includegraphics[height=0.45\textheight]{figs/Res/kobe.ps}
+  \caption{入力地震加速度}
+  \label{kobe-wav}
+\end{figure}
+上記の振動モデルにこの入力を与えた結果、図\ref{outo1}--\ref{outo5}
+のような変位応答を得た。
+%傾向と原因の評価。
+
+case 1の\杉浦邸 の場合、1層の最大変位が約7.2cmであり、これは層間変形角にす
+ると、約1/50radであるから、建物自体は相当の損傷を受けるが崩壊には至らな
+いだろうと推測できる。実際の被害は、基礎部分の損傷が大きかったが、建物自
+体の損傷は壁に亀裂が入ったり、長押にひびが入る程度であったから、この解析
+結果は妥当であろう。
+
+case 2はしっかりした造りの総2階建ての住宅であるが、1層で最大変位が約
+14.5cm(層間変位では約1/20rad)となり、相当の損傷を受けると考えられる。し
+かし、剛性を壁耐力だけで算定しているので、剛性、特に$k_1$、をいくらか低
+く考えている可能性がある。
+
+case 3とcase 4は、京都の町屋などに見られる\harima 方向と桁行方向で剛性に
+大きな差がある住宅で壁耐力の評価を変えたものであるが、実際の地震時に見ら
+れた、ラスモルタル壁が剥がれ落ちてしまいその耐力を十分発揮しなかった、と
+いう被害状況がこの解析結果からも容易に推測される。すなわち、ラスモルタル
+壁が剥がれ落ちてしまうと、ごく短時間で崩壊に至ってしまう。
+
+case 4(図\ref{outo4})とcase 5(図\ref{outo5})は、case 3と同じ住宅の場合に、
+各方向で地震応答がどうなるかを解析したものであるが、初期剛性の算定や非線
+形域での挙動が適当であるかどうかという問題はあるものの、応答の傾向という
+点では、\harima 方向(case 5)と桁行方向(case 4)で全くちがう傾向が得られた。
+すなわち、
+耐力壁の多い桁行方向では最大でも4cmを越えない変位応答であるのに対して、
+耐力壁の少ない\harima 方向ではごく短時間で層間変形角にして1/10rad以上の
+応答を示しており、桁行・\harima 方向で動特性がアンバランスな場合には、重
+大な地震被害を被りやすいと考えられる。
+
+以上の応答結果から兵庫県南部地震レベルの地震動が作用した場合には木造建物
+の損傷がかなり大きくなる可能性があること、特に\harima ・桁行で振動特性が
+ことなり、一方向の耐力が十分でない場合には危険性が高くなることが予想され、
+市街地の密集住宅地域の建物については総合的な耐震計画、補強対策が、また、
+一般の建物については立体的、平面的な剛性、耐力の適正な配置が必要であるこ
+とを示唆していると思われる。
+
+\begin{figure}[htbp]
+    \centering\leavevmode
+  \includegraphics[height=0.4\textheight]{figs/Res/outo1.ps}
+  \caption{case 1の変位応答}
+  \label{outo1}
+\end{figure}
+\begin{figure}[htbp]
+   \centering\leavevmode
+   \includegraphics[height=0.4\textheight]{figs/Res/outo2.ps}
+  \caption{case 2の変位応答}
+  \label{outo2}
+\end{figure}
+\begin{figure}[htbp]
+  \centering\leavevmode
+  \includegraphics[height=0.4\textheight]{figs/Res/outo3.ps}
+  \caption{case 3の変位応答}
+  \label{outo3}
+\end{figure}
+\begin{figure}[htbp]
+   \centering\leavevmode
+  \includegraphics[height=0.4\textheight]{figs/Res/outo4.ps}
+  \caption{case 4の変位応答}
+  \label{outo4}
+\end{figure}
+\begin{figure}[htbp]
+ \centering\leavevmode
+  \includegraphics[height=0.4\textheight]{figs/Res/outo5.ps}
+  \caption{case 5の変位応答}
+  \label{outo5}
+\end{figure}
+\newpage

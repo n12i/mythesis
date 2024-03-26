@@ -1,0 +1,67 @@
+%Path: epdpri10!s2000!kuis-news!wsclark!newssinet!news.nc.u-tokyo.ac.jp!t-server!mech.t.u-tokyo.ac.jp!toshi
+%From: toshi@nml.t.u-tokyo.ac.jp (Toshio -Koutaishi- HORI)
+%Newsgroups: fj.comp.texhax
+%Subject: Re: [Q] vertical caption in figure
+%Date: 22 Feb 1996 09:26:31 GMT
+%Organization: Nagao&Mitsuishi Lab., Dept. of Engineering Synthesis, Univ. of
+%	Tokyo, Japan.
+%Lines: 120
+%Distribution: fj
+%Message-ID: <TOSHI.96Feb22182631@stork.nml.t.u-tokyo.ac.jp>
+%References: <KONDO.96Feb19115029@keroppi.drl.mei.co.jp>
+%NNTP-Posting-Host: stork.nml.t.u-tokyo.ac.jp
+%In-reply-to: kondo@drl.mei.co.jp's message of Mon, 19 Feb 1996 02:50:29 GMT
+%
+%堀＠東大機械です。
+%
+%In article <KONDO.96Feb19115029@keroppi.drl.mei.co.jp>,
+%	kondo@drl.mei.co.jp (Satoshi Kondo) writes:
+%kondo> figure 環境で caption を 90 度回転させる方法はないのでしょう
+%kondo> か？
+%
+%あります:-) ．．．だけではお話にならないので(笑)、以下に示します。
+%
+%＃動作はNTT jLaTeX + dvi2psでしか確認していません(_o_)
+%
+%-----<vcaption.sty>-----
+\input frbox.sty
+\def\vcaption{\refstepcounter\@captype \@dblarg{\@vcaption\@captype}}
+
+\long\def\@vcaption#1[#2]#3{\addcontentsline{\csname
+    ext@#1\endcsname}{#1}{\protect\numberline{\csname 
+      the#1\endcsname}{\ignorespaces #2}}\begingroup
+  \@parboxrestore
+  \@makevcaption{\csname fnum@#1\endcsname}{\ignorespaces #3}\par
+  \endgroup}
+
+\long\def\@makevcaption#1#2{
+  $\vcenter{\leavevmode\frbox[-]{#1 \ #2}}$
+  }
+%-----<vcaption.sty>-----
+%
+%通常 \caption{...} としているところを \vcaption{...} とするだけです。
+%
+%ただ、実際に使ってみたところでは図との位置(間隔)が変になることが多く;-)
+%堀は
+%
+%\begin{figure}[p]
+%\begin{tabular}{l@{\hskip 40pt}l}
+%$\vcenter{\epsfile{...}}$ & \vcaption{...}
+%\end{tabular}
+%\end{figure}
+%
+%のようにして使いました。
+%
+%＃"\hskip 40pt"のところを図ごとに適当にいじる;-)
+%
+%なお、この中でinputしている frbox.sty は以下のようなものです(昨年ここ
+%fj.comp.texhaxに流れました)。
+%
+%-----<frbox.sty>-----
+%-----<frbox.sty>-----
+%
+%--
+%--->> 堀　俊夫＠東京大学大学院工学系研究科産業機械工学専攻
+%                長尾・光石研究室  博士課程３年
+%      ○From行に深い意味はございません。:-)（い）×１６（さ）×６（象）×１
+%      E-MAIL : toshi@nml.t.u-tokyo.ac.jp                 <<---

@@ -1,0 +1,69 @@
+%ronbun.tex
+%各種定義を行なう
+%
+%各建物の名前はそれによって一意に判別できる程度の短さにする
+\gdef\七条邸{SI邸}
+\gdef\辻邸{TU邸}
+\gdef\田中邸{TA邸}
+\gdef\杉浦邸{SU邸}
+\gdef\ハウメッセ{H棟}
+%
+\setlength{\tabcolsep}{0.05in}
+\gdef\harima{張間}
+\topmargin=-0.2in
+\headheight=0in
+\headsep=0in
+\topskip=\baselineskip
+\oddsidemargin=-0.1in
+\evensidemargin=-0.1in
+\textwidth=5.5in
+\textheight=8.in
+\baselineskip=11.0mm
+%
+\newcommand{\Lower}[2]{\smash{\lower #1 \hbox{#2}}}
+\newcommand{\Upper}[2]{\smash{\raise #1 \hbox{#2}}}
+\gdef\丸文字#1{{\ooalign{\hfill$\scriptstyle#1$\hfill\crcr$\bigcirc$}}}
+%
+%\renewcommand{\topfraction}{.9}
+%\renewcommand{\floatpagefraction}{.05}
+%\setcounter{topnumber}{5}
+%\setcounter{bottomnumber}{5}
+%\renewcommand{\bottomfraction}{.9}
+%\setcounter{totalnumber}{10}
+%\renewcommand{\textfraction}{.05}
+%
+\newcommand{\Center}[1]{\multicolumn{1}{c|}{#1}}
+%
+\makeatletter
+\newcounter{photo}
+\def\thephoto{\@arabic\c@photo}
+\def\fps@photo{tbp}
+\def\ftype@photo{1}
+\def\ext@photo{lof}
+\def\fnum@photo{写真 \thephoto}
+\def\photo{\@float{photo}}
+\let\endphoto\end@float
+\@namedef{photo*}{\@dblfloat{photo}}
+\@namedef{endphoto*}{\end@dblfloat}
+\def\section{\@startsection {section}{1}{\z@}{3.5ex plus 1ex minus 
+ .2ex}{2.3ex plus .2ex}{\Large\bf}}
+\def\subsection{\@startsection{subsection}{2}{\z@}{3.25ex plus 1ex minus 
+ .2ex}{1.5ex plus .2ex}{\large\bf}}
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{3.25ex plus
+ 1ex minus .2ex}{1.5ex plus .2ex}{\normalsize\bf}}
+\def\paragraph{\@startsection
+ {paragraph}{4}{\z@}{3.25ex plus 1ex minus .2ex}{-1em}{\normalsize\bf}}
+\makeatother
+%
+\setcounter{secnumdepth}{4}
+%
+\newlength{\defitemindent}\setlength{\defitemindent}{.25in}
+\newcommand{\deflabel}[1]{\hspace{\defitemindent}\bf #1\hfill}
+\newenvironment{deflist}[1]%
+{\begin{list}{}%
+ {\itemsep=10pt \parsep=5pt \topsep=0pt \parskip=10pt
+ \settowidth{\labelwidth}{\hspace{\defitemindent}\bf #1:}%
+ \setlength{\leftmargin}{\labelwidth}%
+ \addtolength{\leftmargin}{\labelsep}%
+\renewcommand{\makelabel}{\deflabel}}}%
+{\end{list}}

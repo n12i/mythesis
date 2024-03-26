@@ -1,0 +1,1587 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 36 340 360 757
+%%Title: sdofkei
+%%CreationDate: Tue Feb 13 15:44:55 2024
+%%Creator: Tgif-4.2.5-QPL written by William Chia-Wei Cheng (bill.cheng@acm.org)
+%%ProducedBy: (unknown)
+%%Pages: 1
+%%DocumentFonts: (atend)
+%%EndComments
+%%BeginProlog
+
+/tgifdict 89 dict def
+tgifdict begin
+
+/tgifellipsedict 6 dict def
+tgifellipsedict /mtrx matrix put
+
+/TGEL % tgifellipse
+ { tgifellipsedict begin
+      /yrad exch def
+      /xrad exch def
+      /y exch def
+      /x exch def
+      /savematrix mtrx currentmatrix def
+      x y translate
+      xrad yrad scale
+      0 0 1 0 360 arc
+      savematrix setmatrix
+   end
+ } def
+
+/tgifarrowtipdict 8 dict def
+tgifarrowtipdict /mtrx matrix put
+
+/TGAT % tgifarrowtip
+ { tgifarrowtipdict begin
+      /dy exch def
+      /dx exch def
+      /h exch def
+      /w exch def
+      /y exch def
+      /x exch def
+      /savematrix mtrx currentmatrix def
+      x y translate
+      dy dx atan rotate
+      0 0 moveto
+      w neg h lineto
+      w neg h neg lineto
+      savematrix setmatrix
+   end
+ } def
+
+/tgifpatdict 12 dict def
+
+/tgifpatbyte
+ { currentdict /retstr get exch
+   bytesperrow mul
+   pat i cellh mod bytesperrow mul bytesperrow getinterval putinterval
+ } def
+
+/tgifpatproc
+ { 0 1 cells_wd 1 sub {tgifpatbyte} for retstr
+   /i i 1 add def
+ } def
+
+/TGPF % tgifpatfill
+ { tgifpatdict begin
+      /h exch def
+      /w exch def
+      /lty exch def
+      /ltx exch def
+      /cellh exch def
+      /cellw exch def
+      /pat exch def
+
+      /cells_wd w cellw div cvi def
+      /bytesperrow cellw 8 div ceiling cvi def
+      /retstr cells_wd bytesperrow mul string def
+      /i 0 def
+
+      tgiforigctm setmatrix
+      ltx lty translate
+      w h true [1 0 0 1 0 0] {tgifpatproc} imagemask
+      ltx neg lty neg translate
+   end
+ } def
+
+/pat3 <8000000008000000> def
+/pat4 <8800000022000000> def
+/pat5 <8800220088002200> def
+/pat6 <8822882288228822> def
+/pat7 <aa55aa55aa55aa55> def
+/pat8 <77dd77dd77dd77dd> def
+/pat9 <77ffddff77ffddff> def
+/pat10 <77ffffffddffffff> def
+/pat11 <7ffffffff7ffffff> def
+/pat12 <8040200002040800> def
+/pat13 <40a00000040a0000> def
+/pat14 <ff888888ff888888> def
+/pat15 <ff808080ff080808> def
+/pat16 <f87422478f172271> def
+/pat17 <038448300c020101> def
+/pat18 <081c22c180010204> def
+/pat19 <8080413e080814e3> def
+/pat20 <8040201008040201> def
+/pat21 <8844221188442211> def
+/pat22 <77bbddee77bbddee> def
+/pat23 <c1e070381c0e0783> def
+/pat24 <7fbfdfeff7fbfdfe> def
+/pat25 <3e1f8fc7e3f1f87c> def
+/pat26 <0102040810204080> def
+/pat27 <1122448811224488> def
+/pat28 <eeddbb77eeddbb77> def
+/pat29 <83070e1c3870e0c1> def
+/pat30 <fefdfbf7efdfbf7f> def
+/pat31 <7cf8f1e3c78f1f3e> def
+
+/TGMAX
+ { exch dup 3 1 roll exch dup 3 1 roll gt { pop } { exch pop } ifelse
+ } def
+/TGMIN
+ { exch dup 3 1 roll exch dup 3 1 roll lt { pop } { exch pop } ifelse
+ } def
+/TGSW { stringwidth pop } def
+/tgifstrw 0 def
+
+/bd { bind def } bind def
+
+/GS { gsave } bd
+/GR { grestore } bd
+/NP { newpath } bd
+/CP { closepath } bd
+/CHP { charpath } bd
+/CT { curveto } bd
+/L { lineto } bd
+/RL { rlineto } bd
+/M { moveto } bd
+/RM { rmoveto } bd
+/S { stroke } bd
+/F { fill } bd
+/TR { translate } bd
+/RO { rotate } bd
+/SC { scale } bd
+/MU { mul } bd
+/DI { div } bd
+/DU { dup } bd
+/NE { neg } bd
+/AD { add } bd
+/SU { sub } bd
+/PO { pop } bd
+/EX { exch } bd
+/CO { concat } bd
+/CL { clip } bd
+/EC { eoclip } bd
+/EF { eofill } bd
+/IM { image } bd
+/IMM { imagemask } bd
+/ARY { array } bd
+/SG { setgray } bd
+/RG { setrgbcolor } bd
+/SD { setdash } bd
+/W { setlinewidth } bd
+/SM { setmiterlimit } bd
+/SLC { setlinecap } bd
+/SLJ { setlinejoin } bd
+/SH { show } bd
+/FF { findfont } bd
+/MS { makefont setfont } bd
+/AR { arcto 4 {pop} repeat } bd
+/CURP { currentpoint } bd
+/FLAT { flattenpath strokepath clip newpath } bd
+/TGSM { tgiforigctm setmatrix } def
+/TGRM { savematrix setmatrix } def
+
+end
+
+%%EndProlog
+%%Page: 1 1
+
+%%PageBoundingBox: 36 340 360 757
+tgifdict begin
+/tgifsavedpage save def
+
+1 SM
+1 W
+
+0 SG
+
+72 0 MU 72 11 MU TR
+72 128 DI 100.000 MU 100 DI DU NE SC
+
+GS
+
+/tgiforigctm matrix currentmatrix def
+
+% OVAL
+0 SG
+GS
+   GS
+      NP 388 97 32 32 TGEL
+      S
+   GR
+GR
+
+% BOX
+0 SG
+GS
+   NP 135 758 M 637 758 L 637 795 L 135 795 L CP 1 SG F
+   0 SG
+   NP 135 758 M 637 758 L 637 795 L 135 795 L CP EC NP
+   pat20 8 8 128 752 512 48 TGPF
+GR
+GS
+   10 SM
+   GS
+      NP 135 758 M 637 758 L 637 795 L 135 795 L CP
+      2 W
+      1 SG S 0 SG
+   GR
+   0 SG
+   GS
+      NP 135 758 M 637 758 L 637 795 L 135 795 L CP
+      2 W
+      FLAT
+      pat3 8 8 128 752 512 48 TGPF
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      135 683 M
+      637 683 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      135 610 M
+      637 610 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      135 537 M
+      637 537 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      135 462 M
+      637 462 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      136 758 M
+      638 758 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      135 389 M
+      637 389 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      135 316 M
+      637 316 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      575 314 M
+      75 0 atan DU cos 8.000 MU exch sin 8.000 MU RM
+      75 0 atan DU cos 8.000 MU 575 exch SU
+      exch sin 8.000 MU 389 exch SU L
+   TGSM
+   1 W
+   S
+GR
+GS
+   TGSM
+   NP
+      575 314 8.000 3.000 0 -75 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      575 314 8.000 3.000 0 -75 TGAT
+   CP F
+GR
+GS
+   TGSM
+   NP
+      575 389 8.000 3.000 0 75 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      575 389 8.000 3.000 0 75 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      575 389 M
+      71 0 atan DU cos 8.000 MU exch sin 8.000 MU RM
+      71 0 atan DU cos 8.000 MU 575 exch SU
+      exch sin 8.000 MU 460 exch SU L
+   TGSM
+   1 W
+   S
+GR
+GS
+   TGSM
+   NP
+      575 389 8.000 3.000 0 -71 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      575 389 8.000 3.000 0 -71 TGAT
+   CP F
+GR
+GS
+   TGSM
+   NP
+      575 460 8.000 3.000 0 71 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      575 460 8.000 3.000 0 71 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      575 462 M
+      73 0 atan DU cos 8.000 MU exch sin 8.000 MU RM
+      73 0 atan DU cos 8.000 MU 575 exch SU
+      exch sin 8.000 MU 535 exch SU L
+   TGSM
+   1 W
+   S
+GR
+GS
+   TGSM
+   NP
+      575 462 8.000 3.000 0 -73 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      575 462 8.000 3.000 0 -73 TGAT
+   CP F
+GR
+GS
+   TGSM
+   NP
+      575 535 8.000 3.000 0 73 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      575 535 8.000 3.000 0 73 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      575 539 M
+      71 0 atan DU cos 8.000 MU exch sin 8.000 MU RM
+      71 0 atan DU cos 8.000 MU 575 exch SU
+      exch sin 8.000 MU 610 exch SU L
+   TGSM
+   1 W
+   S
+GR
+GS
+   TGSM
+   NP
+      575 539 8.000 3.000 0 -71 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      575 539 8.000 3.000 0 -71 TGAT
+   CP F
+GR
+GS
+   TGSM
+   NP
+      575 610 8.000 3.000 0 71 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      575 610 8.000 3.000 0 71 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      575 612 M
+      71 0 atan DU cos 8.000 MU exch sin 8.000 MU RM
+      71 0 atan DU cos 8.000 MU 575 exch SU
+      exch sin 8.000 MU 683 exch SU L
+   TGSM
+   1 W
+   S
+GR
+GS
+   TGSM
+   NP
+      575 612 8.000 3.000 0 -71 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      575 612 8.000 3.000 0 -71 TGAT
+   CP F
+GR
+GS
+   TGSM
+   NP
+      575 683 8.000 3.000 0 71 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      575 683 8.000 3.000 0 71 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      575 685 M
+      71 0 atan DU cos 8.000 MU exch sin 8.000 MU RM
+      71 0 atan DU cos 8.000 MU 575 exch SU
+      exch sin 8.000 MU 756 exch SU L
+   TGSM
+   1 W
+   S
+GR
+GS
+   TGSM
+   NP
+      575 685 8.000 3.000 0 -71 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      575 685 8.000 3.000 0 -71 TGAT
+   CP F
+GR
+GS
+   TGSM
+   NP
+      575 756 8.000 3.000 0 71 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      575 756 8.000 3.000 0 71 TGAT
+   CP F
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      148 354 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (V) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      162 358 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (S1) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      189 350 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (r) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      222 352 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (m) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      202 360 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (1) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      238 360 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (1) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      148 425 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (V) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      162 429 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (S2) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      189 423 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (r) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      222 423 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (m) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      202 431 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (2) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      238 431 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (2) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      148 500 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (V) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      159 504 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (S3) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      189 498 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (r) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      222 498 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (m) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      201 506 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (3) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      237 506 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (3) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      148 567 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (V) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      159 573 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (S4) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      189 565 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (r) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      222 567 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (m) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      201 573 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (4) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      237 573 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (4) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      149 646 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (V) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      163 650 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (S5) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      190 644 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (r) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      225 644 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (m) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      203 652 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (5) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      239 652 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (5) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      148 721 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (V) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      162 725 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (S6) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      189 719 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (r) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      222 719 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (m) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      202 727 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (6) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      238 727 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (6) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      149 792 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (V) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      163 796 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (S7) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      190 790 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (r) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      225 790 M
+      GS
+            0 SG
+            /Symbol FF [18 0 0 -18 0 0] MS
+            (m) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      203 798 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (7) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      239 798 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (7) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      583 355 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (H) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      602 362 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (1) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      583 429 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (H) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      601 435 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (2) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      583 505 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (H) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      602 510 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (3) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      582 577 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (H) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      601 583 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (4) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      582 652 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (H) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      600 656 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (5) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      583 723 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [18 0 0 -18 0 0] MS
+            (H) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      601 729 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [10 0 0 -10 0 0] MS
+            (6) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      109 320 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (\(0\)) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      110 395 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (\(1\)) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      110 466 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (\(2\)) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      110 537 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (\(3\)) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      109 614 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (\(4\)) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      110 687 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (\(5\)) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      110 762 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (\(6\)) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      67 355 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (1) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      69 432 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (2) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      69 503 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (3) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      68 578 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (4) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      69 649 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (5) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      68 724 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (6) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      68 792 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (7) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 293 296 M 483 296 L 483 316 L 293 316 L CP
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      388 130 M
+      388 296 L
+   TGSM
+   1 W
+   S
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      426 89 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (m) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      398 219 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (k) SH
+      GR
+   GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      497 95 M
+      529 95 L
+   TGSM
+   1 W
+   S
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      514 95 M
+      221 0 atan DU cos 8.000 MU exch sin 8.000 MU RM
+      221 0 atan DU cos 8.000 MU 514 exch SU
+      exch sin 8.000 MU 316 exch SU L
+   TGSM
+   1 W
+   S
+GR
+GS
+   TGSM
+   NP
+      514 95 8.000 3.000 0 -221 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      514 95 8.000 3.000 0 -221 TGAT
+   CP F
+GR
+GS
+   TGSM
+   NP
+      514 316 8.000 3.000 0 221 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      514 316 8.000 3.000 0 221 TGAT
+   CP F
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      528 218 M
+      GS
+            0 SG
+            /Times-Roman FF [17 0 0 -17 0 0] MS
+            (h) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      401 281 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (K) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      416 284 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [8 0 0 -8 0 0] MS
+            (H) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      439 282 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (K) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      455 285 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [8 0 0 -8 0 0] MS
+            (R) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      324 281 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (m) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      340 286 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [11 0 0 -11 0 0] MS
+            (0) SH
+      GR
+   GR
+
+GR
+tgifsavedpage restore
+end
+showpage
+
+%%Trailer
+%MatchingCreationDate: Tue Feb 13 15:44:55 2024
+%%DocumentFonts: Times-Roman
+%%+ Symbol
+%%+ NewCenturySchlbk-Roman
+%%EOF

@@ -1,0 +1,296 @@
+%ronbun.tex
+%各種定義を行なう
+%
+\newcommand{\Lower}[2]{\smash{\lower #1 \hbox{#2}}}
+\newcommand{\Upper}[2]{\smash{\raise #1 \hbox{#2}}}
+%\gdef\丸文字#1{{\ooalign{\hfill$\scriptstyle#1$\hfill\crcr$\bigcirc$}}}
+%
+\newcommand{\Center}[1]{\multicolumn{1}{c|}{#1}}
+%
+\newcounter{photo}
+\def\thephoto{\@arabic\c@photo}
+\def\fps@photo{tbp}
+\def\ftype@photo{1}
+\def\ext@photo{lop}
+\def\fnum@photo{\photoname\thephoto}
+\newcommand{\photoname}{写真}
+\def\photo{\@float{photo}}
+\let\endphoto\end@float
+\@namedef{photo*}{\@dblfloat{photo}}
+\@namedef{endphoto*}{\end@dblfloat}
+%\renewenvironment{photo}{\@float{photo}}{\end@float}
+%%%%% to use \subfigure
+\newcounter{subphoto}[photo]
+\def\thesubphoto{(\alph{subphoto})}
+\newcommand{\@thesubphoto}{{\subcaplabelfont\thesubphoto}\space}
+\let\p@subphoto\thephoto
+\let\ext@subphoto\ext@photo
+\newcommand{\l@subphoto}{%
+  \@dottedxxxline{\ext@subphoto}{2}{3.9em}{2.3em}}
+\newcounter{lopdepth}
+\setcounter{lopdepth}{1}%
+%\setcounter{secnumdepth}{3}
+\let\subphoto\subfigure
+\let\@makesubphotocaption\@makesubfigurecaption
+
+%
+\newlength{\defitemindent}\setlength{\defitemindent}{.25in}
+\newcommand{\deflabel}[1]{\hspace{\defitemindent}\bf #1\hfill}
+\newenvironment{deflist}[1]%
+{\begin{list}{}%
+ {\itemsep=10pt \parsep=5pt \topsep=0pt \parskip=10pt
+ \settowidth{\labelwidth}{\hspace{\defitemindent}\bf #1:}%
+ \setlength{\leftmargin}{\labelwidth}%
+ \addtolength{\leftmargin}{\labelsep}%
+\renewcommand{\makelabel}{\deflabel}}}%
+{\end{list}}
+
+%%% lengths
+\setlength{\topmargin}{-1.in}
+\addtolength{\topmargin}{25.mm}
+\setlength{\headheight}{0.in}
+\setlength{\headsep}{0.in}
+\setlength{\oddsidemargin}{-1.in}
+\addtolength{\oddsidemargin}{25.mm}
+\setlength{\evensidemargin}{-.2in}
+\setlength{\topskip}{\baselineskip}
+\setlength{\textwidth}{165.mm}
+\setlength{\textheight}{43\baselineskip}
+\setlength{\columnsep}{6.2mm}
+\setlength{\parskip}{0.pt}
+
+%%% Declaring floats
+%% ratio
+\setcounter{topnumber}{5}
+\renewcommand{\topfraction}{.8}
+\setcounter{bottomnumber}{5}
+\renewcommand{\bottomfraction}{.2}
+\setcounter{totalnumber}{10}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.45}
+%% spacing
+\setlength{\intextsep}{.5\Cvs}
+\setlength{\textfloatsep}{.5\Cvs}
+\setlength{\floatsep}{0.5\Cvs}
+\setlength{\dblfloatsep}{\floatsep}
+\setlength{\dbltextfloatsep}{\textfloatsep}
+\setlength{\@fptop}{0pt}
+\setlength{\@fpsep}{0pt}
+\setlength\abovecaptionskip{.3\Cvs}
+\setlength\belowcaptionskip{.3\Cvs}
+
+%%%% references
+\def\@biblabel#1{#1)}   %List
+\renewcommand\citeform[1]{#1)} % parenthesis after numbers ^{1)-5),8)}
+%%% 本文中で文献を参照する場合は通常のフォントにする
+%%% 例えば文献12)で示される…
+\DeclareRobustCommand\Ncite{%
+  \@ifnextchar [{\@tempswatrue\@normalcitex}{\@tempswafalse\@normalcitex[]}}
+\def\@normalcitex[#1]#2{%
+  \let\@Ncitea\@empty
+  \@Ncite{\@for\@Nciteb:=#2\do
+    {\@Ncitea\def\@Ncitea{,\penalty\@m\ }%
+      \edef\@Nciteb{\expandafter\@firstofone\@Nciteb}%
+      \if@filesw\immediate\write\@auxout{\string\citation{\@Nciteb}}\fi
+      \@ifundefined{b@\@Nciteb}{\mbox{\reset@font\bfseries ?}%
+        \G@refundefinedtrue
+        \@latex@warning
+        {Citation `\@Nciteb' on page \thepage \space undefined}}%
+      {\hbox{\csname b@\@Nciteb\endcsname}}}}{#1}}
+\def\@Ncite#1#2{#1\if@tempswa , #2\fi}
+%%%
+% re-define thebibliography
+%
+\newcommand{\bibsection}{\@startsection{section}{1}{\z@}% \z@=0
+  {1.0\Cvs}% \Cvs=\baselineskip
+  {.1\Cdp}%  \Cdp=\dp0
+  {\reset@font\small\bfseries}}
+\renewenvironment{thebibliography}[1]
+{\bibsection*{\refname\@mkboth{\refname}{\refname}}%
+%  \small\rmfamily\list{\@biblabel{\@arabic\c@enumiv}}%
+  \rmfamily\list{\@biblabel{\@arabic\c@enumiv}}%
+  {\settowidth\labelwidth{\@biblabel{#1}}%
+    \leftmargin\labelwidth
+    \advance\leftmargin\labelsep
+    \@openbib@code
+    \usecounter{enumiv}%
+    \let\p@enumiv\@empty
+    \renewcommand\theenumiv{\@arabic\c@enumiv}
+     \itemsep=0pt}%
+  \sloppy\clubpenalty4000\widowpenalty4000%
+  \sfcode`\.\@m}
+{\def\@noitemerr
+  {\@latex@warning{Empty `thebibliography' environment}}%
+  \endlist}
+
+%%%
+%%% change maketitle
+%%%
+\if@titlepage
+  \renewcommand{\maketitle}{\begin{titlepage}%
+  \let\footnotesize\small
+  \let\footnoterule\relax
+  \let\footnote\thanks
+  \null\vfil
+  \vskip 45\p@
+  \begin{center}%
+    {\LARGE \@title \par}%
+    \vskip 30em%
+    {\Large \@date \par}%       % Set date in \large size.
+      \vskip 3em%
+    {\LARGE
+     \lineskip .75em%
+     \renewcommand{\arraystretch}{1.0}
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+  \end{center}\par
+  \@thanks\vfil\null
+  \end{titlepage}%
+  \setcounter{footnote}{0}%
+  \global\let\thanks\relax
+  \global\let\maketitle\relax
+  \global\let\p@thanks\relax
+  \global\let\@thanks\@empty
+  \global\let\@author\@empty
+  \global\let\@date\@empty
+  \global\let\@title\@empty
+  \global\let\title\relax
+  \global\let\author\relax
+  \global\let\date\relax
+  \global\let\and\relax
+  }%
+\else
+  \renewcommand{\maketitle}{\par
+  \begingroup
+    \renewcommand{\thefootnote}{\fnsymbol{footnote}}%
+    \def\@makefnmark{\hbox{\ifydir $\m@th^{\@thefnmark}$
+      \else\hbox{\yoko$\m@th^{\@thefnmark}$}\fi}}%
+     \long\def\@makefntext##1{\parindent 1em\noindent
+       \hbox to1.8em{\hss$\m@th^{\@thefnmark}$}##1}%
+    \if@twocolumn
+      \ifnum \col@number=\@ne \@maketitle
+      \else \twocolumn[\@maketitle]%
+      \fi
+    \else
+      \newpage
+      \global\@topnum\z@   % Prevents figures from going at top of page.
+      \@maketitle
+    \fi
+     \thispagestyle{jpl@in}\@thanks
+  \endgroup
+  \setcounter{footnote}{0}%
+  \global\let\thanks\relax
+  \global\let\maketitle\relax
+  \global\let\p@thanks\relax
+  \global\let\@thanks\@empty
+  \global\let\@author\@empty
+  \global\let\@date\@empty
+  \global\let\@title\@empty
+  \global\let\title\relax
+  \global\let\author\relax
+  \global\let\date\relax
+  \global\let\and\relax
+  }
+  \def\@maketitle{%
+  \newpage\null
+  \vskip -1em%
+  \begin{center}%
+  \let\footnote\thanks
+    {\LARGE \@title \par}%
+    \vskip 1.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par\vskip 1.5em}
+\fi
+
+%%% 図1  図1の説明
+%%% ゴ   明朝
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \iftdir\sbox\@tempboxa{{\bf #1}\hskip2zw#2}%
+    \else\sbox\@tempboxa{{\bf #1} #2}%
+  \fi
+  \ifdim \wd\@tempboxa >\hsize
+    \iftdir {\bf #1}\hskip2zw#2\relax\par
+      \else {\bf #1} #2\relax\par\fi
+  \else
+    \global \@minipagefalse
+    \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
+
+%%% paragraph, subparagraph でも改行する
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\z@}%
+   {3.25ex \@plus 1ex \@minus .2ex}%
+   {.5\Cvs}%
+   {\reset@font\normalsize\bfseries}}
+\renewcommand{\subparagraph}{\@startsection{subparagraph}{5}{\z@}%
+   {3.25ex \@plus 1ex \@minus .2ex}%
+   {.5\Cvs}%
+   {\reset@font\normalsize\bfseries}}
+
+\newcounter{marusuuji}
+\def\marusuhji#1{\c@marusuuji=#1
+  \ifnum\c@marusuuji<10
+  \textcircled{\small #1}
+  \else
+  \textcircled{\scriptsize #1}\fi}
+
+\newcommand{\presectionname}{第}
+\newcommand{\postsectionname}{章}
+\renewcommand{\section}{\par\addvspace{3ex}%
+  \@afterindentfalse
+  \secdef\@section\@ssection}
+\def\@section[#1]#2{%
+  \ifnum \c@secnumdepth >\m@ne
+    \refstepcounter{section}%
+    \addcontentsline{toc}{section}{%
+       \presectionname\thesection\postsectionname\hspace{1zw}#1}%
+  \else
+    \addcontentsline{toc}{section}{#1}%
+  \fi
+  \markboth{}{}%
+  {\parindent\z@\raggedright
+   \interlinepenalty\@M\reset@font
+   \ifnum \c@secnumdepth >\m@ne
+     \Large\bfseries\presectionname\thesection\postsectionname\hspace{1zw}
+   \fi
+   \Large\bfseries#2\par}%
+  \nobreak\vskip2ex\@afterheading}
+\def\@ssection#1{{%
+  \parindent\z@\raggedright
+  \interlinepenalty\@M\reset@font
+  \Large\bfseries#1\par}%
+  \nobreak\vskip2ex}
+
+\renewenvironment{thebibliography}[1]
+{\section*{\refname\@mkboth{\refname}{\refname}}%
+  \addcontentsline{toc}{section}{\protect\numberline{~}{\textbf\refname}}
+   \list{\@biblabel{\@arabic\c@enumiv}}%
+        {\settowidth\labelwidth{\@biblabel{#1}}%
+         \leftmargin\labelwidth
+         \advance\leftmargin\labelsep
+         \@openbib@code
+         \usecounter{enumiv}%
+         \let\p@enumiv\@empty
+         \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+   \sloppy
+   \clubpenalty4000
+   \@clubpenalty\clubpenalty
+   \widowpenalty4000%
+   \sfcode`\.\@m}
+  {\def\@noitemerr
+    {\@latex@warning{Empty `thebibliography' environment}}%
+   \endlist}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "paper"
+%%% End: 

@@ -1,0 +1,81 @@
+強震動下における木造建物の地震応答と耐震性評価
+Seismic Response and Resistance of Wooden Structures
+under Strong Earthquakes
+鈴木　祥之（京都大学防災研究所）	○中治　弘行（京大大学院・工・生活空間学専攻）
+Yoshiyuki SUZUKI, Disaster Prevention Research Institute, Kyoto University, Gokasho, Uji, Kyoto 611
+email: suzuki@zeisei.dpri.kyoto-u.ac.jp
+Hiroyuki NAKAJI, Department of Architecture and Environmental Design, Graduate School of Engineering, Kyoto University, Yoshidahonmachi, Sakyo-ku, Kyoto 606-01
+email: nakaji@zeisei.dpri.kyoto-u.ac.jp
+
+To investigate seismic response and resistance of wooden structures under strong earthquakes, the numerical seismic response analysis was executed for 2-DOF hysteretic structural systems. Herein various recorded earthquakes are used as input excitations. The initial stiffness and maximum resisting force of hysteretic characteristics, the weight ratio of first-story to second-story, and the first and second-story shear coefficients are selected as parameters. It is found from the analytical results that the seismic response of wooden structures unstably increase for the cases of their base shear coefficients less than 0.2.
+
+Key words : wooden structure, seismic response, seismic resistance, maximum deformation angle, cumulative hysteretic energy
+1. はじめに
+1995年兵庫県南部地震による阪神・淡路大震災において甚大な被害を受けた木造住宅について、強地震での地震応答解析を実施し、最大層間変形角や履歴消費エネルギーなどの耐震安全性に関わる尺度を用いて応答性状を明らかにするとともに、必要とされる耐力や変形性能などの耐震性を検証する。
+2. 地震応答解析用モデル
+2階建木造住宅を対象にして、建物の重量別に分類し、2質点せん断型の振動モデルとする。履歴復元力特性など地震応答解析のための動力学モデルを以下のように設定する。
+2.1 建物重量及び復元力特性の設定
+建物重量は屋根や壁の仕上げによってTable 1に示すように重い建物、中程度の重さの建物、軽い建物の3タイプを設定する1)。各層の床面積は91,125m2、1,2階の階高をそれぞれ2.75m、2.5mとする。
+各層の履歴復元力特性は、実在の木造住宅を対象に行った静的水平力載荷実験2)の結果等を勘案して、ポリリニア型履歴特性とスリップ型履歴特性の複合型とする。これら履歴特性の各分岐の剛性は、Fig.1に示すように設定する。ポリリニア、スリップ型履歴特性の比率はそれぞれ0.4、0.6である。ポリリニア型履歴特性における1/30rad変形時の耐力は、1/120rad変形時の耐力の?倍であるとしている。
+
+Fig.1　Hysteretic characteristics
+1,2層の変形角1/120rad時における耐力Piは現行の建築基準法施行令に基づき次式で定める。
+
+
+ここで、Aiは層せん断力係数、地域係数Z=1.0、振動特性係数=1.0、はi層以上の重量である。地震応答解析においてベースシア係数C0をパラメータとしているので初期剛性及び固有周期はベースシア係数の関数として決定される。通常耐震設計に用いられるAi分布は木造建物のような低層用ではないため2層の層せん断力係数をパラメータ?で変化させた場合(?A2)の地震応答解析も行っている。減衰は剛性比例型とし、1次モード臨界減衰比を5%としている。また、地震応答解析においてP-Δ効果を考慮している。
+2.2 耐震安全性の判定尺度
+木造住宅の地震応答解析において、建物の倒壊や大破などの耐震安全性を各層での最大変形角で判定するのが一般的である。一方、地震のように構造物が繰り返し変形を受ける場合には、損傷が繰り返しによって累積した後に破壊するような累積破壊規範がより現実的である。しかしながら、木造建物の破壊メカニズムがよく解っていないので、ここでは、瞬時破壊規範に対する判定尺度として最大層間変形角を、累積破壊規範に対しては履歴消費エネルギーを尺度として地震応答解析から求めて検討を行う。
+2.3 入力地震動
+地震応答解析に用いた地震波は、1995年兵庫県南部地震による神戸海洋気象台での観測記録JMA Kobe NS(最大加速度818gal、最大速度92.2cm/sec)、JR鷹取での観測記録JR Takatori NS(最大加速度605.5gal、最大速度122.7cm/sec)3)、JR西明石駅での観測記録JR Nisiakasi NS(最大加速度473.8gal、最大速度44.3cm/sec)3)、JR宝塚駅での観測記録JR Takarazuka NS(最大加速度683.6gal、最大速度66.7cm/sec)3)、大阪ガス葺合供給部での観測記録O-Gas Fukiai NS(最大加速度686.5gal、最大速度55.0cm/sec)と、高層建築の動的解析によく用いられる強震記録1940 El Centro NS(最大加速度341.7gal、最大速度38.1cm/sec)及び1968 Hachinohe NS(最大加速度225gal、最大速度40.5cm/sec)である。最大速度は加速度を積分して求めている。Fig.2に地震応答解析に用いた地震波の速度応答スペクトル(減衰比5%)を示す。
+3. 解析結果
+先ず、中程度の重さの建物を対象にし、入力地震波JMA Kobe NSの場合の地震応答解析例を示す。本解析での標準的なパラメータの組み合わせである履歴復元力特性のパラメータ?=1.5、２層せん断力係数のパラメータ?=1.0、重量比Rm=0.76で、ベースシア係数C0=0.2とした場合の時刻歴応答(１層及び２層の層間変形角、層間速度、履歴消費エネルギー及び履歴ループ)をFig.3に示す。一般に総２階建では間取り等により２階の剛性が高くなる場合が多く、阪神・淡路大震災において1階部分の崩壊が顕著であった被害状況と符合する。
+
+
+Fig.2 Velocity response spectra
+
+(a) Story deformation angles
+
+(b) Velocities
+
+(c) Cumulative hysteretic energies
+
+(d) Hysteretic loops
+Fig.3 Time histories of seismic responses
+(JMA Kobe NS)
+2層の層せん断力係数を変化させた場合の1,2層の最大層間変形角及び履歴消費エネルギーをFig.4に示す。?=0.5、即ち2層の剛性が標準Ai分布に比べて小さい場合には、ベースシア係数が0.2より小さい範囲では2層の最大応答が増大し、ベースシア係数が0.2より大きい範囲では、?を大きく、即ち2層の剛性を高くすると1層の応答が大きくなる傾
+
+	
+(a) Maximum deformation angles 
+	
+(b) Cumulative hysteretic energies 
+Fig.4 Influence of parameter ? on responses (JMA Kobe NS, middle weight)
+
+(a) maximum deformation angles
+
+(b) Cumulative hysteretic energies
+Fig.5 Influence of weight ratio Rm (JMA Kobe NS)
+
+(a) maximum deformation angles 
+
+(b) Cumulative hysteretic energies
+Fig.6 Influence of ? (JMA Kobe NS)
+向がある。
+1,2層の重量比Rmを変化させた場合の1層の最大層間変形角及び履歴消費エネルギーをFig.5に示す。Rmの変化は、本解析においては総2階建の建物を想定しているので建物の仕上げによる重量差に相当するが、一般には1,2階の床面積が異なるために2層の重量が1層より小さいことによる重量差に相当する。ベースシア係数が0.2を超える範囲では最大応答は小さくなる。1,2層の重量比の影響は、ベースシア係数が十分確保されている場合には小さいことが判る。
+復元力特性のパラメータ?を変化させたときの1層の最大層間変形角及び履歴消費エネルギーをFig.6に示す。ここで、?=1.0、Rm=0.76である。?は構造物の耐力の大小に関係するパラメータである。
+パラメータ?、Rm、?を変化させた場合の最大層間変形角応答は、ベースシア係数が0.2より小さい範囲では増大するが、ベースシア係数が大きくなるにつれて小さくなる傾向が共通してみられる。特にJMA Kobeのような入力に対して1層の最大変形角を1/30radまでに留めるには0.5～0.7程度以上のベースシア係数が必要である。
+履歴消費エネルギーはベースシア係数が大きくなれば低下するが、ベースシア係数が0.3より小さくなれば履歴消費エネルギーも低下する。特に、ベースシア係数が0.2未満では、応答が不安定的で一方向への塑性流れが大きくなり、履歴繰り返しをすることなく倒壊するため、見かけの履歴消費エネルギーは小さくなる。
+次に入力地震波の違いによる影響を調べるために、各地震波の最大速度を50,75,100,125cm/secに基準化した。ベースシア係数と１層の最大層間変形角の関係をFig.7に示す。ここでは標準パラメータを有する中程度の重量の建物を対象としている。入力地震動の強度が大きくなれば、建物の耐震性を確保するには、十分大きなベースシア係数を必要とし、建物の耐力の大きさのみでは不十分で層間変形角の限界値と関連する変形性能が重要となる。
+4. おわりに
+一般的な2階建木造住宅について、建物重量や復元力特性など動力学的モデルを構築して地震応答解析を実施した。このような解析を通じて、木造建物の地震時の動的性状を、各層の層間変形角や履歴消費エネルギーなどの耐震安全性の判定尺度を用いて明らかにすることを試みた。
+本論では中程度重量の建物の解析結果について述べたが、重い建物や軽い建物についても同様の傾向を示した。
+木造建物の変形性能や耐力などの履歴復元力特性、更に破壊メカニズムなどに関する実験・研究はまだ少ない。特に、木造建物の各部や全体の動的実験がほとんどなされていない現状では、動的な観点からの検討は、多くの課題があり今後更に進める必要がある。
+参考文献
+1) (財)日本住宅・木材技術センター：木質資材利用技術耐震性向上事業報告書．平成9年3月．
+2) 鈴木祥之、中治弘行、岩井哲、北原明男：在来構法木造住宅の実大水平力載荷実験．日本建築学会構造系論文集No.499．1997年9月．
+3) 中村豊ほか：1995年兵庫県南部地震の地震動記録波形と分析(II)．JR地震情報No.23d．(財)鉄道総合研究所ユレダス開発推進本部．1996年3月．
+
+
+
+
+Fig.7: Maximum deformation angles of 1st story
+

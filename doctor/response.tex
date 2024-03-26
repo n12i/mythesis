@@ -1,0 +1,539 @@
+\section{強震動下における木造建物の地震応答と耐震性評価}
+\label{sec:seis-response-calc}
+
+1995年兵庫県南部地震による阪神・淡路大震災では、特に建築時期の古い木造
+住宅で、倒壊・大破といった甚大な被害が顕著であった。このように大きな被
+害が起こった原因を明らかにし、今後木造建物について構造設計を行うために
+は、木造建物の強震動下での挙動を把握する必要がある。
+
+本章では、1995年兵庫県南部地震による阪神・淡路大震災において甚大な被害
+を受けた木造住宅について、強地震での地震応答解析を実施し、最大層間変形
+角や履歴消費エネルギーなどの耐震安全性に関わる尺度を用いて応答性状を明
+らかにするとともに、必要とされる耐力や変形性能などの耐震性を検証する。
+
+
+
+\subsection{地震応答解析用モデル}
+\label{sec:resp-model}
+
+総2階建木造住宅を対象にして、建物の重量別に分類し、2質点せん断型の振動
+モデルとする。履歴復元力特性など地震応答解析のための動力学モデルを以下
+のように設定する。
+
+\subsubsection{建物重量及び復元力特性の設定}
+
+建物重量は屋根や壁の仕上げによって表\ref{tab:typeofwoodenhouses}に示す
+ように重い建物、中程度の重さの建物、軽い建物の3タイプを設定する
+\cite{Ju-Moku-Report97}。各層の床面積は91.125m$^2$、1、2階の階高をそれ
+ぞれ2.75m、2.5mとする。
+
+各層の履歴復元力特性は、実在の木造住宅を対象に行った静的水平力載荷実験
+\cite{my-kibyoshi-jitsudai}や耐力壁のせん断載荷実験
+(第\ref{sec:wall-test}章)の結果等を勘案して、
+(\ref{eq:hysteretic})式に示すように、
+ポリリニア型履歴特性と
+スリップ型履歴特性の複合型とする\cite{YSuzuki}。
+\begin{equation}
+  \label{eq:hysteretic}
+  \Phi = \beta\Phi_{QL} + (1-\beta)\Phi_{SL}
+\end{equation}
+ここで、$\Phi_{QL}$はポリリニア型履歴特性、
+$\Phi_{SL}$はスリップ型履歴特性、
+$\beta$は、両者の複合割合を決める定数である。
+これら履歴特性の各分岐の剛性は、図
+\ref{fig:hysteresis}に示すように設定する。ポリリニ
+ア、スリップ型履歴特性の比率$\beta=0.4$を標準とする。
+ポリリニア型履歴特性における1/30rad
+変形時の耐力は、1/120rad変形時の耐力の$\gamma_3$倍であるとしているので、
+層間変形角が1/30rad時に最大耐力に達し、その大きさは
+(\ref{eq:hysteretic})式より、1/120rad変形時の耐力の$\gamma =
+\beta\gamma _3 + (1 - \beta )$倍になる。例えば、$\beta = 0.4, 
+\gamma _3 = 1.5$の時、最大耐力は1/120rad変形時の耐力の1.2倍となる。
+
+初期剛性の設定は、\ref{sec:microtremor}節で示した常時微動レベルでの剛
+性に比べると小さな値となるが、強震応答では容易に大変形に達し、剛性を減
+じるので、\ref{sec:full-scale-static-test}節で得られた実在木造住宅の復
+元力特性に近づけている。中程度重量の建物の場合、ベースシアー係数0.2、
+$\beta=0.4$、$A_i$分布に従うとすると、各層の剛性はそれぞれ、$k_1=6.8,
+k_2=4.7$(tonf/cm)である。
+
+\begin{table}[htbp]
+  \begin{center}
+    \caption{解析に使用した2階建て木造住宅モデルのパラメータ}
+    \label{tab:typeofwoodenhouses}
+    \resizebox{\textwidth}{!}{%
+      \begin{tabular}[t]{|c|c|c|c|c|c|} \hline
+        タイプ&屋根仕上げ&壁の種類&1層重量(tonf)&2層重量(tonf)&
+        1、2層重量比$R_m$\\\hline
+        重い&土葺き瓦&\InExtWall{土塗り壁}{モルタル壁}
+        &27.25&27.79&1.02\\\hline
+        中程度&桟瓦&\InExtWall{土塗り壁}{モルタル壁}
+        &20.05&15.32&0.76\\\hline
+        軽い&カラーベスト&\InExtWall{ボード類大壁}{サイディング}
+        &17.41&10.97&0.63\\\hline
+      \end{tabular}}
+  \end{center}
+\end{table}
+\begin{table}[htbp]
+  \begin{center}
+    \caption{解析に用いたパラメータ}
+    \label{tab:parameters-for-seismic-analysis}
+    \begin{tabular}{|c|c|c|} \hline
+      パラメータ & 値の範囲 & 標準値 \\\hline
+      ベースシアー係数$C_0$ & 0.05,0.1,0.15,0.2,0.3〜1.0 & 0.2 \\\hline
+      2層の層せん断力係数への倍率$\nu$ & 0.5,0.75,1.0,1.25,1.5 & 1.0
+      \\\hline
+      $P_{1/30}/P_{1/120}$ for Quadri-linear $\gamma_3$ & 1.25, 1.50,
+      1.75, 2.0, 2.25, 2.50 & 1.5 \\\hline
+      1、2層重量比$R_m$ & 0.4,0.6,0.8,1.0,0.63,0.764,1.02 & 0.764 \\\hline
+    \end{tabular}
+  \end{center}
+\end{table}
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[scale=0.5]{Response/figs/hysteretics.eps}
+    \raisebox{.8in}{=}\\
+    \includegraphics[scale=0.5]{Response/figs/ql.eps}\raisebox{.8in}{+}
+    \includegraphics[scale=0.5]{Response/figs/sl.eps}
+    \caption{各層の履歴復元力特性モデル}
+    \label{fig:hysteresis}
+  \end{center}
+\end{figure}
+
+1、2層の変形角1/120rad時における耐力$P_i$は、現行の建築基準法施行令に基
+づき、次式で定める。
+\begin{equation}
+  \label{eq:P1/120rad}
+  \begin{array}{c}
+    P_i = C_i W_i \\
+    C_i = Z R_i A_i C_0 \\
+  \end{array}
+\end{equation}
+ここで、$A_i$は層せん断力係数、地域係数$Z=1.0$、振動特性係数$=1.0$、は
+$i$層以上の重量である。地震応答解析においてベースシア係数$C_0$をパラメー
+タとしているので初期剛性及び固有周期はベースシア係数の関数として決定さ
+れる。通常耐震設計に用いられる$A_i$分布は木造建物のような低層用ではな
+いため2層の層せん断力係数をパラメータ$\nu$で変化させた場合($A_2=\nu
+A_2$)の地震応答解析も行っている。\ref{sec:full-scale-static-test}章の
+水平力載荷実験の対象とした住宅で行った常時微動計測結果に基づく木造住宅
+の減衰定数は、\ref{sec:microtremor}節で述べたように、3〜8\%の範囲であっ
+た(他の住宅についても、常時微動計測から得られる減衰定数は同程度であっ
+た)が、ここでは、減衰は剛性比例型とし、1次モード臨界減衰比を5\%として
+いる。また、\ref{sec:wall-test}章で述べたような、破壊が生じることによ
+り耐力が減少することは考慮に入れていないが、地震応答解析において
+$P$-$\Delta$効果を考慮している。
+
+
+\subsubsection{耐震安全性の判定尺度}
+
+木造住宅の地震応答解析において、建物の倒壊や大破などの耐震安全性を各層
+での最大変形角で判定するのが一般的である。例えば、久田は、損傷を受ける
+が修復に莫大な費用がかかる手前の変形限度として、
+層間変形角1/60radを挙げている\cite{Hisada1955}。現行の壁量規定の基となっ
+ているのは、層間変形角1/120radでの耐力である。
+
+一方、地震のように構造物が繰り返し変形を受ける場合には、損傷が繰り返し
+によって累積した後に破壊するような累積破壊規範がより現実的である。しか
+しながら、木造建物の破壊メカニズムがよく解っていないので、ここでは、瞬
+時破壊規範に対する判定尺度として最大層間変形角を、累積破壊規範に対して
+は、履歴消費エネルギーを尺度として、地震応答解析から求めて検討を行う。
+
+\subsubsection{入力地震動}
+
+地震応答解析に用いた地震波は、表\ref{tab:seismic-data}に示すように、
+1995年兵庫県南部地震による神戸海洋気象台
+での観測記録JMA Kobe NS(最大加速度818gal、最大速度92.2cm/sec)、JR鷹取
+での観測記録JR Takatori NS(最大加速度605.5gal、最大速度
+122.7cm/sec)\cite{Yuredasu}、JR西明石駅での観測記録JR Nisiakasi NS(最
+大加速度473.8gal、最大速度44.3cm/sec)\cite{Yuredasu}、JR宝塚駅での観測
+記録JR Takarazuka NS(最大加速度683.6gal、
+最大速度66.7cm/sec)\cite{Yuredasu}、大阪ガス葺合供給部での観測記録
+O-Gas Fukiai NS(最大加速度686.5gal、最大速度
+55.0cm/sec)と、高層建築の動的解析によく用いられる強震記録1940 El
+Centro NS(最大加速度341.7gal、最大速度38.1cm/sec)及び1968 Hachinohe
+NS(最大加速度225gal、最大速度40.5cm/sec)である。最大速度は加速度を積分
+して求めている。
+%図\ref{fig:jma-kobe-wav3}に、神戸海洋気象台での観測記録の時刻歴を、
+図\ref{fig:seismic-wave}に、地震応答解析に用いた地震波を、
+図\ref{fig:vel-resp-spec}にその
+速度応答スペクトル(減衰比5\%)をそれぞれ示す。
+%%%
+\begin{table}[htbp]
+  \begin{center}
+    \caption{地震応答解析に用いた地震波}
+    \label{tab:seismic-data}
+    \begin{tabular}{|c|c|c|c|}\hline
+      地震波名称 & 観測点(方向) & 最大加速度(gal) & 最大速度(kine)
+      \\\hline
+      JMA Kobe & 神戸海洋気象台(南北) & 818 & 92.2 \\\hline
+      JR Takatori & JR鷹取駅(南北) & 605.5 & 122.7 \\\hline
+      JR Nisiakasi & JR西明石駅(南北) & 473.8 & 44.3 \\\hline
+      JR Takarazuka & JR宝塚駅(南北) & 683.6 & 66.7 \\\hline
+      O-Gas Fukiai & 大阪ガス葺合供給部(南北) & 686.5 & 55.0
+      \\\hline
+      ElCentro & El Centro (南北) & 341.7 & 38.1 \\\hline
+      Hachinohe & 八戸(南北) & 225.0 & 40.5 \\\hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\begin{figure}[htbp]
+  \begin{center}
+%    \includegraphics[width=\textwidth]{%
+%      Response/figs/timehistory/JMA-Kobe.eps}
+%    \caption{1995年兵庫県南部地震による神戸海洋気象台での観測記録
+%      ---解析に用いたのは南北方向の記録のみ---}
+%    \label{fig:jma-kobe-wav3}
+    \includegraphics[width=.92\textwidth]{%
+      Response/Seismic-Data/waves.eps}
+    \caption{地震応答解析に使用した地震波}
+    \label{fig:seismic-wave}
+  \end{center}
+\end{figure}
+\begin{figure}[htbp]
+  \begin{center}
+    \subfigure[1995年兵庫県南部地震において、神戸海洋気象台・JR鷹取駅・
+    JR西明石駅・JR宝塚駅で観測された地震の速度応答スペクトル]{%
+    \includegraphics{Response/figs/respec/respec1.eps}}
+    \vspace{\baselineskip}
+    \subfigure[1995年兵庫県南部地震において、
+    大阪ガス葺合供給所で観測された地震及びElCentro、
+    八戸地震の速度応答スペクトル]{%
+    \includegraphics{Response/figs/respec/respec2.eps}}
+    \caption{地震応答解析に使用した入力地震波の速度応答スペクトル}
+    \label{fig:vel-resp-spec}
+  \end{center}
+\end{figure}
+
+
+\subsubsection{解析モデルの妥当性の検証}
+
+\ref{sec:full-scale-static-test}章で実験対象とした住宅の復元力特性との
+整合性について、特にQuadri-linear とSlipの混合比$\beta$について検討す
+る。
+本解析モデルの主要なパラメータは、1)建物重量、2)ベースシアー係数、3)最
+大耐力決定のための係数$\gamma$の3つである。
+\ref{sec:full-scale-static-test}章の実験対象建物のうち、\Shichijo{}に
+ついて、復元力特性の比較を行う。水平力載荷実験では、2層の上部に外力を
+作用させたので、2層の荷重と層間変形角の関係を比較対象とする。
+
+\Shichijo{}、\Tsuji{}、\Tanaka{}、\Sugiura{}、\Haumesse{}の2層の層間変
+形角と層間変形角が1/120rad時の耐力が1となるように基準化した耐力の関係
+を、本解析モデルの復元力特性($\gamma_3 = 1.5, \beta = 0.4$の場合)と重
+ねて描くと、図\ref{fig:hikaku-house-and-model}に示すようになる。 
+Quadri-linearとSlipの混合比$\beta$によって、1/120rad変形に至るまでの復
+元力特性の折れ線が決定されるが、図\ref{fig:hikaku-house-and-model}より、
+本解析モデルは実建物の包絡線の内側を通っている。最大耐力は、
+Quadri-linearのパラメータ$\gamma_3$と$\beta$によって、1/120rad変形時の
+耐力の$\gamma=\beta\gamma_3 + (1-\beta)$倍に決定されるので、図
+のように$\gamma_3=1.5$とすると、実建物よりずいぶん小さい最大耐力となっ
+ている。しかし、$\beta=0.4$と固定して、土塗り壁が主な耐力壁の場合には、
+$\gamma=1.5$、合板張やラスモルタル仕上げが主に用いられている建物では
+$\gamma=2〜2.5$となるように設定すれば、うまく実建物の復元力特性を再現
+できると考えられる。
+
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics{Response/hikaku/kijunka.eps}
+    \caption{実建物と解析モデルの復元力特性の比較}
+    \label{fig:hikaku-house-and-model}
+  \end{center}
+\end{figure}
+
+本解析モデルにおいて、1、2層の重量を\Shichijo{}と等しく、$W_1=11.0,
+W_2=8.1$tonfとし、初期剛性が等しくなるように、ベースシアー係数を0.55、
+最大耐力を等しくするために$\gamma_3=2.125$とする。
+
+\Shichijo{}2層の荷重と変形角の関係と、前述のパラメータ設定をし
+た解析モデルにJR Takatori NSの最大振幅を2倍にしたものを入力した場合の
+応答結果より得られる2層の復元力と層間変形角の関係を重ねて、
+図\ref{fig:hikaku-experiment-and-analysismodel}に示す。
+
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics{Response/hikaku/jr-takatori-c0-0_55.eps}
+    \caption{静的水平力載荷実験結果と解析モデルとの比較}
+    \label{fig:hikaku-experiment-and-analysismodel}
+  \end{center}
+\end{figure}
+
+図より、復元力特性はよく一致しており、Quadri-linear成分の各勾配の設定
+とQuadri-linearとSlipの混合比$\beta$の値、Slipの設定は妥当であると言え
+る。
+%%%
+
+\subsection{解析結果}
+\label{sec:resultofcalculation}
+
+中程度の重さの建物を対象にし、入力地震波JMA Kobe NSの場合の地震
+応答解析例を示す。本解析での標準的なパラメータの組み合わせ(表
+\ref{tab:parameters-for-seismic-analysis})である履歴復
+元力特性のパラメータ$\gamma_3=1.5$、
+2層せん断力係数のパラメータ$\nu=1.0$、
+重量比$R_m=0.76$で、ベースシア係数$C_0=0.2$とした場合の時刻歴応答(1層
+及び2層の層間変形角、層間速度、履歴消費エネルギー及び履歴ループ)を図
+\ref{fig:TimeHistory-Mid-JMAKobeNS}に示す。各パラメータの値はそれぞれ、
+各層の最大耐力が1/120rad変形時の耐力の$\gamma = 1.2$倍であること、2層
+の層せん断力係数が$A_i$分布に従うこと、1、2層の重量は表
+\ref{tab:typeofwoodenhouses}の中程度重量であることを示している。
+%この標準的なパラメータの組み合せによるモデルは、前述の通り、実際の建物
+%より耐力が小さくなっている。
+
+一般に総2階建では間取り等により、1階よりも2階の剛性が高くなる場合が多
+く、阪神・淡路大震災において1階部分の崩壊が顕著であった被害状況と符合
+する。
+
+2層の層せん断力係数を変化させた場合の1、2層の最大層間変形角及び履歴消費
+エネルギーを図\ref{fig:Influenceofnu-JMAKobeNS-Mid}に示す。$\nu=0.4$、
+即ち2層の剛性が標準$A_i$分布に比べて小さい場合には、ベースシア係数が
+0.2より小さい範囲では2層の最大応答が増大し、ベースシア係数が0.2より大
+きい範囲では、$\nu$を大きく、即ち2層の剛性を高くすると1層の応答が大き
+くなる傾向がある。これは、阪神・淡路大震災において、西宮市などで店舗つ
+き住宅の被害が大きかったこと符合する。店舗つき住宅では、1階部分が店舗
+のために開放的となり剛性が小さいのに対し、2階は住居部分であるために耐
+力で仕切られており、剛性が大きい。
+
+1、2層の重量比$R_m$を変化させた場合の、1層の最大層間変形角及び履歴消費
+エネルギーを図\ref{fig:Inf-Rm-JMAKobeNS}に示す。
+$R_m$の変化は、本解析においては総2階建の建物を想定しているので、建物の
+屋根や内外壁の仕様による1、2階の重量の違いに相当する。
+一般には、1、2階の床面積が異なるために2層の重量が1層より小さいこと
+による重量差に相当する。ベースシアー係数が0.2を超える範囲では最大応答
+は小さくなる。1、2層の重量比の各層の最大変形角に与える影響は、ベースシ
+アー係数が0.4以上に十分確保されている場合には小さいことが判る。ベース
+シアー係数が0.3より小さいと、1層の応答が大きくなり倒壊の恐れがある傾向
+を示している。
+
+復元力特性のパラメータ$\gamma_3$を変化させたときの1層の最大層間変形角
+及び履歴消費エネルギーを図\ref{fig:Inf-gamma-JMAKobeNS}に示す。ここで、
+$\nu=1.0$、$R_m=0.76$、$\beta=0.4$である。
+$\gamma_3$は構造物の耐力の大小に関係するパラメータであり、
+$\gamma_3=1.5$、$\beta=0.4$の場合は、最大耐力が1/120rad変形時の耐力の
+1.2倍であることを表している。
+
+パラメータ$\nu$、$R_m$、$\gamma_3$を変化させた場合の最大層間変形角応答
+は、ベースシア係数が0.2より小さい範囲では増大するが、ベースシア係数が
+大きくなるにつれて小さくなる傾向が共通してみられる。特にJMA Kobeのよう
+な入力に対して1層の最大変形角を1/30radまでに留めるには0.5〜0.7程度以上
+のベースシア係数が必要である。
+
+履歴消費エネルギーはベースシア係数が大きくなれば低下するが、ベースシア
+係数が0.3より小さくなれば履歴消費エネルギーも低下する。特に、ベースシ
+ア係数が0.2未満では、応答が不安定的で一方向への塑性流れが大きくなり、
+履歴繰り返しをすることなく倒壊するため、見かけの履歴消費エネルギーは小
+さくなる。
+
+次に、入力地震波の違いによる影響を調べるために、各地震波の最大速度を
+50、75、100、125cm/secに基準化した。ベースシア係数と1層の最大層間変形角
+の関係を図\ref{fig:Inf-Inputs}に示す。ここでは標準パラメータを有する中
+程度の重量の建物を対象としている。入力地震動の強度が大きくなれば、建物
+の耐震性を確保するには、十分大きなベースシア係数を必要とし、建物の耐力
+の大きさのみでは不十分で層間変形角の限界値と関連する変形性能が重要とな
+る。
+
+ほとんどのケースで、ベースシアー係数が大きくなると応答が小さくなるとい
+う傾向が見られたが、
+\begin{itemize}
+\item 中程度重量
+\item $\beta = 0.4$
+\item $\nu=1.0$ (層せん断力係数は$A_i$分布に従う)
+\item $\gamma_3 = 2.25$ (各層の最大耐力は、層間変形角1/120rad時の耐力
+  の1.5倍)
+\end{itemize}
+という組合わせのケースでは、1層の応答が、ベースシアー係数が0.15の
+ときには安定するが、ベースシアー係数が0.2になると発散するという結果が
+得られた。1層の層間変形角の時刻歴応答を図\ref{fig:response-hen}に示す。
+
+大地震時には、大きなベースシアー係数を有していることが有利になるのであ
+り、ベースシアー係数が0.15でもよいということには決してならないが、
+このように、微妙なところで崩壊に至るか至らないかが決まってくると
+いうことも忘れてはならないことである。
+
+\begin{figure}[htbp]
+  \begin{center}
+    \subfigure[各層の層間変形角]{%
+      \includegraphics[width=.47\textwidth]{%
+        Response/figs/timehistory/gamma.eps}}
+    \subfigure[各層の速度]{%
+      \includegraphics[width=.47\textwidth]{%
+        Response/figs/timehistory/vel.eps}}
+    \subfigure[各層の履歴消費エネルギー]{%
+      \includegraphics[width=.47\textwidth]{%
+        Response/figs/timehistory/che.eps}}
+    \subfigure[各層の履歴ループ]{%
+      \includegraphics[width=.47\textwidth]{%
+        Response/figs/timehistory/hys-loop.eps}}
+    \subfigure[パラメータの組み合わせ]{%
+      \begin{tabular}{l}
+        $w_1=20.05, w_2=15.32$ (tonf)\\
+        $\gamma_3=1.5, \beta=0.4, \nu=1.0$\\
+      \end{tabular}}
+    \caption{中程度重量建物の応答時刻歴(JMA Kobe NS入力時)}
+    \label{fig:TimeHistory-Mid-JMAKobeNS}
+  \end{center}
+\end{figure}
+%%%
+\begin{figure}[htbp]
+  \begin{center}
+    \subfigure[1層の最大層間変形角]{%
+      \includegraphics[width=0.47\textwidth]{%
+        Response/JMA-Kobe/Nu/figs/max-def-angle-1st.eps}}
+    \subfigure[2層の最大層間変形角]{%
+      \includegraphics[width=0.47\textwidth]{%
+        Response/JMA-Kobe/Nu/figs/max-def-angle-2nd.eps}}
+    \subfigure[1層の履歴消費エネルギー]{%
+      \includegraphics[width=0.47\textwidth]{%
+        Response/JMA-Kobe/Nu/figs/che-1st.eps}}
+    \subfigure[2層の履歴消費エネルギー]{%
+      \includegraphics[width=0.47\textwidth]{%
+        Response/JMA-Kobe/Nu/figs/che-2nd.eps}}
+    \subfigure[パラメータの組み合わせ]{%
+      \begin{tabular}{l}
+        $w_1=20.05, w_2=15.32$ (tonf)\\
+        $\gamma_3=1.5, \beta=0.4,$\\
+        $\nu=0.6,0.8,1.0,1.2,1.4$\\
+      \end{tabular}}
+    \caption{係数$\nu$の応答への影響
+      (JMA Kobe NS入力時、中程度重量建物の場合)}
+    \label{fig:Influenceofnu-JMAKobeNS-Mid}
+  \end{center}
+\end{figure}
+%%%
+\begin{figure}[htbp]
+  \begin{center}
+    \subfigure[1層の最大層間変形角]{%
+      \includegraphics[width=0.47\textwidth]{%
+        Response/JMA-Kobe/Rm/figs/max-def-angle-1st.eps}}
+    \subfigure[2層の最大層間変形角]{%
+      \includegraphics[width=0.47\textwidth]{%
+        Response/JMA-Kobe/Rm/figs/max-def-angle-2nd.eps}}
+    \subfigure[1層の履歴消費エネルギー]{%
+      \includegraphics[width=0.47\textwidth]{%
+        Response/JMA-Kobe/Rm/figs/che-1st.eps}}
+    \subfigure[2層の履歴消費エネルギー]{%
+      \includegraphics[width=0.47\textwidth]{%
+        Response/JMA-Kobe/Rm/figs/che-2nd.eps}}
+    \subfigure[パラメータの組み合わせ]{%
+      \begin{tabular}{l}
+        $w_1=20.05, w_2 = w_1\times R_m$ (tonf)\\
+        $\gamma_3=1.5, \beta=0.4, \nu=1.0$\\
+        $R_m=0.4,0.6,0.8,1.0$\\
+      \end{tabular}}
+    \caption{1、2層重量比$R_m$の応答への影響(JMA Kobe NS入力時)}
+    \label{fig:Inf-Rm-JMAKobeNS}
+  \end{center}
+\end{figure}
+%%%
+\begin{figure}[htbp]
+  \begin{center}
+    \subfigure[1層の最大層間変形角]{%
+      \includegraphics[width=0.47\textwidth]{%
+        Response/JMA-Kobe/Gamma/figs/max-def-angle-1st.eps}}
+    \subfigure[2層の最大層間変形角]{%
+      \includegraphics[width=0.47\textwidth]{%
+        Response/JMA-Kobe/Gamma/figs/max-def-angle-2nd.eps}}
+    \subfigure[1層の履歴消費エネルギー]{%
+      \includegraphics[width=0.47\textwidth]{%
+        Response/JMA-Kobe/Gamma/figs/che-1st.eps}}
+    \subfigure[2層の履歴消費エネルギー]{%
+      \includegraphics[width=0.47\textwidth]{%
+        Response/JMA-Kobe/Gamma/figs/che-2nd.eps}}
+    \subfigure[パラメータの組み合わせ]{%
+      \begin{tabular}{l}
+        $w_1=20.05, w_2=15.32$ (tonf)\\
+        $\beta=0.4, \nu=1.0$\\
+        $\gamma_3 = 1.25,1.50,1.75,2.00,2.25,2.50$\\
+      \end{tabular}}
+    \caption{係数$\gamma_3$により復元力特性を変化させた場合の応答の変化
+      (JMA Kobe NS入力時)}
+    \label{fig:Inf-gamma-JMAKobeNS}
+  \end{center}
+\end{figure}
+\begin{figure}[htbp]
+  \begin{center}
+    \subfigure[50cm/sに基準化]{%
+      \includegraphics[width=.47\textwidth]{%
+        Response/vel/figs/max-rad/50kine.eps}}
+    \subfigure[75cm/sに基準化]{%
+      \includegraphics[width=.47\textwidth]{%
+        Response/vel/figs/max-rad/75kine.eps}}
+    \subfigure[100cm/sに基準化]{%
+      \includegraphics[width=.47\textwidth]{%
+        Response/vel/figs/max-rad/100kine.eps}}
+    \subfigure[125cm/sに基準化]{%
+      \includegraphics[width=.47\textwidth]{%
+        Response/vel/figs/max-rad/125kine.eps}}
+%    \subfigure[実地震波の場合]{%
+%      \includegraphics[width=.47\textwidth]{%
+%        Response/vel/figs/max-rad/original.eps}}
+    \subfigure[パラメータの組み合わせ]{%
+      \begin{tabular}{l}
+        $w_1=20.05, w_2=15.32$ (tonf)\\
+        $\gamma_3=1.5, \beta=0.4, \nu=1.0$\\
+      \end{tabular}}
+    \caption{入力地震波の最大速度による応答の変化}
+    \label{fig:Inf-Inputs}
+  \end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics{%
+      Response/JR-Takatori/hen.eps}
+    \caption{応答の不安定性}
+    \label{fig:response-hen}
+  \end{center}
+\end{figure}
+
+
+%\subsection{実建物との復元力特性の比較}
+%\label{sec:compare_hysteretic_characteristics}
+
+%本章で設定した復元力特性のモデルは、第\ref{sec:full-scale-static-test}
+%章で述べた実在木造建物の静的載荷実験の結果に基づいているが、初期剛性は
+%ベースシアー係数を基に決定している。
+
+%本章の解析で得られる層間変形角と復元力の関係と実建物の静的載荷実験結果
+%より得られる層間変形角と載荷荷重の関係を、
+%併せて図に示す。
+%なお、縦軸を最大耐力が1となるように正規化している。
+
+\subsection{おわりに}
+\label{sec:resp-fin}
+
+一般的な2階建木造住宅について、建物重量や復元力特性など動力学的モデル
+を構築して地震応答解析を実施した。このような解析を通じて、木造建物の地
+震時の動的性状を、各層の層間変形角や履歴消費エネルギーなどの耐震安全性
+の判定尺度を用いて明らかにすることを試みた。
+
+本論では中程度重量の建物の解析結果について述べたが、重い建物や軽い建物
+についても同様の傾向を示した。
+
+強震下では、一般に2層よりも1層の応答が大きくなることが、本解析からも明
+らかであり、阪神・淡路大震災で見られた被害と符合する。1、2層の層せん断
+力係数の値によって、2層が極端に剛性が高くなると、1層の応答だけが著しく
+大きく発散してしまう現象が見られた。
+
+同じモデルであっても、ベースシアー係数のわずかな違いによって、応答が発
+散するものと安定するものが見られた。例えば、中程度重量のモデルにJR鷹取
+駅で観測された地震波を入力した場合、$\gamma_3=2.25$、すなわち最大耐力
+が1/120rad変形時の耐力の1.5倍とすると、ベースシアー係数が0.15では、1層
+の応答が発散しないのに、ベースシアー係数が0.2では発散している。ベース
+シアー係数が大きくなくともよい、ということではなく、地震の規模が大きく
+なると、応答が発散するか安定するか、すなわち崩壊に至るか至らないかが、
+微妙な違いで決まってくることを示している。
+
+木造建物の変形性能や耐力などの履歴復元力特性、更に破壊メカニズムなどに
+関する実験・研究はまだ少ない。特に、木造建物の各部や全体の動的実験がほ
+とんどなされていない現状では、動的な観点からの検討は、多くの課題があり
+今後更に進める必要がある。
+
+
+%\subsection{実地震動及び模擬地震動による解析例}
+%\label{sec:examples-calc}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "paper"
+%%% End: 

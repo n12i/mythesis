@@ -1,0 +1,1194 @@
+%%% -*- LaTeX -*-
+\section{在来構法木造住宅の実大水平力載荷実験}
+\label{sec:full-scale-static-test}
+
+1995年兵庫県南部地震による阪神・淡路大震災では、
+木造建物の被害が甚大であり
+\cite{nenpo-38a,kinki95-1,kinki95-2,kogai95-1,kogai95-2,mokuzo-higai}、
+全壊及び半壊の建物は20万棟を越えている。
+この震災関連の死者は6千人を越え、戦後最大の人的被害となった。また、多
+くの死者を出す最大の原因が家屋の倒壊によるものであった。
+
+この阪神・淡路大震災から得られる教訓を活かして、
+災害に強い街づくりに取り組むことが大切である。とりわけ、都市住民の安全性
+に密接な影響を持つ木造住宅について、被害原因を究明し、耐震性能の向上を
+図る耐震設計法や既存建物の補強法を確立するなどの耐震対策は重要かつ緊急
+の課題と言える。
+
+実大建物の耐震性を調べる目的で水平力載荷実験が行われている
+\cite{金沢工大紀要,
+sugiyama1,3-story-hirano,hoyu-tairyoku,hoyu-tairyoku81}が、
+在来構法の木造建物の場合、建設年代や地域特有の
+構法の違いなどによって建物の復元力特性は大きく異なる可能性があるため、
+構法別・年代別・地域別に耐震性能を詳細に把握することが木造建物の耐震
+対策をより強固に進めるために重要である。
+
+本章では、地震被害のあった西宮市や
+古い木造家屋の多い京都市において、在来構法木造住宅を対象とした
+静的水平力載荷実験を実施し、建物が崩壊に至るまでの剛性・耐力
+と変形性能を把握すること、ならびに
+木造建物の耐震性能の評価法について考察することを意図している。
+
+水平力載荷実験を行う前に常時微動計測と自由振動実験を、
+また、載荷実験後に可能な
+限り常時微動計測を行い、これらの実験結果から、木造建物の静的・動的特性
+を明らかにし、更に今後、新築される木造建物に対する合理的な耐震構造設計
+法や、既存の木造建物の耐震補強法を策定することを目標としている。
+
+本章では、木造建物の静的復元力特性を
+把握するために既存木造建物4棟と軸組架構1棟について行った
+静的水平力載荷実験、常時微動計測及び自由振動実験について、
+実験の概要と結果について述べる。また、従来
+の壁率に基づく木造建物の耐力と水平力載荷実験で得られた結果とを比較し、
+壁の剛性、強度の評価法について考察した。最後に、軸組架構の
+建物全体の復元力特
+性を耐力壁の復元力特性で表現することを試みた。
+
+%実在する木造建物、特に、1995年兵庫県南部地震において大被害を受けた在
+%来構法木造住宅を対象に、どの程度の変形性能と耐力を持っているのか、また、
+%どのような振動特性を有しているのかを調べようとした。このような目的から、
+%当初は被災地における取り壊し建物を対象に実大破壊実験等を企んだが、現実
+%には周囲の道路や倒壊建物などの状況から、実験を行うことは困難であった。
+%したがって被災地では、1995年12月に入って、周囲の状況が整った西宮市の1
+%棟のみで、自由振動実験や破壊実験を行えた。
+
+%一方、京都市は木造建物が多く、特に建設年代の古い建物が多いことで知られて
+%いる。また、京都市域には花折断層や樫原断層などの活断層があり、これらの断
+%層が近い将来大地震を引き起こす可能性も報じられている。したがってこのような状
+%況下では、京都市域における木造建物の耐震対策はより重要であると考えられる
+%ので、京都市内で、工務店、大工、設計者など多くの方の協力の下に、立て替え
+%予定の建物を対象にして、常時微動計測、自由振動実験ならびに破壊実験を行っ
+%た。本研究は、これらの実験を通じて、木造建物の動力学特性および耐力と変形
+%性能を定量的に評価し、木造建物の耐震性能の評価手法を確立することを目指し
+%ている。
+
+
+\subsection{実験対象建物}
+\label{sec:specimens}
+実在する木造建物の耐力と変形性能及び振動特性を定量的に評価するため、解
+体予定の木造住宅4棟、及び、実験用に建設した木造軸組1棟について、常時微
+動計測、自由振動実験ならびに水平力載荷実験を行った。実験を行った建物の
+概要を表\ref{sites}に、平面図を図\ref{sh_plan}から
+図\ref{hau_plan}に示す。
+
+\input{sites}
+
+図中●、■は、それぞれ重心、剛心を表す。重心は、各平面図から幾何学的に
+算定し、剛心については、耐力壁の剛性の分布から、偏心距離を算定した。こ
+こで、耐力壁の剛性は、壁率計算と同様の方法で、1/120rad変形時の耐力から求めた。即ち、耐力壁線毎に、耐力壁の有効長さ(m)を算定したものに130kgf/mを掛けたもの
+を剛性とした。但し、耐力壁の有効長さを算出する際、壁倍率として
+\ref{壁率} 節に示した倍率のうち(~)内の値を用いた。
+平面図中の矢印は、載荷方向を表している。
+
+\input{plan}
+
+昭和初期に建てられた2棟、\Shichijo (図\ref{sh_plan})と\Tsuji (図
+\ref{tu_plan})は、内外壁とも耐力壁は、3段貫・竹小舞の土塗壁である。
+外壁の一部には、%厚さ1.5cm
+断面15×100程度の筋かい材が添えられており、2階中ほどまで
+縦羽目板貼りされている。しかし、羽目板の多くに反りや割れなどを生じてい
+た。
+内外壁とも耐力壁を土塗壁(壁倍率0.5)とし
+て計算した壁率(表\ref{kaberitsu}、(~)内の値)は、現在の基準値を満たして
+いない。2棟とも古い建物であるため、土台の一部に蟻害や腐朽が見られた。
+
+昭和30年代後半に建てられた\Tanaka (図\ref{ta_plan})
+は、外壁がラスモルタルであり、隅角部には筋かい
+も入っているが、建築基準法施行令第46条による1階壁率(表\ref{kaberitsu}、
+(~)内の値)は、24〜25cm/m$^2$程度であり、いずれも現在の所要壁率
+33cm/m$^2$を満たしていない。載荷のために一部壁仕上材を剥がしてみたが、
+構造材の腐朽はほとんど見られなかった。
+
+西宮市六軒町の\Sugiura (図\ref{su_plan})は、1995年兵庫県南部地震で「全
+壊」の被害認定を受けた建物である。昭和40年の建築である。
+特に、敷地を、南西から北東にかけて、斜めに横切って地盤に亀裂が走ってお
+り、土台が基礎から横ずれしたり、一部陥没するなどの地盤変状により、鉄筋
+コンクリート布基礎(フーチング幅:40cm、基礎深さ:1.5m)も貫通するようなひ
+び割れが生じている。建物は不同沈下して、1階壁にひび割れなどの被害が出
+ていた。また、柱が一部で土台から外れていたが、被害調査時の被害レベル分
+類\cite{kogai95-1}に従えば、建物の上部構造自体の被害は、中破レベルと見
+なされる。構造材の腐朽は見られなかった。
+
+\begin{figure}[htbp]
+  \begin{center}
+%    \rotatebox{90}{%
+%      \includegraphics{figs/plan/haumesse-bracejoint.epsi}}
+    \includegraphics[width=.4\textwidth]{%
+      figs/plan/haumesse-bracemetal-joint.eps}
+    \caption{\Haumesse 筋かい接合部}
+    \label{fig:hau-bracejoint}
+  \end{center}
+\end{figure}
+
+\Haumesse (図\ref{hau_plan})は、1ケ月間の屋外展示用並びに実験用に建
+設された軸組のみ(壁仕上げなし、構造合板の野地板のみで屋根仕上なし)の
+3.6m×3.6m平面(2間×2間)の2階建であり、貫構法と筋かい構法との差異を調
+べる目的で、構面a(図\ref{hau_plan}の構面4)が3段貫、構面b(図
+\ref{hau_plan}の構面1)が二ツ割筋かいとなっている。筋かいはベイマツ材を
+使用し、
+図\ref{fig:hau-bracejoint}に示すように、突付け
+で、箱型金物で接合されている。また、軸組の復元力特性を調べるために、2
+台のクレーンによる正負繰返し載荷実験を行った。
+
+\subsection{実験の方法}
+
+小屋梁位置で隅柱部分を引っ張って静的な載荷を行い、
+載荷履歴に対する耐力と変形の関係を調べ、最大耐
+力を越えて破壊に至るまでの挙動を調べることを意図した。
+図\ref{saika-jokyo}、\ref{saika}に
+載荷及び計測の状況を示す。
+
+解体前の住宅4棟の実験では、図\ref{saika-jokyo}及び\ref{saika}に示すように、
+載荷には、容量約25tonf
+のラフター型トラッククレーンを用いて、
+%図\ref{saika-jokyo}、\ref{saika}に示
+%すようにワイヤーで2階小屋組の柱--梁接合部分を引っ張り、
+建物全体に力が加わるように、載荷方向に対して奥側の2階小屋組の柱--梁接
+合部分をワイヤーで引っ張り、1方向の繰り返し載荷を層間変形
+角で1/30〜1/12rad程度まで行った。但し、建物の倒壊や、外周にある電線・
+電話線の切断などの、近隣への安全に対する配慮から、載荷続行が危険である
+と判断した場合には、最大耐力に至る前においても載荷を停止した。
+%また、小屋梁位置に載荷
+%を行うため1、2階の各層にかかる水平せん断力が一定になるが、1階に比べて2
+%階は床面積も壁量も少なくほとんどの場合2階部分が早く破壊することが
+%予想された。
+
+\Haumesse{}の実験では、容量7tonfのトラッ
+ククレーン2台を用いて、交互に引っ張って繰り返し載荷した後に、荷重計及
+び変位計を除去し倒壊するまで載荷した。
+
+作用させた水平引張力は、容量20tonf(定格出力$2000 \mu$・精度10kgf)の
+荷重計を1台用いて計測した。%基礎、1層、2層の
+層間変形角及び層のねじれ変形を計測するため、図\ref{saika}に示すように土
+台、胴差し、軒げた(妻ばり)の位置で左右2点ずつ、計6点の変位を測定した。
+各点の変位は、図\ref{saika-jokyo}に示すようにビティ足場を立て、容量2500mm
+の巻き込み型変位計(定格出力$5000\mu$・精度0.5mm)を6台取り付けて計測し
+た。また、
+変位の実験時モニタ用に、測定範囲200〜1300mmの超音波式変位センサ(非接触
+型変位計測、表示分解能1mm、表示精度$\pm$1\%F.S.)を2台用いた。変位計取
+りつけ状況を写真\ref{pho:disp-meas-equip}に示す。
+
+実験を行った住宅4棟のうち、3棟は壁量が多い桁行方向の載荷で、
+\Tanaka{}のみが張間方向の載荷であった。
+
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[width=.7\columnwidth]{figs/nakaji.eps}
+    \caption{載荷状況}\label{saika-jokyo}%\vspace{3pt}
+  \end{center}
+\end{figure}
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[width=.7\columnwidth]{figs/load_meas.epsi}
+    \caption{載荷と計測の概要(\Haumesse の場合)}\label{saika}
+  \end{center}
+\end{figure}
+\begin{photo}[htbp]
+  \begin{center}
+    \includegraphics{figs/photos/disp-meas-equips.eps}
+    \caption{巻き込み型変位計と超音波式変位センサ}
+    \label{pho:disp-meas-equip}
+  \end{center}
+\end{photo}
+
+%%%%%%
+%%%%%%
+%%%%%%
+
+\subsection{実験結果の考察}\label{sec3}
+載荷実験より得られた建物の変位は、図\ref{saika}に示されるように、6点の
+$d_{0a}、d_{0b}、d_{1a}、d_{1b}、d_{2a}、d_{2b}$である。これより、層間
+変位$u$、層間変形角$\gamma$、及び、ねじれ変形角$\theta$を次式で求めた。
+\begin{equation}
+  \label{story-deform}\renewcommand{\arraystretch}{0.9}
+  \begin{array}{l@{~~~}l}
+    u_1=(u_{1a}+u_{1b})/2, &   u_2=(u_{2a}+u_{2b})/2 \\
+    u_{1a}=d_{1a}-d_{0a}, & u_{1b}=d_{1b}-d_{0b} \\
+    u_{2a}=d_{2a}-d_{1a}, & u_{2b}=d_{2b}-d_{1b} \\
+    \gamma_1=u_1/h_1, & \gamma_2=u_2/h_2 \\
+    \theta_1=(d_{1a}-d_{1b})/s, & \theta_2=(d_{2a}-d_{2b})/s \\
+  \end{array}
+\end{equation}
+%%%
+ここで、$u、\gamma 及び\theta$の添字1、2は、建物の1層、2層を、添字
+\textit{a}、\textit{b}は、それぞれ、図\ref{saika}に示した構面a、bを意
+味する。また、$h_1$、$h_2$、$s$は、それぞれ、図\ref{saika}に示したよう
+に、計測点位置での階高、スパンを表す。
+但し、その構面で計測が出来ない場合にも、可能な限り近い位置で変形を計
+測したので、(\ref{story-deform})式での計算では、$h$や$s$の補整を行わず、
+$h_i=(h_{ia}+h_{ib})/2 ~~(i=1,2)$のように平均値を用いた。
+ねじれ変形角$\theta$は、構面a側の変形が大きくなる方向(平面図で半
+時計回り)を正とした。床面の浮き上がりなど、水平構面の面外変形は計測し
+ていない。ねじれ変形角の算定時には、水平構面は剛であるとした。
+表\ref{tab:keisokuichi-h&s}に、各建物での$h$、$s$ の値を示す。
+%%%
+\begin{table}[htbp]
+  \begin{center}
+    \caption{計測機器間寸法(cm) (図\ref{saika}の$h$と$s$)}
+    \label{tab:keisokuichi-h&s}
+    \begin{tabular}{|c|c|c|c|}\hline
+      建物名称 & $h_1$ & $h_2$ & $s$ \\\hline
+      \Shichijo{} & 225.0 & 275.0 & 475.0 \\\hline
+      \Tsuji{} & 230.0 & 265.0 & 583.7 \\\hline
+      \Tanaka{} & 134.5 & 290.0 & 1064.0 \\\hline
+      \Sugiura{} & 223.5 & 365.5 & 583.3 \\\hline
+      \Haumesse{} & 243.0 & 255.0 & 360.0 \\\hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+基礎部の変位$d_{0a}$、$d_{0b}$は、\Tsuji を除く建物では最大荷重時で3〜
+4mm程度であり、建物全体の10〜20cmという変形量に比べると小さい。
+\Tsuji の場合には、1階北東隅の基礎が浮くなどの損傷を
+生じ、東側基礎部の変位($d_{0a}$)は最大荷重時で13mmであった。
+
+%荷重--変位関係及び荷重--ねじれ変形角関係を図
+%\ref{sh-pd}--\ref{hau-th}に示す。ねじれ変形角は、
+%a構面の変形が大きくなる向きを正としている。基礎部の変位$d_{0a},d_{0b}$は
+%小さく、建物全体の剛体移動は無視できる。\Tsuji の場合は、土台のずれが生じ
+%たため、○○cmの基礎部の変位が計測された。
+%\input figs
+%\setlength{\parindent}{1zw}
+
+\input{kekka}
+
+各建物の最大荷重$P_{max}$、その時の層間変形角$\gamma_{max}$、及びねじ
+れ変形角$\theta_{max}$、顕著な破壊箇所を表\ref{kekka}に示す。\Tsuji 及
+び\Haumesse の他には、大きなねじれ変形を生じた建物はなかった。
+
+水平力載荷実験を行った5つの建物の崩壊過程を荷重と層間変形の関係を中心
+にそれぞれ以下に述べる。
+
+\subsubsection{\Shichijo}
+\Shichijo (図\ref{sh_plan})の荷重--層間変位関係を図\ref{sh-pd}に、荷重--
+ねじれ変形角関係を図\ref{sh-ptor}に、それぞれ示す。
+%
+ここでは1層及び2層の層間変位$u_1$、$u_2$と荷重$P$の関係を示してい
+る。
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[height=.45\textheight]{figs/load-disp/shichijo1e.ps}
+    \caption{\Shichijo 荷重--層間変位関係}
+    \label{sh-pd}
+
+    \includegraphics[height=.45\textheight]{figs/load-disp/shichijo6e.ps}
+    \caption{\Shichijo 荷重--ねじれ変形角関係}
+    \label{sh-ptor}
+  \end{center}
+\end{figure}
+%また図\ref{pd-th}は各層の荷重とねじれ変形角との関係を示している。
+%最大荷重は8.1tonf、
+%その時の層間変位は1層が6.9cm、2層が13.7cmであった。
+
+%荷重1.6tonf%(\#79)
+%の段階から木材接合部と思われる数ヶ所できしみ音が発生し、
+荷重2.5tonf(載荷ステップ番号\#101)の段階で、まず2階の外壁が面外に膨ら
+みだした。
+これは壁の内部にある%木材
+貫或いは間柱の面外変形によるものと考えられる。
+%\begin{floatingfigure}[r]{.6\columnwidth}
+%  \includegraphics[width=.59\columnwidth]{figs/load-disp/shichijo1e.ps}
+%  \caption{\Shichijo 荷重--層間変位関係\label{sh-pd}}%\vspace{.5\baselineskip}%
+%\end{floatingfigure}
+さらに、荷重を3.0tonfに増
+加させると、1階の外壁に取り付けられている板厚の薄い斜材の座屈によ
+る面外変形が生じ、建物の剛性が低下し始めた。6.0tonf載荷時(\#122)には土壁
+の亀裂が顕著になり、2階の階段室と和室との境界の北側の土壁
+%(図\ref{sh_plan}で楕円で囲んだ壁)
+が脱落し、7.5tonf時に
+は、写真\ref{pho:sh-hazure}に示すように、この壁が軸組から外れた。その
+時点では、剛性は初期剛性の1/4程度に低下していた。最大荷重8.1tonfに達し
+た時(\#142)、層間変形角は1層が1/40rad、2層が3/50radであった。その後除
+荷を行ったが、除荷時の剛性は初期剛性に近く、残留変形は、2層で15.7cm(変
+形角7/100rad)であった。再載荷時の剛性も除荷時と類似しており、最終加力
+時の層間変位は2層で20.0cm(4/45rad)に達した。
+
+静的載荷であることにもよるが、最大耐力を越えて、層間変形角が1/10rad近く
+になっても倒壊はしていない。
+近隣の状況から、これ以上の載荷は不可能と判断し、実験を終了した。翌日の
+朝、\Tsuji の実験開始前に、特に2階の破壊状況を観察したところ、西側外壁
+となる土壁に、貫や立貫に沿ってひび割れが発生していた(写真)。また、建物
+全体がねじれるように変形していたためか、2階の床に敷かれていた畳が波打
+つようにうねっていた。1階部分も2階と同様、西側の土壁のひび割れを観察す
+ることができた。
+
+%この建物には載荷方向に階段が2ヶ所あり、これが筋かいの%作用をして
+%効果を持って1層の耐力が高くなっていると考
+%えられる。
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{figs/photos/sh-hazure.eps}
+    \caption{\Shichijo{}:2階の間仕切り壁が外れた}
+    \label{pho:sh-hazure}
+  \end{center}
+\end{photo}
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{figs/photos/sh-westwall-crack.eps}
+    \caption{\Shichijo{}:2階の西側土壁のひび割れ}
+    \label{pho:sh-westwall-crack}
+  \end{center}
+\end{photo}
+
+\subsubsection{\Tsuji}
+\Tsuji (図\ref{tu_plan})の荷重--変形関係を図\ref{tu-pd}、
+\ref{fig:tu-theta}に示す。
+図\ref{tu-pd}は、%\Shichijo と同様
+1層及び2層の層間変位と荷重の関係を、図\ref{fig:tu-theta}は各層のねじれ
+変形角$\theta_1$、$\theta_2$と荷重の関係をそれぞれ示している。
+この建物の場合、層間変位(図\ref{tu-pd})、ねじれ変形角(図
+\ref{fig:tu-theta})とも1層の方が大きかった。1階は特に建物の東側で壁が
+少ないため、偏心が大きくなり、大きなねじれ変形を生じたものと考えられる。
+対照的に2階は偏心が小さく、ほとんどねじれ変形を生じなかった。
+最大荷重
+は10.7tonf、その時の層間変位は、1層で12.2cm、2層で7cmであった。
+
+\begin{figure}[htbp]
+  \begin{minipage}[t]{.9\textwidth}
+    \begin{center}
+      \leavevmode
+      \includegraphics[width=\columnwidth]{figs/load-disp/tsuji1e.ps}
+      \caption{\Tsuji 荷重--層間変位関係}
+      \label{tu-pd}
+    \end{center}
+  \end{minipage}
+  \begin{minipage}[t]{.9\textwidth}
+    \begin{center}
+      \includegraphics[width=\columnwidth]{figs/load-disp/tsuji6e.ps}
+      \caption{\Tsuji 荷重--ねじれ変形角関係}
+      \label{fig:tu-theta}
+    \end{center}
+  \end{minipage}
+\end{figure}
+
+荷重2.0tonf(\#36)の段階から、木材接合部のきしみ音や土壁のちり部分での
+わずかな崩れが顕著であった。5.4tonf(\#70)の段階では、土壁の亀裂や崩れ
+が目立つようになり、剛性の低下が認められる。荷重6.2tonf(\#77)の段階に
+なると、一部で壁土が大きく崩れ落ちたり、壁と軸組の間の隙間が、目に見え
+て大きくなってきた。その時の層間変形角は、1層で3/250rad、2層で1/147rad
+であった。
+
+一旦除荷し、再載荷したところ、
+8.0tonf(\#149)で、1階和室の障子紙の破れが観察され
+るようになり(写真\ref{pho:tu-shoji})、
+続いて荷重を増加させると、1階東側の縁側
+にあるガラス戸のガラスが割れ始めた。
+これは、軸組の変形にともない、軸組と建具の間の隙間がなくな
+り、建具に直接力が加わるようになったためであると考えられる。
+さらに荷重を増加させると、9.1tonf(\#155)で、外壁に取り付けられている板
+厚の薄い筋かい材(それまでにすでに座屈して面外に変形していた)が外れて落
+ちて、再び剛性の低下が認められた。この時点で剛性は初期剛性の約1/4に低下
+している。
+
+最大荷重10.7tonfに達した時(\#163)
+の層間変形角は、1層が1/22rad、2層が1/29radであった。
+荷重はまだ上昇する傾向を示していたが、特に1層のねじれ変形が大きく、
+隣接建物に接触する危険性があったため、載荷を終了し、除荷を行った。
+\Shichijo と同様、除荷時の剛性は初期剛性に近く、残留
+変形は1層で層間変位8.2cm(層間変形角で約1/32rad)であった。
+途中の再載荷時の剛性も除荷時と類似している。
+%おり、最終加力時の変形は1階で
+%1/20rad近くに達した。
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{figs/photos/tu-shoji.eps}
+    \caption{\Tsuji{}:1階東南側和室の障子}
+    \label{pho:tu-shoji}
+  \end{center}
+\end{photo}
+
+\subsubsection{\Tanaka}
+1層及び2層の層間変位と荷重の関係を図\ref{ta-pd}に、ねじれ変形角と荷重
+の関係を図\ref{ta-tor}に示す。最大荷重は
+10.6tonf、その時の層間変形は1層で4.6cm(約1/50rad)、2層で6.7cm(約
+1/40rad)であった。
+
+本建物(図\ref{ta_plan})は、もともと内外壁ともに土壁であったが、増改築
+時に1階部分は洋風スタイルに改装されたため、各部屋がしっかりした間仕切
+り壁で区画されており、載荷方向(張間方向)の1階の壁量は比較的多い。
+そのため、1階部分の水平耐力は2階部分よりも相当大きいと考えられた。
+対して、2階部分は床面積が1階の約1/3であり、壁量も1階に比べると少ないので、
+2階部分の水平耐力は1階部分よりも相当小さいことが予想された。
+事実、載荷途中の顕著な破壊状況は2階部分に集中していた。
+
+\begin{figure}[htbp]
+  \begin{minipage}[t]{0.9\textwidth}
+    \begin{center}
+      \includegraphics[width=\columnwidth]{figs/load-disp/tanaka1e.ps}%
+      \caption{\Tanaka 荷重--層間変位関係}\label{ta-pd}
+    \end{center}
+  \end{minipage}
+  \begin{minipage}[t]{0.9\textwidth}
+    \begin{center}
+      \includegraphics[width=\columnwidth]{figs/load-disp/tanaka6e.ps}%
+      \caption{\Tanaka 荷重--ねじれ変形角関係}\label{ta-tor}
+    \end{center}
+  \end{minipage}
+\end{figure}
+%引張破壊実験を行った5棟のうち\Tanaka のみが\harima 方向の引張載荷であっ
+%た。
+荷重3.0tonf(\#42)
+付近で室内の作りつけの棚が落ちるのが観察された。6.8tonf(\#109)
+で屋根の歪みが認められた。また、そのころから外壁のモ
+ルタルのひび割れが目立ちはじめ、10.3tonf(\#189)で、外壁の一部で剥離が
+生じた。
+最大荷重10.6tonf(\#193)
+に達して間もなく2階南東の隅柱
+%(図\ref{ta_plan}、○印)
+が折れ(写真\ref{pho:ta-hashira-hakai})、
+%載荷荷重が一旦低くなった。さらに荷重を増加させたところ、
+9.9tonf(\#207)に耐力が低下した時点でその柱が外れてしまった。
+それまではほとんどねじれ変形
+を生じていなかったが、柱が1本外れた直後、%反動で
+$1/120$rad程度のねじれ
+変形を生じた。残留変形は1層で3.0cm(1/100rad)、2層で4.5cm(1/30rad)であっ
+た。
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{figs/photos/ta-hashira-color.eps}
+    \caption{\Tanaka{}:2階南東の隅柱が折れた}
+    \label{pho:ta-hashira-hakai}
+  \end{center}
+\end{photo}
+
+\subsubsection{\Sugiura}
+
+西宮市六軒町の\Sugiura は、実際に1995年兵庫県南部地震で被害を受けた建物
+である。
+建物自体の損傷は、一部で柱が土台から外れている程度で、筆者らの行った被
+害調査時の被害レベル分類\cite{kogai95-1}に従えば中破であったが、敷地を
+斜めに横切って亀裂が走り、1部陥没するなどの地盤変状により、鉄筋コンク
+リート布基礎(フーチング幅：40cm、基礎深さ：1.5m)に亀裂が生じ、全体的に
+沈下していた。
+
+\begin{figure}[htbp]
+  \begin{minipage}[t]{0.9\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth]{figs/load-disp/sugiura1e.ps}
+      \caption{\Sugiura 荷重--層間変位関係}
+      \label{fig:su-pd}
+    \end{center}
+  \end{minipage}
+  \begin{minipage}[t]{0.9\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth]{figs/load-disp/sugiura6e.ps}
+      \caption{\Sugiura 荷重--ねじれ変形角関係}
+      \label{fig:su-tor}
+    \end{center}
+  \end{minipage}
+\end{figure}
+
+図\ref{fig:su-pd}に、1層及び2層の層間変位と荷重の関係を、
+図\ref{fig:su-tor}に、1層及び2層のねじれ変形角と荷重の関係を示す。
+他の3棟の住宅と同様、まず室内の棚が外れるといった状況が目立ったが、
+その他には木材のきしむ音や地震によって生じた外壁の亀裂の進行が顕著であっ
+た。
+最大荷重は14.2tonf、その時の層間変位は1層で6.8cm(1/54rad)、2層で
+7.3cm(1/31rad)であった。
+
+他の3棟の住宅と同様、まず室内の棚が外れるといった状況が目立ったが、そ
+の他には木材のきしむ音や地震によって生じた外壁の亀裂の進行が顕著であっ
+た。
+
+最大荷重に達しても大きな剛性の低下は見られなかったため、建物に余力が残っ
+ていると考えられたが、
+荷重の増加を止めても被災により生じていた外壁の亀裂が進行していたので、
+倒壊に対する安全に配慮してこの時点で載荷を終了した。
+%実験終了時の残留変形は層間変位にして1層で2.8cm、2層で3.7cmであった。
+実験終了時の残留変形は層間変形角にして1層で1/130rad、
+2層で1/61radであった。
+
+%西宮市において
+%本建物(図\ref{su_plan})のように被災した建物がどの程度の耐力と変形性能
+本建物のように被災した建物がどの程度の耐力と変形性能
+を有しているかを調べることは重要と考えられる。したがって、水平力載荷に
+よって建物の被災箇所の状況変化に注目して、建物全体の損傷状況を観測し
+た。
+%しかし結果的には、被災損傷の程度と建物の復元力特性との間の相関を
+%把握することは出来なかった。
+地震による被災損傷との関連では、被災箇所、特に外壁の亀裂が水平載荷によ
+り早く進行するなどの状況が見られたが、建物の耐力との関連は、水平載荷の
+方向(桁行方向)が地震時に大きく揺れたであろう方向(張間方向)と異なるため、
+明確には把握できなかった。
+
+\subsubsection{\Haumesse}
+
+\Haumesse (図\ref{hau_plan})では、写真\ref{pho:hau-saika}に示すよう
+に、2台のクレーンを用いて正負繰り返し載荷を行い、復元力特性を調べた。
+載荷荷重1.0tonfまで載荷したのち、$-0.7$tonfまで逆方向の載荷を行う
+ことを3度繰り返し、それ以後破壊が生じるような変形になるまで単調載荷
+した。更に、変位計の計測限度まで載荷したのち、荷重計及び変位計を除去し
+て倒壊するまで載荷した。
+%繰り返し載荷は1.0tonf及び$-$0.7tonfを基準として行った。
+\begin{photo}
+  \begin{center}
+    \includegraphics{figs/photos/hau-saika.eps}
+    \caption{\Haumesse 載荷状況}
+    \label{pho:hau-saika}
+  \end{center}
+\end{photo}
+
+図\ref{hau-pd}に層間変位%$u_1$、$u_2$
+と荷重の関係を示す。1層と2層
+が同じ軸組で構成された総2階建であるので、1、2層の層間変位に大きな差
+はなく、構面全体が%平行四辺形になるような
+せん断変形を生じている。
+
+\begin{figure}[htbp]
+  \begin{minipage}[t]{.9\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth]{figs/load-disp/haumesse1e.ps}
+      \caption{\Haumesse ~荷重--層間変位関係}\label{hau-pd}
+    \end{center}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{.9\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth]{figs/load-disp/haumesse6e.ps}
+      \caption{\Haumesse ~荷重--ねじれ角関係}
+      \label{hau-th}
+    \end{center}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+  \begin{minipage}[t]{.9\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth]{figs/load-disp/haumesse5e.ps}
+      \caption{\Haumesse ~荷重--層間変位関係(構面a)}\label{hau-pda}
+    \end{center}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{.9\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth]{figs/load-disp/haumesse4e.ps} 
+      \caption{\Haumesse ~荷重--変位関係(構面b)}
+      \label{hau-pdb}
+    \end{center}
+  \end{minipage}
+\end{figure}
+
+筋かい構面及び貫構面で剛性が大きく異なるため、図\ref{hau-pda}、
+図\ref{hau-pdb}に示す荷重と両構面の各層間変位との関係から見て取れるよ
+うに、
+両構面の層間変位が大きく異なり、図\ref{hau-th}に示すように大きなねじれ
+変形を生じていることがわかる。
+繰り返し載荷途中の復元力特性にはスリップ特性が顕著に見られる。
+
+柱はほとんど曲げ変形をせず、柱と胴差しとの接合部が緩み、徐々に隙間が開い
+ていき、構面全体がせん断変形を生じた。
+貫構面は大きく変形するものの大きな損傷はなく、一方、筋かい構面は大きな
+力が加わり、まず圧縮筋かい、次いで引張筋かいが損傷した。
+
+図\ref{hau-pd}において、荷重1.46tonf(\#105)の段階で1階の圧縮筋かいが座
+屈により面外に大きく変形し、筋かいを止めていた間柱が割れた(写真
+\ref{hau-mabashira})。
+
+次いで、荷重1.66tonf(\#111)では、2階の圧縮筋かいが同様に座屈し間柱が割れた
+のち、筋かいも折れた(写真\ref{hau-2ashuku})。
+
+この圧縮筋かいの破断直後には、強度は約500kgf低下した。
+その後、荷重1.73tonf(\#114)では1階引張筋かいの下端部(柱・土台との接合部、
+図\ref{hau_plan}の立面1、○印)で金物を留めていた釘が抜け出して接合部が
+外れた(写真\ref{hau-hipari})。
+
+この時点(\#114)で最大耐力1.73tonfとなり、その時層間変形角は1層で
+9/100rad、2層で7/100radであった。この直後に耐力は急激に低下し、変形も
+大きく増加した。さらに載荷を続けると、荷重1.5tonf(\#119)では1階の圧縮
+筋かいが破断し、更に約500kgf耐力が低下した。
+
+さらに載荷を続け、step119(荷重1.54tonf)では1階の圧縮筋かいが座屈により
+折れた(写真\ref{hau-1ashuku})。
+
+筋かいのない構面は大きく変形するものの大きな損傷はなく、一方、筋かいのあ
+る構面は大きな力が加わり、まず圧縮筋かい、次いで引張筋かいが損傷した。
+
+その後、変位計を除去し、更にクレーンで引っ張ったところ、構面全体は平行
+四辺形を保ったまま倒壊した(写真\ref{pho:hau-tokai})。
+
+\begin{photo}[htbp]
+  \begin{center}
+    \includegraphics{figs/photos/hau-mabashira.eps}
+    \caption{\Haumesse ：step105で間柱が折れた}\label{hau-mabashira}
+  \end{center}
+\end{photo}
+\begin{photo}[htbp]
+  \begin{center}
+    \includegraphics{figs/photos/hau-2ashuku.eps}
+    \caption{\Haumesse ：step111で2階の圧縮筋かいが折れた}
+    \label{hau-2ashuku}      
+  \end{center}
+\end{photo}
+\begin{photo}[htbp]
+  \begin{center}
+    \includegraphics{figs/photos/hau-hipari.eps}
+    \caption{\Haumesse ：step114で1階引張筋かいの下端部で接合部が外れた}
+    \label{hau-hipari}
+  \end{center}
+\end{photo}
+\begin{photo}
+  \begin{center}
+    \includegraphics{figs/photos/hau-1ashuku.eps}
+    \caption{\Haumesse ：step119で1階の圧縮筋かいが折れた}
+    \label{hau-1ashuku}
+  \end{center}
+\end{photo}
+\begin{photo}
+  \begin{center}
+    \includegraphics{figs/photos/hau-tokai.eps}
+    \caption{\Haumesse{}:倒壊する様子}
+    \label{pho:hau-tokai}
+  \end{center}
+\end{photo}
+
+%\nocite{tebiki}
+\nocite{hoyu-tairyoku,hoyu-tairyoku81}
+
+
+\subsection{荷重--変形関係に関する考察}
+\label{sec:envelope}
+
+
+\subsubsection{建物重量の算定と層せん断力係数の評価}
+\label{sec:juryo-and-story-shear}
+
+本研究では、建物全体としての耐力評価に主眼を置いているので、実験時の最
+大耐力と層せん断力係数に注目する。
+
+日本建築学会の『建築耐震設計に
+おける保有耐力と変形性能(1990)』\cite{hoyu-tairyoku}に基づいて、
+2階の重量$w_2$は、小屋組を含む屋根重量、2階天井部分及び2階
+壁の上半分の重量を加えたものとし、1階の重量$w_1$は、2階壁の下半分と、
+2階床、下屋及び1階壁の上半分の重量を加えたものとした。
+仕上げ材の状況に応じて推定した各部の単位重量
+\cite{Tebiki-for-structure}に基づいて得られた建物重量$W=w_1+w_2$を表
+\ref{juryo}に示す。
+なお、実験時の対象建物は、家具・調度品が全て除去された状態であっ
+たので、建物重量算定において積載荷重を考慮していない。
+本実験のような載荷方法では、各層に作用するせん断力が一定になるとして、
+載荷実験での最大荷重$P_{max}$(表\ref{kekka})から各層の層せん断力係数を
+求めて表\ref{juryo}に示す。
+\begin{table}[h]
+ \begin{center}
+   \caption{住宅4棟の重量、最大荷重時層せん断力係数}\vspace{-.1in}
+    \begin{tabular}[t]{|c|c|c|c|c|}\hline
+      建物名称 &\Shichijo &\Tsuji &\Tanaka &\Sugiura \\\hline
+      {重量(tonf)} & & & & \\
+      {$w_2$} &8.1 &10.0 &10.0 &7.6 \\
+      {$w_1$} &11.0 &13.3 &30.3 &18.6 \\
+      {$W$} &19.1 &23.3 &40.3 &26.2 \\ \hline
+%     \parbox[m]{4zw}{\addtolength{\baselineskip}{-0.5\baselineskip}%
+%       ベースシアー係数} &0.43 &0.46 &0.26 &0.54 \\ \hline
+     2層せん断力係数$C_2$ & 1.00 & 1.07 & 1.06 & 1.87 \\\hline
+     1層せん断力係数$C_1$ & 0.43 &0.46 &0.26 &0.54 \\ \hline
+   \end{tabular}\label{juryo}
+ \end{center}
+\end{table}
+
+各実験の荷重--変形関係を無次元量で表したものが、図\ref{mujigen}である。
+図\ref{mujigen}の横軸は2階の層間変形角(rad)、縦軸は
+2層せん断力係数$C_2$である。
+2層で破壊が起こった\Shichijo 及び\Tanaka の2
+層せん断力係数$C_2$と層間変形角$\gamma_{2max}$の関係はほぼ一致しており、
+最大荷重時の$C_2$及び$\gamma_{2max}$も表\ref{kekka}、\ref{juryo}に示さ
+れるように、近い値となっている。
+
+\Tsuji は1層の変形が大きく、2層では破壊に至っていないので、2層せん断力
+係数はわずかに上昇傾向を示しており、最大荷重時の変形角$\gamma_{2max}$
+も約1/30radと小さい。
+\Sugiura は1995年兵庫県南部地震により被災しているにも係わらず、実験時に
+は顕著な破壊が見られず、耐力も上昇傾向を示していた。2層について、変形
+角と層せん断力係数の関係を見ても、その傾向は変わらず建物が余力を残して
+いることが窺われる。
+
+\begin{figure}[htbp]
+  \begin{center}
+    \leavevmode
+    \includegraphics[width=.5\textwidth]{figs/load-disp/mujigen/mujigen.epsi}
+    \caption{ベースシアー係数と2階の層間変形角の関係}
+    \label{mujigen}
+  \end{center}
+\end{figure}
+
+\Tanaka の最大荷重時のベースシアー係数$C_1$が0.26と他の
+3棟に比べて小さいが、これには次のような原因が考えられる。
+(1)\Tanaka の場合、最大荷重は耐力の小さい2層で決
+まっているため、最大荷重そのものが小さい。また、(2)建物全体の重量が大
+きい(表\ref{juryo})。
+
+\subsubsection{壁率と建物耐力の関係}\label{壁率}
+
+現行の建築基準法に取り入れられている「壁量計算」による耐震設計方法は、
+次式が成り立つように耐力壁の種類と長さを決めるものである。
+\begin{equation}\label{betaA}\beta A \le \sum\alpha l\end{equation}
+ここで、$\beta$は所要壁率(cm/m$^2$)、$A$は床面積(m${}^2$)、$\alpha$は
+耐力壁の種類によって定められる壁倍率、$l$は耐力壁の実長である。
+壁倍率$\alpha$は%データのばらつきによる低減係数3/4を用いず、次式で与え
+%た。
+次式で与えられるものとする。
+\begin{equation}
+  \label{alpha}
+  \alpha = P_{1/120}/130
+\end{equation}
+ここで、$P_{1/120}$は耐力壁の見かけの変形角が1/120rad時の単位長さ当た
+りの抵抗力(kgf/m)であり、130は大貫筋かい付壁の1/120rad変形時の抵抗力
+(kgf/m)である。
+
+各住宅の平面図に基づき、耐力壁の種類、長さを求め、壁の種類に
+応じて壁倍率を以下のように定めた。但し、実際の壁は、建築基
+準法施行令第46条で壁倍率を規定されている壁とは異なるものもあるので、規
+定値と近い値を仮定した。
+また、小壁や腰壁は本来非耐力部分とされ、「水平荷重の1/3を非耐力部分が
+負担する」と壁率決定の際に規定されている。非耐力壁に関する資料が不充分
+なため、(\ref{alpha})式のように無開口壁の壁倍率を考え、非耐力壁につい
+て、同種の無開口壁の1/2の壁倍率を仮定する。
+よって算定上の壁倍率を全建物に共通に、内壁の
+土壁については1.0(施行令第46条に基づくと0.5)、腰壁及び小壁についてはそれ
+ぞれ0.5(同じく0)とした。建設年代の古い\Shichijo と\Tsuji では、外壁の土壁の
+壁倍率を1.0(同じく0.5)、外壁に一部取り付けられている薄い筋かいを1.5(同じ
+く1.0)、羽目板を1.0(同じく0)とし、年代の新しい\Tanaka と\Sugiura では、筋
+かいを含む外壁を2.0(同じく1.5)とした。このようにして得られた有効壁長さ
+(cm)を床面積(m${}^2$)で割って壁率(cm/m${}^2$)を算定した。各住宅の桁行方
+向及び張間方向の壁率を各階について表\ref{kaberitsu}に示す。
+
+\begin{table}[ht]
+  \begin{center}
+    \begin{minipage}[t]{\columnwidth}\def\thefootnote{}
+      \def\footnoterule{}\centering
+      \caption{実験対象住宅4棟の壁率(単位:cm/m${}^2$)
+                                %        \protect\footnote{表中(\space)は建築基準法施行令第46条に基づく
+                                %          壁率}
+        }\vskip -.1in
+                                % \renewcommand{\arraystretch}{0.8}
+      \begin{tabular}[t]{|l|r|r|r|r|}\hline
+        & \multicolumn{2}{c|}{1階} & \multicolumn{2}{c|}{2階} \\
+        \cline{2-5}
+        &張間方向 &桁行方向 &張間方向 &桁行方向 \\ \hline
+        \Shichijo &32.6(16.9) &66.4(22.3) &40.8(14.0) &106.4(31.6) \\
+        \hline
+        \Tsuji &18.1(~7.6) &31.3(13.4) &19.7(~9.9) &43.5(15.8) \\
+        \hline
+        \Tanaka &38.4(25.0) &39.8(23.8) &28.3(13.6) &82.3(44.8) \\
+        \hline
+        \Sugiura &22.6(11.0) &49.0(23.4) &45.9(23.7) &77.5(31.0) \\
+        \hline
+                                %          \parbox{3.1zw}{1950 制定}& 
+                                %          \multicolumn{2}{c|}{16} &\multicolumn{2}{c|}{12} \\\hline
+                                %          \parbox{3.1zw}{1959 改正}& 
+                                %          \multicolumn{2}{c|}{24} &\multicolumn{2}{c|}{15} \\\hline
+                                %          \parbox{3.1zw}{1981 改正}& 
+        所要値 & 
+        \multicolumn{2}{c|}{33} & \multicolumn{2}{c|}{21} \\\hline
+        \multicolumn{5}{l}{\small 
+          表中(\space)は建築基準法施行令第46条に基づく壁率}
+      \end{tabular}
+      \vspace{-.1in}
+      \label{kaberitsu}
+    \end{minipage}
+  \end{center}
+\end{table}
+\vspace{-.5\Cvs}
+
+この壁率から載荷方向の2層の層間変形角が1/120rad時の耐力
+$P_{1/120}^\ast$(kgf)を%(\ref{betaA})式で等号が成り立つ場合に
+(\ref{alpha})式から得られる式、$P_{1/120}^\ast=130A\beta$
+($A$: 床面積、$\beta$: 壁率)で求めると、\Shichijo は5.6tonf(実験結果では
+5.6tonf)、\Tsuji は3.0tonf(同じく6.6tonf)、\Tanaka は1.6tonf(同じく
+4.8tonf)、\Sugiura は3.3tonf(同じく6.5tonf)となり、\Shichijo の他は壁率か
+ら算定した耐力と実験結果の耐力との間で2--3倍の差がある。
+
+\subsection{ねじれ変形を考慮した復元力特性の推定--\Haumesse の場合--}
+
+\Haumesse はねじれ変形を意図して建設した実験用軸組で、%ある。3600mm×
+構面aは3段貫、構面bは金物補強二ツ割筋かいとなっている。
+ここでは、平嶋らの行った壁体の実験データ\cite{hirashima}を使って
+\Haumesse の復元力特性を推定する。
+
+構面a、bは構法が異なるので、変形に応じた抵抗力もそれぞれ異なる。
+任意の変形時の載荷荷重$P$は構面a、bそれぞれのその時の変形に対応する抵
+抗力$P_a$、$P_b$の和になっていると考えられるので次式が成り立つ。
+\begin{equation}
+P = P_a + P_b\label{p=pa+pb}
+\end{equation}
+ここで、$P_a$、$P_b$はそれぞれ構面a、bの抵抗力を表す。
+
+3段貫、金物補強筋かい耐力壁の一定変形角時の耐力(文献\Ncite{hirashima}、
+Table2,Test frame No.11)から、式(\ref{p=pa+pb})を用いて$P$を算定し、
+\Haumesse の筋かい構面について荷重
+と層間変形角の関係を描くと、図\ref{suitei}のようになる。ここでは、載荷
+荷重に対する貫構面、筋かい構面の変形が図\ref{hau-pda}、\ref{hau-pdb}の
+ように得られているので、その変形に対応する各構面の抵抗力を文献
+\Ncite{hirashima}の表から算定し、それぞれ$P_a$、$P_b$とした。
+
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics{figs/suitei/suitei.eps}
+%    \input{figs/suitei/suitei.tex}
+    \caption{\Haumesse の筋かい構面--実験結果と計算値の比較}
+    \label{suitei}
+  \end{center}
+\end{figure}
+
+図中の実線は、実験結果
+のうち2層の荷重と層間変形角の関係の包絡線であり、$+$は推定値
+である。参考にしたデータの個数が限られているため実
+験結果の最大耐力まで計算することは出来なかったが、推定値は実験結果とほ
+ぼ一致する曲線を描いていることがわかる。
+
+\subsection{常時微動計測}
+\label{sec:microtremor}
+
+在来構法木造建物の基本的な動力学特性を把握し、かつ、建物が損傷を受けるこ
+とにより生じる動特性の推移を明らかにするため、
+破壊実験前後に常時微動測定を行い、5つの木造建物に関して速度記録のフー
+リエスペクトルを求めた。
+
+微動計測による速度波形を図
+\ref{fig:bidowave-before}--\ref{fig:bidowave-after}に、
+フーリエスペクトルを
+図\ref{fig:bido-sh-prev}--\ref{fig:bido-h-post}に示す。
+
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[height=.4\textheight]{figs/bido/shb.epsi}
+    \caption{\Shichijo 小屋梁位置の常時微動波形(破壊実験前)}
+    \label{fig:bidowave-before}
+  \end{center}
+  \begin{center}
+    \includegraphics[height=.4\textheight]{figs/bido/sha.epsi}
+    \caption{\Shichijo 小屋梁位置の常時微動波形(破壊実験後)}
+    \label{fig:bidowave-after}
+  \end{center}
+\end{figure}
+%%%
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[height=.45\textheight]{figs/spectrum/prev/shichijo-ns2.ps}
+    \caption{常時微動フーリエスペクトル \Shichijo (破壊実験前)}
+    \label{fig:bido-sh-prev}
+%%
+    \includegraphics[height=.45\textheight]{%
+      figs/spectrum/post/shichijo.after-ns2.ps}
+    \caption{常時微動フーリエスペクトル \Shichijo (破壊実験後)}
+    \label{fig:bido-sh-post}
+  \end{center}
+\end{figure}
+%%%
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[height=.45\textheight]{figs/spectrum/prev/tsuji-ns2.ps}
+    \caption{常時微動フーリエスペクトル \Tsuji (破壊実験前)}
+    \label{fig:bido-tu-prev}
+  \end{center}
+\end{figure}
+%%%
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[height=.45\textheight]{figs/spectrum/prev/tanaka-ns2.ps}
+    \caption{常時微動フーリエスペクトル \Tanaka (破壊実験前)}
+    \label{fig:bido-ta-prev}
+%%
+    \includegraphics[height=.45\textheight]{%
+      figs/spectrum/post/tanaka.after-ns2.ps}
+    \caption{常時微動フーリエスペクトル \Tanaka (破壊実験後)}
+    \label{fig:bido-ta-post}
+  \end{center}
+\end{figure}
+%%%
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[height=.45\textheight]{figs/spectrum/prev/sugiura-ns2.ps}
+    \caption{常時微動フーリエスペクトル \Sugiura (破壊実験前)}
+    \label{fig:bido-su-prev}
+%%
+    \includegraphics[height=.45\textheight]{%
+      figs/spectrum/post/sugiura.after-ns2.ps}
+    \caption{常時微動フーリエスペクトル \Sugiura (破壊実験後)}
+    \label{fig:bido-su-post}
+  \end{center}
+\end{figure}
+%%%
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[height=.45\textheight]{%
+      figs/spectrum/prev/haumesse-ns2.ps}
+    \caption{常時微動フーリエスペクトル \Haumesse{}(破壊実験前)}
+    \label{fig:bido-h-prev}
+%%
+    \includegraphics[height=.45\textheight]{%
+      figs/spectrum/post/haumesse.after-ns2.ps}
+    \caption{常時微動フーリエスペクトル \Haumesse{}(破壊実験後)}
+    \label{fig:bido-h-post}
+  \end{center}
+\end{figure}
+
+常時微動のフーリエスペクトルは、
+\begin{enumerate}
+\item 観測波形の全体のうち比較的波形の安定した1024点の区間を数ヶ所
+  (10--20ヶ所)えらび、
+\item その各々でスペクトル解析を行い、
+\item 平均をとった後、
+\item Parzenのスペクトルウィンドウを用いて平滑化して
+\end{enumerate}
+求めた\cite{osaki}。
+別に、自由振動実験を行ったので、常時微動から減衰を求めることはしなかっ
+た。
+\Tsuji{}については、時間の関係で破壊実験後の常時微動測
+定を行うことができなかった。破壊実験前後の各建物の1次固有振動数およ
+び2次固有振動数を表\ref{koyushuki}に示す。
+\begin{table}[htbp]
+ \begin{center}
+  \caption{破壊実験前後の各建物の固有振動数(Hz)}\vspace{0.1in}
+  \label{koyushuki}
+  \begin{minipage}[t]{0.47\textwidth}\centering
+   a. 1次固有振動数\vspace{-.1in}
+   \resizebox{\textwidth}{!}{
+   \begin{tabular}[t]{|l|c|c|c|c|}
+    \hline
+    & \multicolumn{2}{c|}{実験前} & \multicolumn{2}{c|}{実験後} \\ \cline{2-5}
+    &\harima 方向 &桁行方向 &\harima 方向 &桁行方向  \\ \hline
+    \Shichijo &2.44 &3.81 &2.05 &3.13
+    \\ \hline
+    \Tsuji &2.44 &3.01 &-- &-- \\ \hline
+    \Tanaka &4.00 &4.69 &3.32 &5.18 \\ \hline
+    \Sugiura &2.83 &3.52 &2.83 &3.32 \\ \hline
+    \Haumesse &2.83 &2.64 &2.73 &2.15 \\ \hline
+   \end{tabular}}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.47\textwidth}\centering
+   b. 2次固有振動数\vspace{-.1in}
+   \resizebox{\textwidth}{!}{
+   \begin{tabular}[t]{|l|c|c|c|c|}
+    \hline
+    & \multicolumn{2}{c|}{実験前} & \multicolumn{2}{c|}{実験後} \\ \cline{2-5}
+    & \harima{}方向 &桁行方向 & \harima{}方向 &桁行方向  \\ \hline
+    \Shichijo &5.57 &12.90 &4.98 &7.23  \\ \hline
+    \Tsuji &5.76 &9.08 &-- &-- 
+    \\ \hline
+    \Tanaka &12.50 &9.77 &8.89 &9.47 \\ \hline
+    \Sugiura &6.84 &8.98 &6.84 &7.91 \\ \hline
+    \Haumesse &8.59 &8.40 &6.64 &6.54 \\ \hline
+   \end{tabular}}
+  \end{minipage}
+ \end{center}
+\end{table}
+
+5棟の建物について、破壊実験前の常時微動の振幅をフーリエスペクトルのピー
+ク値で比較する。
+\Shichijo{}、\Tsuji{}は隣接しているため、ほぼ等しい地盤条件で
+あり、また、建築時期も同じである(昭和初め)ため、
+0.7--0.8mkine$\cdot$sec程度である。\Tanaka は0.3--0.35mkine$\cdot$sec、
+\Sugiura は4.5mkine$\cdot$sec、\Haumesse は3.5mkine$\cdot$secであり、
+立地条件による常時微動の振幅レベルの違いが見られる。
+
+\Tsuji 以外の4棟について破壊実験前後の載荷方向の1次固有振動数の推移を見る
+と、\Shichijo では17.8％、\Tanaka では17％、\Sugiura では5.6％、
+そして、\Haumesse では18.5％の1次固有振動数の低下が見られる。
+このことからも、\Sugiura はまだ相当の余力を残していただろうと考えられる。
+
+芦屋市内や神戸市内などで、倒壊を免れた木造住宅を対象に、常時微動測定を
+行った\cite{kogai95,mokuzo-bido}。これらの木造建物の桁行方向の1次固
+有振動数は、5.9Hzから11.0Hzと高い固有振動数を持っていることがわかって
+いる。
+これらの建物の被災前の振動特性は不明であるが、
+今回実験を行った建物、特に京都市内の建物、の健全な状態における桁行方
+向の1次固有振動数は3.0Hzから4.7Hzであり、神戸や芦屋で被災した建物より
+低い固有振動数であるから、兵庫県南部地震レベルの地震動を受けた場合には、
+相当の被害を受けることが予想される。
+
+\subsection{自由振動実験}
+\label{sec:free-vibration}
+
+\Shichijo の自由振動実験から得られた速度波形の一部を、
+図\ref{fig:freewave}に示す。
+初期変位は測定していないため正確ではないが、速度振幅レベルは常時微動時の
+100倍程度である。
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[width=\textwidth]{figs/FV/sh-w-1.ps}
+    a. \Shichijo 2階床西側
+    \includegraphics[width=\textwidth]{figs/FV/sh-w-2.ps}
+    b. \Shichijo 2階床東側
+    \caption{自由振動実験の速度波形の一例}
+    \label{fig:freewave}
+  \end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+ \centering\leavevmode
+ \includegraphics[height=0.4\textheight]{figs/FV/sh-b.ps}
+ \caption{\Shichijo 自由振動フーリエスペクトル}
+ \label{sh-free}
+\end{figure}
+\begin{figure}[htbp]
+ \centering\leavevmode
+ \includegraphics[height=0.4\textheight]{figs/FV/tu-a.ps}
+ \caption{\Tsuji 自由振動フーリエスペクトル}
+ \label{tu-free}
+\end{figure}
+\begin{figure}[htbp]
+ \centering\leavevmode
+ \includegraphics[height=0.4\textheight]{figs/FV/ta-f.ps}
+ \caption{\Tanaka 自由振動フーリエスペクトル}
+ \label{ta-free}
+\end{figure}
+\begin{figure}[htbp]
+ \centering\leavevmode
+ \includegraphics[height=0.4\textheight]{figs/FV/su-f.ps}
+ \caption{\Sugiura 自由振動フーリエスペクトル}
+ \label{su-free}
+\end{figure}
+\begin{figure}[htbp]
+ \centering\leavevmode
+ \includegraphics[height=0.4\textheight]{figs/FV/hau-f.ps}
+ \caption{\Haumesse 自由振動フーリエスペクトル}
+ \label{hau-free}
+\end{figure}
+
+自由振動実験の速度波形のフーリエスペクトルを図
+\ref{sh-free}--\ref{hau-free}に示す。
+フーリエスペクトル図から得られる1次固有振動数を表\ref{jiyu}に示す。この実験
+では\Shichijo と\Sugiura で明確なねじれ振動は観測できなかった。この2邸の場
+合、自由振動させた方向(＝加力方向)について偏心が小さいことがその一
+因であると考えられる。これらの波形から対数減衰率を
+用いて求めた各建物の減衰定数を併せて表\ref{jiyu}に示す。
+%表\ref{jiyu-kekka}(pp.\pageref{jiyu-kekka})のようになる。
+芦屋市内や神戸市内などで倒壊を免れた木造住宅を対象に行った常時微動測定
+からハーフパワー法により得られた建物の減衰定数は3.9\%から5.8\%であったか
+ら\cite{mokuzo-bido}、本研究における実験対象建物の減衰は、それに
+比べると大きい。
+
+\begin{table}[htbp]
+  \begin{center}
+    \caption{自由振動実験から得られた1次固有振動数(Hz)と減衰定数(\%)}
+    \label{jiyu}
+    \begin{tabular}[t]{|r|c|c||c|}
+      \hline
+      &並進 &ねじれ & 減衰定数\\ \hline
+      \Shichijo &3.91 &--- & 5.4--6.0 \\ \hline
+      \Tsuji &2.15 &3.13 &5.9--8.5
+      \\ \hline
+      \Tanaka &3.71 &4.59 &4.6--6.2 \\ \hline
+      \Sugiura &3.13 &--- &7.5--8.0 \\ \hline
+      \Haumesse &2.05 &2.54 &3.0--6.5 \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\subsection{3種の実験結果の関連について}
+\label{integ}
+
+第\ref{sec:envelope}節で算定された建物重量$w_1,w_2$を用いて
+固有値解析を行い、
+常時微動測定および自由振動実験から得られた建物の1次および2次の固有周期と
+一致するように各層の載荷方向の剛性$k_1,k_2$を定める。
+%(付録\ref{app-C}参照)。
+各実験対象建物の破壊実験前と
+破壊実験後の各層の剛性を算定して剛性の低下率を求めると、
+20--30\%である(表\ref{gouseiteika})。ただし、\Tanaka の場合は、載荷用にワイ
+ヤーをかけていた柱が折れたため、大きく剛性を減じているものと考えられ
+る。
+%\Shichijo と\Sugiura のケースで比較すると、最大荷重時の2階の層間変形角が
+%\Shichijo は約1/15rad、\Sugiura では約1/30radであることから、最大荷重時の変
+%形量によって、初期剛性との比が定まる可能性が高い。
+%ただし、2例しかデータがないのでこれは現段階では単なる推測にすぎない。
+
+\begin{table}[htbp]
+  \begin{center}
+    \caption{破壊実験前後の常時微動測定の結果により算定される剛性}
+    \label{gouseiteika}
+    \begin{tabular}[t]{|c|c|c|c|c|p{4.zw}|p{4.zw}|}
+      \hline
+      & \multicolumn{2}{c|}{破壊実験前}  & \multicolumn{2}{c|}{破壊実験後}
+      & \multicolumn{2}{c|}{剛性の低下率(\%)}  \\ \hline
+      &$k_1$ &$k_2$ &$k_1$ &$k_2$ &\Center{$k_1$} &\Center{$k_2$}
+      \\ \hline 
+      \Shichijo &12.09 &5.13 &9.94 &4.22 &\centering 17.76 &\hfill
+      17.77\hfill\null \\ \hline
+      \Tsuji &9.47 &4.06 &-- &-- &\centering -- &\hfill --\hfill\null
+      \\ \hline
+      \Tanaka &27.01 &6.70 &18.96 &4.70 &\centering 29.80 &\hfill
+      29.81\hfill\null \\ \hline
+      \Sugiura &14.22 &4.12 &12.89 &3.73 &\centering 9.35 &\hfill
+      9.36\hfill\null \\ \hline
+      \Haumesse &0.16 &0.09 &0.11 &0.06 &\centering 31.41 &\hfill
+      31.11\hfill\null \\ \hline
+    \end{tabular}
+  \end{center} 
+\end{table}
+
+常時微動測定により求められた建物の1次および2次の卓越振動数と
+%第\ref{juryo-santei}節で算定した
+表\ref{juryo}に示される
+各層の重量を用いて、2質点系の固有値解析を行って、各層の剛性$k_1,k_2$
+を推定した。この結果\Shichijo の場合、
+$k_1=12.088,k_2=5.132$(tonf/cm)と求められ、破壊実験の荷重〜変位関係から
+得られる$k_2=5.58$(tonf/cm)との差は、実験の計測誤差を考えると妥当であろ
+う。
+
+自由振動の場合は卓越振動数が常時微
+動の時より小さくなる傾向がある。1次モードが常時微動のそれと等しいと仮定
+して固有値解析を行うと、剛性がおよそ15--30\%低い値で算定される。例え
+ば\Tsuji の場合、$k_1,k_2$はそれぞれ、(1)常時微動から、9.47,4.06、(2)自由
+振動から、6.44,3.48(tonf/cm)と求められる。
+
+ただし、木造建物の設計の自由度、建設年代などによる劣化の程度や
+測定誤差もあり、また、計測データ数も少ないため、以上の結果から任意の木造
+建物の振動特性を一般的に論じることは困難である。
+
+常時微動と自由振動の相関性を定量的に把握し、
+実験計測から得られる動特性と設計図書から算定される動特性との相関などを明
+らかにするためには、
+これらの実験・計測を実在の建物について行うとともに、部分架構の静加力実
+験、実大あるいは縮小模型による振動台実験などを通じて微小振幅レベルから崩
+壊レベルまでの動特性の推移や
+架構および接合部の復元力特性を明らかにする実験を実施してデータの蓄積をは
+かるとともにこれらを推定し得る解析手法を開発していく必要がある。
+
+\nocite{my-kibyoshi-jitsudai,nenpo-jitsudai}
+
+
+\subsection{まとめ}
+\label{sec:fullscale-matome}
+
+木造住宅の復元力特性や破壊性状、固有振動数ならびに減衰定数を把握するた
+めに、既存の木造住宅と実験用に建設された木造軸組について、水平力載荷実
+験、常時微動計測及び自由振動実験を行い、実験の概要と結果、ならびに若干
+の解析について述べた。本章で得られた成果をまとめると次のようになる。
+
+\begin{itemize}
+\item 最大耐力時の層間変形角$\gamma_{max}$は1/60rad〜1/20radの範囲にあ
+  り、平均1/30radであった。
+  耐力壁が土塗壁である古い建物とラスモルタル壁である比較的新しい建物で
+  $\gamma_{max}$を比較すると、古い建物の方が大きくなっており、土塗壁が
+  大変形を生じていることがわかる。
+\item 最大耐力時のベースシアー係数は、昭和初期に建てられた2棟で0.43〜
+  0.46、昭和40年に建てられた1棟で0.54と、桁行方向に載荷したものはいず
+  れも比較的高い値を示している。それに比べて、張間方向に載荷した1棟は
+  0.26と低いが、これは\ref{sec:juryo-and-story-shear}節でも述べたように
+  この建物の特殊性が影響していると考えられる。
+\item 軸組のみの\Haumesse{}のような単純な構造であれば、対応する実験デー
+  タから建物の耐力等を算定可能であるが、一般には、各種の耐力壁の復元力
+  特性や壁率算定に取り入れられない非耐力壁、非構造要素の寄与が不明であ
+  るため、建物の耐力を有効壁長さや壁倍率などから算定するのは困難である。
+  そのため、各種の耐力壁や開口を含む壁などの復元力特性に関する実験デー
+  タを蓄積し、建物全体の復元力特性を評価する方法を開発する必要がある。
+\item 実験対象木造建物の1次固有振動数は、水平力載荷実験前には、桁行方
+  向で3.0〜4.7Hz、張間方向で2.4〜4.0Hzであり、載荷実験後にはそれが6〜
+  18\%低下した。
+\item 減衰定数は、4.6〜8.5\%の範囲であった。
+\item 固有値解析により算定された剛性は、水平力載荷実験結果から得られる
+  ものと大きく違わない。
+\item 損傷により、各層の剛性が18〜30\%程度低下した。
+\end{itemize}
+
+%\subsection{復元力特性の評価}
+%\label{sec:histeresis}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "paper"
+%%% End: 

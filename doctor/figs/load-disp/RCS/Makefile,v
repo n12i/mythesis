@@ -1,0 +1,29 @@
+head	1.1;
+access;
+symbols;
+locks
+	nakaji:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	97.02.20.12.06.02;	author nakaji;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@all:
+	gnuplot puplot.eng
+
+clean:
+	-rm -f *.ps */*.ps *~
+@

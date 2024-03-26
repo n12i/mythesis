@@ -1,0 +1,78 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@% @;
+
+
+1.1
+date	99.02.12.03.18.53;	author nakaji;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@\begin{figure}[htbp]
+\begin{center}
+  \subfigure[仕上げなし]{%
+    \includegraphics{BearingWall/board/figs/PvsGamma/No1a.eps}}
+  \subfigure[仕上げあり]{%
+    \includegraphics{BearingWall/board/figs/PvsGamma/No1b.eps}}
+  \caption{試験体No.1}
+  \label{fig:P-d_No1}
+\end{center}
+\end{figure}
+\begin{figure}[htbp]
+\begin{center}
+  \subfigure[仕上げなし]{%
+    \includegraphics{BearingWall/board/figs/PvsGamma/No2a.eps}}
+  \subfigure[仕上げあり]{%
+    \includegraphics{BearingWall/board/figs/PvsGamma/No2b.eps}}  
+  \caption{試験体No.2}
+  \label{fig:P-d_No2}
+\end{center}
+\end{figure}
+\begin{figure}[htbp]
+\begin{center}
+  \subfigure[仕上げなし]{%
+    \includegraphics{BearingWall/board/figs/PvsGamma/No3a.eps}}
+  \subfigure[仕上げあり]{%
+    \includegraphics{BearingWall/board/figs/PvsGamma/No3b.eps}}  
+  \caption{試験体No.3}
+  \label{fig:P-d_No3}
+\end{center}
+\end{figure}
+\begin{figure}[htbp]
+\begin{center}
+  \subfigure[仕上げなし]{%
+    \includegraphics{BearingWall/board/figs/PvsGamma/No4a.eps}}
+  \subfigure[仕上げあり]{%
+    \includegraphics{BearingWall/board/figs/PvsGamma/No4b.eps}}  
+  \caption{試験体No.4}
+  \label{fig:P-d_No4}
+\end{center}
+\end{figure}
+\begin{figure}[htbp]
+\begin{center}
+  \subfigure[仕上げなし]{%
+    \includegraphics{BearingWall/board/figs/PvsGamma/No5a.eps}}
+  \subfigure[仕上げあり]{%
+    \includegraphics{BearingWall/board/figs/PvsGamma/No5b.eps}}  
+  \caption{試験体No.5}
+  \label{fig:P-d_No5}
+\end{center}
+\end{figure}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "/home/nakaji/paper/phD/paper"
+%%% End: 
+@

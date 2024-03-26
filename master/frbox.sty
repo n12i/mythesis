@@ -1,0 +1,67 @@
+%
+%
+%	F R B O X . S T Y	by T.Imamura <imamura@kuamp.kyoto-u.ac.jp>
+%
+%				Version 1.1, Feb 13 1995.
+%				Version	1.0, Feb  7 1995.
+%
+%
+%			For Flip-and-Rotate box LaTeX style
+%			This style depend on DVI->PS driver!
+%			Now it supports dvi2ps and jdvi2kps. (maybe dvips.)
+%
+%	[Usage]		\frbox{strings}
+%				    : 180 deg rotate (same as frbox[r])
+%			\frbox[opt]{strings}
+%				opt : v ... vertically flip
+%				    : h ... horizontally flip
+%				    : r ... 180 deg rotate
+%				    : + ... +90 deg rotate(clock wise)
+%				    : - ... -90 deg rotate(clock wise)
+%				    other option will be ignored.
+\newbox\@frboxbox
+\newdimen\@frboxdima
+\newdimen\@frboxdimb
+%
+\def\@froptanalys#1{%
+  \def\@frboxopt{#1}\global\def\@frboxmode{1}%
+  \if\@frboxopt v\global\def\@frboxmode{1}\fi%
+  \if\@frboxopt h\global\def\@frboxmode{1}\fi%
+  \if\@frboxopt r\global\def\@frboxmode{1}\fi%
+  \if\@frboxopt +\global\def\@frboxmode{2}\fi%
+  \if\@frboxopt -\global\def\@frboxmode{2}\fi%
+}
+\def\frbox{\@ifnextchar[{\@frbox}{\@frbox[r]}}
+\def\@frbox[#1]#2{%
+  \def\@frboxopt{#1}\@froptanalys{#1}%
+  \setbox\@frboxbox\hbox{\strut#2}%
+  \if\@frboxmode1%
+    \@frboxdima.5\ht\@frboxbox\advance\@frboxdima-.5\dp\@frboxbox%
+    \@frboxdimb.5\wd\@frboxbox%
+    \kern\@frboxdimb\raise\@frboxdima\hbox to\@frboxdimb{%
+    \special{ps: currentpoint gsave}%
+    \if\@frboxopt v%		vertically filip
+      \special{ps: 0 currentpoint exch pop 2 mul translate 1 -1 scale}\fi%
+    \if\@frboxopt h%		holizontally filip
+      \special{ps: currentpoint pop 2 mul 0 translate -1 1 scale}\fi%
+    \if\@frboxopt r%		180 deg rotate
+      \special{ps: currentpoint 2 mul exch 2 mul exch translate 180 rotate}\fi%
+%				else are ignored and printed as normal image.
+    \makebox(0,0){\usebox\@frboxbox}%
+    \special{ps: grestore moveto}\hss}%
+  \else%			rotate plus minus 90 degree
+    \@frboxdima.5\ht\@frboxbox\advance\@frboxdima.5\dp\@frboxbox%
+    \@frboxdimb.5\wd\@frboxbox\advance\@frboxdimb-\dp\@frboxbox%
+    \kern\@frboxdima\raise\@frboxdimb\hbox to\@frboxdima{%
+    \advance\@frboxdimb\@frboxdima\vrule height\@frboxdimb width\z@%
+    \special{ps: currentpoint gsave currentpoint}%
+    \if\@frboxopt +%		90 deg rotate
+      \special{ps: add currentpoint exch sub translate 90 rotate}\fi%
+    \if\@frboxopt -%		-90 deg rotate
+      \special{ps: sub currentpoint add translate -90 rotate}\fi%
+    \makebox(0,0){\usebox\@frboxbox}%
+    \special{ps: grestore moveto}\hss}%
+  \fi%
+}
+%
+\endinput

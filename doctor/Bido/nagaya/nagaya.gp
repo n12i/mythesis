@@ -1,0 +1,17 @@
+cd "/home/nakaji/paper/phD/Bido/nagaya/"
+set term postscript eps "Helvetica-Gothic" 20
+set xrange [0:20]
+set yrange [ * : * ] noreverse nowriteback
+set xlabel "frequency (Hz)"
+set ylabel "transfer function"
+set xtics border mirror norotate autofreq 
+set ytics border mirror norotate autofreq 
+
+set data style lines
+set output "figs/nagaya-ns.eps"
+### 桁行方向
+plot "nagayans.trs" u 1:3 title "小屋梁/1階床","nagayans.trs" u 1:4 title "2階床/1階床"
+
+set output "figs/nagaya-ew.eps"
+### 張間方向
+plot "nagayaew.trs" u 1:3 title "小屋梁/1階床","nagayaew.trs" u 1:4 title "2階床/1階床"

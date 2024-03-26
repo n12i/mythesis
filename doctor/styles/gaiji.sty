@@ -1,0 +1,88 @@
+%
+% Gaiji macros by Tetsuro Tanaka -- Feb 14, 1996
+%
+\typeout{External Type1 Font package for LaTeX. version 0.10 - Feb 14, 1996}
+\newcount\@fileno
+\newcount\@pssize
+\newcount\@pssizedot
+\newdimen\@psraise
+\newwrite\ps@stream
+\@fileno=0
+\catcode`\%=12\relax
+\def\gaiji#1{\relax
+  \def\@psfile{gaiji\the\@fileno .ps}\relax
+  \global\advance\@fileno by 1\relax
+  \@psraise=1zw\relax
+  \@pssize=\@psraise\relax
+  \multiply\@pssize by 95\relax
+  \divide\@pssize by 10\relax
+  \@psraise=1pt\relax
+  \divide\@pssize by \@psraise\relax
+  \@pssizedot=\@pssize	\relax
+  \divide\@pssize by 10\relax
+  \multiply\@pssize by -10\relax
+  \advance\@pssizedot by \@pssize\relax
+  \divide\@pssize by -10\relax
+  \@psraise=0.87zw\relax
+  \advance\@psraise by -0.5pt\relax
+  \typeout{Writing to file \@psfile}\relax
+  \immediate\openout\ps@stream=\@psfile\relax
+  \catcode`\%=12\relax
+  \newlinechar=`\^^J\relax
+  \immediate\write\ps@stream{%!}\relax
+  \immediate\write\ps@stream{%%BoundingBox: 0 0 \the\@pssize.\the\@pssizedot\space \the\@pssize.\the\@pssizedot}\relax
+  \catcode`\{=12\relax
+  \catcode`\}=12\relax
+  \immediate\write\ps@stream{/T1SF ^^J
+{ ^^J
+/newname /Soko def ^^J
+/size exch def  ^^J
+/charstrings exch def  ^^J
+newname 20 dict def  ^^J
+newname load begin  ^^J
+/FontType 1 def  ^^J
+/FontInfo 8 dict dup begin  ^^J
+ /version (001.001) readonly def  ^^J
+ /FullName (Soko) readonly def  ^^J
+ /FamilyName (Soko) readonly def  ^^J
+ /Weight (Medium) readonly def  ^^J
+ /ItalicAngle 0 def ^^J
+ /isFixedPitch false def ^^J
+ /UnderlinerPosition 0 def ^^J
+ /UnderlineThichness 0 def ^^J
+end def ^^J
+/FontMatrix [.001 0 0 .001 0 0] def ^^J
+/FontBBox [0 0 1000 1000] def ^^J
+/Encoding [/c00] def ^^J
+/CharStrings 2 dict dup /c00 charstrings put def ^^J
+CharStrings /.notdef <10bf317079ca388fe763> put ^^J
+/FontName newname def ^^J
+/PaintType 0 def ^^J
+/UniqueId 9876 def ^^J
+/Private 8 dict dup begin ^^J
+  /BlueValues [] def ^^J
+  /password 5839 def ^^J
+ end ^^J
+def	 ^^J
+end  ^^J
+newname dup dup load definefont  ^^J
+newname findfont size scalefont setfont ^^J
+def ^^J
+} def ^^J
+<#1> ^^J
+}\relax
+  \catcode`\{=1\relax
+  \catcode`\}=2\relax
+  \catcode`\%=14\relax
+  \immediate\write\ps@stream{
+    \the\@pssize.\the\@pssizedot\space T1SF ^^J
+    0 0 moveto <00> show^^J
+  }\relax
+  \immediate\closeout\ps@stream\relax
+  \raisebox{\@psraise}{\mbox{\relax
+  \rule{0pt}{\the\@pssize.\the\@pssizedot pt}\relax
+  \special{psfile=\@psfile \space voffset=-\the\@pssize.\the\@pssizedot}}\relax
+  \rule{\the\@pssize.\the\@pssizedot pt}{0pt}\relax
+  \rule{0pt}{\the\@pssize.\the\@pssizedot pt}}\relax
+}
+\catcode`\%=14

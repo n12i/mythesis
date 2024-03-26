@@ -1,0 +1,28 @@
+\documentstyle[eclepsf]{jarticle}
+\input{nakaji}
+\begin{document}
+
+\begin{figure}[htbp]
+\begin{center}
+\epsfile{file=figs/shichijo.eps,scale=0.5}
+\caption{七条邸の耐震壁配置}
+\end{center}
+\end{figure}
+
+1層,2層の$x$方向の水平剛性をそれぞれ$_1K_x,_2K_x$,ねじれ剛性をそれぞれ
+$_1K_\theta,_2K_\theta$とすると、非減衰の運動方程式は、
+
+\begin{equation}
+m_1\ddot{x}_1 + {}_1K_x x_1 + {}_1K_x\cdot {}_1e_y\cdot \theta_1 = -
+m_1 \ddot{x}_0 
+\end{equation}
+\begin{equation}
+m_1\ddot{y}_1 + {}_1K_y y_1 + {}_1K_y\cdot {}_1e_x\cdot \theta_1 = - m_1 \ddot{y}_0
+\end{equation}
+\begin{equation}
+I_1\ddot{\theta}_1 + {}_1K_x\cdot{}_1e_y\cdot x_1 -
+{}_1K_y\cdot{}_1e_x\cdot y_1 + {}_1K_\theta\cdot_1 = 0
+\end{equation}
+
+\end{document}
+

@@ -1,0 +1,145 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@% @;
+
+
+1.1
+date	99.03.14.06.08.32;	author nakaji;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@% GNUPLOT: LaTeX picture
+\setlength{\unitlength}{0.240900pt}
+\ifx\plotpoint\undefined\newsavebox{\plotpoint}\fi
+\begin{picture}(1500,900)(0,0)
+\font\gnuplot=cmr10 at 10pt
+\gnuplot
+\sbox{\plotpoint}{\rule[-0.200pt]{0.400pt}{0.400pt}}%
+\put(161.0,82.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(141,82){\makebox(0,0)[r]{0}}
+\put(1419.0,82.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(161.0,277.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(141,277){\makebox(0,0)[r]{0.5}}
+\put(1419.0,277.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(161.0,471.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(141,471){\makebox(0,0)[r]{1}}
+\put(1419.0,471.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(161.0,666.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(141,666){\makebox(0,0)[r]{1.5}}
+\put(1419.0,666.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(161.0,860.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(141,860){\makebox(0,0)[r]{2}}
+\put(1419.0,860.0){\rule[-0.200pt]{4.818pt}{0.400pt}}
+\put(241.0,82.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(241,41){\makebox(0,0){\shortstack{\shortstack{\small $B%9%.(B\\1P}}}}
+\put(241.0,840.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(401.0,82.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(401,41){\makebox(0,0){\shortstack{\shortstack{\small $B%9%.(B\\2P}}}}
+\put(401.0,840.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(560.0,82.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(560,41){\makebox(0,0){\shortstack{\shortstack{\small $B%Y%$%^%D(B\\1P}}}}
+\put(560.0,840.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(720.0,82.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(720,41){\makebox(0,0){\shortstack{\shortstack{\small $B%Y%$%^%D(B\\2P}}}}
+\put(720.0,840.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(880.0,82.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(880,41){\makebox(0,0){\shortstack{\shortstack{\small $B%9%.(B\\1P}}}}
+\put(880.0,840.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(1040.0,82.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(1040,41){\makebox(0,0){\shortstack{\shortstack{\small $B%9%.(B\\2P}}}}
+\put(1040.0,840.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(1199.0,82.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(1199,41){\makebox(0,0){\shortstack{\shortstack{\small $B%Y%$%^%D(B\\1P}}}}
+\put(1199.0,840.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(1359.0,82.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(1359,41){\makebox(0,0){\shortstack{\shortstack{\small $B%Y%$%^%D(B\\2P}}}}
+\put(1359.0,840.0){\rule[-0.200pt]{0.400pt}{4.818pt}}
+\put(161.0,82.0){\rule[-0.200pt]{307.870pt}{0.400pt}}
+\put(1439.0,82.0){\rule[-0.200pt]{0.400pt}{187.420pt}}
+\put(161.0,860.0){\rule[-0.200pt]{307.870pt}{0.400pt}}
+\put(40,471){\makebox(0,0){\shortstack{\shortstack{$BJI(B\\$BG\(B\\$BN((B}}}}
+\put(465,238){\makebox(0,0){$BH"7A6bJ*(B}}
+\put(1120,238){\makebox(0,0){$B%W%l!<%H6bJ*(B}}
+\put(241,666){\makebox(0,0){1.2}}
+\put(401,510){\makebox(0,0){1.6}}
+\put(560,704){\makebox(0,0){1.2}}
+\put(720,432){\makebox(0,0){1.4}}
+\put(880,666){\makebox(0,0){1.3}}
+\put(1040,743){\makebox(0,0){1.5}}
+\put(1199,782){\makebox(0,0){2.0}}
+\put(1359,782){\makebox(0,0){1.9}}
+\put(161.0,82.0){\rule[-0.200pt]{0.400pt}{187.420pt}}
+\put(1227,393){\makebox(0,0)[r]{$BC1D4:\2Y(B}}
+\put(1297,393){\raisebox{-.8pt}{\makebox(0,0){$\Diamond$}}}
+\put(241,588){\raisebox{-.8pt}{\makebox(0,0){$\Diamond$}}}
+\put(401,704){\raisebox{-.8pt}{\makebox(0,0){$\Diamond$}}}
+\put(560,627){\raisebox{-.8pt}{\makebox(0,0){$\Diamond$}}}
+\put(720,510){\raisebox{-.8pt}{\makebox(0,0){$\Diamond$}}}
+%\put(880,82){\raisebox{-.8pt}{\makebox(0,0){$\Diamond$}}}
+%\put(1040,82){\raisebox{-.8pt}{\makebox(0,0){$\Diamond$}}}
+%\put(1199,82){\raisebox{-.8pt}{\makebox(0,0){$\Diamond$}}}
+%\put(1359,82){\raisebox{-.8pt}{\makebox(0,0){$\Diamond$}}}
+\sbox{\plotpoint}{\rule[-0.400pt]{0.800pt}{0.800pt}}%
+\put(1227,352){\makebox(0,0)[r]{1$BJ}8~7+$jJV$7:\2Y(B}}
+\put(241,471){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\put(401,704){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\put(560,549){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\put(720,627){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\put(880,588){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\put(1040,666){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\put(1199,860){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\put(1359,821){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\put(1297,352){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\sbox{\plotpoint}{\rule[-0.500pt]{1.000pt}{1.000pt}}%
+\put(241,549){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\put(401,743){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\put(560,588){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\put(720,743){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+%\put(880,82){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+%\put(1040,82){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+%\put(1199,82){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+%\put(1359,82){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+\sbox{\plotpoint}{\rule[-0.600pt]{1.200pt}{1.200pt}}%
+\put(1227,311){\makebox(0,0)[r]{$B@@5Ii7+$jJV$7:\2Y(B}}
+\put(241,588){\makebox(0,0){$\triangle$}}
+\put(401,821){\makebox(0,0){$\triangle$}}
+\put(560,393){\makebox(0,0){$\triangle$}}
+\put(720,666){\makebox(0,0){$\triangle$}}
+%\put(880,82){\makebox(0,0){$\triangle$}}
+%\put(1040,82){\makebox(0,0){$\triangle$}}
+%\put(1199,82){\makebox(0,0){$\triangle$}}
+%\put(1359,82){\makebox(0,0){$\triangle$}}
+\put(1297,311){\makebox(0,0){$\triangle$}}
+\sbox{\plotpoint}{\rule[-0.500pt]{1.000pt}{1.000pt}}%
+\put(241,549){\makebox(0,0){$\triangle$}}
+\put(401,666){\makebox(0,0){$\triangle$}}
+%\put(560,82){\makebox(0,0){$\triangle$}}
+\put(720,743){\makebox(0,0){$\triangle$}}
+%\put(880,82){\makebox(0,0){$\triangle$}}
+%\put(1040,82){\makebox(0,0){$\triangle$}}
+%\put(1199,82){\makebox(0,0){$\triangle$}}
+%\put(1359,82){\makebox(0,0){$\triangle$}}
+\sbox{\plotpoint}{\rule[-0.200pt]{0.400pt}{0.400pt}}%
+\put(800,82){\usebox{\plotpoint}}
+\multiput(800,82)(0.000,20.756){38}{\usebox{\plotpoint}}
+\put(800,860){\usebox{\plotpoint}}
+\end{picture}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "/home/nakaji/paper/phD/paper"
+%%% End: 
+@

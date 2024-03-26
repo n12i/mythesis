@@ -1,0 +1,56 @@
+%記号の定義
+%\documentstyle[eclepsf]{jarticle}
+
+%\begin{document}
+
+%{\bf 記号の説明}%
+本論文中で使用する記号は以下の通り。
+
+\begin{center}
+\begin{tabular}{rcl}
+荷重 & : & $P$ \\
+水平剪断力 & : & $Q_1$, $Q_2$ \\
+水平変位 & : & $d_{0a}$, $d_{1a}$, $d_{2a}$ \\
+~ & ~ & $d_{0b}$, $d_{1b}$, $d_{2b}$ \\
+平均変位 & : & $d_{0}$, $d_{1}$, $d_{2}$ \\
+ねじれ角 & : & $\theta_1$, $\theta_2$ \\
+層間変位 & : & $u_{1(a)}$, $u_{1(b)}$,\\
+~ & ~ & $u_{2(a)}$, $u_{2(b)}$ \\
+層間変形角 & : & $\gamma_{[12][ab]}$ \\
+階高 & ; & $h_1$, $h_2$ \\
+変位計間鉛直距離 & : & $h_{1a}$, $h_{2a}$, $h_{1b}$, $h_{2b}$ \\
+\end{tabular}
+\end{center}
+ここで、添字の$a,b$はそれぞれ、載荷方向から建物に向かって
+左側の構面、右側の構面をあらわす。
+
+\begin{figure}[htbp]\centering
+ \begin{minipage}[t]{0.45\textwidth}\centering\leavevmode
+  \includegraphics[width=\textwidth]{figs/kigo.eps}
+  \parbox[t]{2.0in}{\caption{記号の説明}}
+  \label{kigo}
+ \end{minipage}
+\end{figure}
+%
+実験では$P$, $d_{2a}$, $d_{1a}$, $d_{0a}$, $d_{2b}$, $d_{1b}$, $d_{0b}$
+(図~\ref{kigo}), 
+を測定し、それらからその他の変位およびねじれ角などを以下の式によって計
+算した。
+\begin{equation}
+\left\{
+\begin{array}{l}
+u_{2a} = d_{2a} - d_{1a} \\
+u_{1a} = d_{1a} - d_{0a} \\
+u_{2b} = d_{2b} - d_{1b} \\
+u_{1b} = d_{1b} - d_{0b} \\
+u_2 = ( u_{2a} + u_{2b} ) / 2 \\
+u_1 = ( u_{1a} + u_{1b} ) / 2 \\
+\theta _2 = ( u_{2a} - u_{2b} ) / l \\
+\theta _1 = ( u_{1a} - u_{1b} ) / l \\
+\gamma _2 = u_2 / h_2 \\
+\gamma _1 = u_1 / h_1 \\
+\end{array}
+\right.
+\end{equation}
+
+%\end{document}

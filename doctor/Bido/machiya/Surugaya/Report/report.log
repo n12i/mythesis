@@ -1,0 +1,77 @@
+This is pTeX, Version 3.1415 p2.1.4 (EUC) (C version 6.1) (format=platex 96.4.18)  23 MAY 1996 12:29
+**report
+(report.tex
+pLaTeX2e <1996/03/05> (based on LaTeX2e <1995/12/01> patch level 1)
+(/usr/local/lib/texmf/tex/platex2e/base/jarticle.cls
+Document Class: jarticle 1996/03/01 v1.0c Standard pLaTeX class
+(/usr/local/lib/texmf/tex/platex2e/base/jsize10.clo
+File: jsize10.clo 1996/03/01 v1.0d Standard pLaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\toclineskip=\dimen117
+\@lnumwidth=\dimen118
+\bibindent=\dimen119
+)
+(/home/nakaji/texinputs/ja/mystyle.sty
+\c@photo=\count87
+\defitemindent=\skip43
+) (/home/nakaji/texinputs/ja/xbmkanji.sty
+\@xbmspacebox=\box41
+\@xbmwidth=\skip44
+\@xbmheight=\skip45
+\@asciibmwidth=\count88
+\@asciibmheight=\count89
+xbmkanji.sty for ASCII-jLaTeX by Koichi Yasuoka, February 1996.
+) (report.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 7.
+ (/export2/X11R6/xc/fonts/bdf/misc/hanglm24.bdf)
+(/export2/X11R6/xc/fonts/bdf/misc/hanglm24.bdf)
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 15.
+ [1
+
+] (report.aux) ) 
+Here is how much of TeX's memory you used:
+ 322 strings out of 10622
+ 3193 string characters out of 125426
+ 53964 words of memory out of 262141
+ 3435 multiletter control sequences out of 9500
+ 9193 words of font info for 37 fonts, out of 100000 for 255
+ 14 hyphenation exceptions out of 607
+ 22i,13n,19p,154b,407s stack positions out of 300i,40n,60p,4096b,4000s
+
+Output written on report.dvi (1 page, 3688 bytes).

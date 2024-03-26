@@ -1,0 +1,83 @@
+\mbox{}\pagebreak
+\appendix
+\setcounter{figure}{0}
+\def\thefigure{\Alph{figure}}
+\section{本論文中で使用する記号について}\label{app-A}
+\input notation
+
+\section{重心・剛心の算定}\label{app-B}
+重心は各階平面図の断面1次モーメントが0となる位置として定めた。剛心につい
+ては、第\ref{sec3}章の無開口壁の壁耐力に基づき重心からの偏心距離を次式で
+求めた\cite{shibata}。
+\begin{equation}
+ \begin{array}[c]{l}
+  {\displaystyle e_x = \sum_{i}^{} {}_ik_y\cdot {}_il_x/K_y} \\
+  {\displaystyle e_y = \sum_{i}^{} {}_ik_x\cdot {}_il_y/K_x} \\
+ \end{array}
+\end{equation}
+ここで、$K_x,K_y$はそれぞれ$x,y$方向の全剛性を表す。
+\begin{equation}
+ \begin{array}[c]{l}
+  {\displaystyle K_x = \sum_i {}_ik_x} \\
+  {\displaystyle K_y = \sum_i {}_ik_y} \\
+ \end{array}
+\end{equation}
+
+\section{建物の剛性の算定}\label{app-C}
+2質点系の非減衰自由振動の運動方程式は、
+\begin{equation}
+[\mbox{\rm M}]\{\ddot{x}\} + [\mbox{\rm K}]\{x\} = 0
+\label{motioneq}
+\end{equation}
+ここで、[M],[K]はそれぞれ質量マトリックス、剛性マトリックスであり、
+\begin{equation}
+ [\mbox{\rm M}] = \left[\matrix{
+			 m_1 & 0 \cr
+			 0 & m_2 \cr
+			}\right],%
+[\mbox{\rm K}] = \left[\matrix{
+			k_1 + k_2 & -k_2 \cr
+			-k_2 & k_2 \cr
+		       }\right]
+\end{equation}
+である。式(\ref{motioneq})の解は、
+\begin{equation}
+ \{x\} = \{u\}e^{i\omega t}
+\end{equation}
+とおくことができて、式(\ref{motioneq})は
+\begin{equation}
+ (-\omega ^2[\mbox{\rm M}]+[\mbox{\rm K}]){u}=0
+\label{motioneq2}
+\end{equation}
+となる。式(\ref{motioneq2})が$\{u\}=0$以外の解をもつためには、
+\begin{equation}
+ \left|-\omega^2[\mbox{\rm M}]+[\mbox{\rm K}]\right| =0
+\end{equation}
+でなければならない。したがって、1次、2次の固有円振動数
+$\omega_1^2,\omega_2^2$は
+\begin{equation}
+ m_1m_2\omega^4 - (k_2(m_1+m_2)+k_1m_2)\omega^2 + k_1k_2 =0
+\end{equation}
+の解である。
+したがって、各層の剛性は1次2次の固有振動数$\omega_1,\omega_2$により、
+\begin{equation}\displaystyle{
+ \begin{array}[c]{rcl}
+  k_1 &=& m_1(\omega_1^2 +
+   \omega_2^2)-\left(1+\frac{m_1}{m_2}\right)k_2 \\\\
+  k_2 &=&
+   \frac{m_1m_2(\omega_1^2 + \omega_2^2) \pm
+   \sqrt{m_1^2m_2^2\omega_1^4 - 2(m_1+2m_2)\omega_1^2\omega_2^2 +
+   m_1m_2\omega_2^4}}{2(m_1 + m_2)} \\
+  &=& {}_1k_2, {}_2k_2 \left({}_1k_2 < {}_2k_2\right) \\
+ \end{array}}
+\end{equation}
+と表すことができる。ここでは破壊実験の荷重〜変関係との整合性を考えて、
+\begin{equation}
+ \begin{array}[c]{rcl}
+  k_1 &=& m_1(\omega_1^2 + \omega_2^2) - \left(1 +
+                                          \frac{m_1}{m_2}\right){}_2k_2
+   \\\\
+  k_2 &=& {}_1k_2 \\
+ \end{array}
+\end{equation}
+とした。

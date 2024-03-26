@@ -1,0 +1,61 @@
+% このファイルは破壊実験にともなって実施された常時微動測定および自由振動
+% 実験に関する情報を記述するものであり、paper.texにインクルードされる。
+%
+% 情報は各サイト毎に記述する。
+% どこに何チャンネルの速度計を置いたか？
+% （わかるものについて）平面図でどこに置いたか？
+%
+% 必要な図面情報等は epsf.sty を用いてEPSファイルを取り込む。
+%
+%\def\joho{4}{\begin{description}\item[測定日]{#1}\item[測定チャンネル数]{#2}
+%	     チャンネル\item[速度計の配置]{#3}\item[方向]{#4}\end{description}}
+%
+\section{常時微動測定および自由振動実験}
+破壊実験とともに常時微動測定および自由振動実験も行なった。ここではそれら
+について測定時期および測定方法などを述べる。
+
+\subsection{常時微動測定}
+振動の計測には速度計を用い、水平2方向および鉛直方向について3チャンネルあ
+るいは4チャンネル同時測定をした。各サイトに置ける速度計の配置を以下に挙
+げる。
+\begin{enumerate}
+ \item \七条邸
+  \begin{itemize}
+   \item 破壊実験前
+	 \begin{description}
+	  \item[測定日] 1995年6月15日
+	  \item[測定チャンネル数] 3チャンネル
+	  \item[速度計の配置] 地表面(1ch)、2階床(2ch)、小屋梁(3ch)(図--
+	  \ref{bido3})
+	  \item[方向] 水平2方向と鉛直方向
+	 \end{description}
+   \item 破壊実験直前
+	 \begin{description}
+	  \item[測定日] 1995年6月20日
+	  \item[測定チャンネル数] 4チャンネル
+	  \item[速度計の配置] 2階床西側、2階床東側、小屋梁東側、小屋梁西
+	       側(図--\ref{fv})
+	  \item[方向] 桁行方向(破壊実験の際加力する方向)
+	 \end{description}
+   \item 破壊実験後
+  \end{itemize}
+
+\end{enumerate}
+
+\begin{figure}[htbp]
+ \begin{minipage}[t]{0.49\textwidth}\centering
+  \epsfile{file=figs/bido3.eps,width=\textwidth,height=2.0in}
+  \parbox[t]{2.00in}{\caption{常時微動測定を3チャンネルで行なう場合の速度
+  計の配置}}
+  \label{bido3}
+ \end{minipage} \hfill
+%
+ \begin{minipage}[t]{0.49\textwidth}
+  \centering
+  \epsfile{file=figs/fv.eps,width=\textwidth,height=2.0in}
+  \parbox[t]{2.00in}{\caption{自由振動実験の場合の速度計の配置}}
+  \label{fv}
+ \end{minipage}
+\end{figure}
+
+\subsection{自由振動実験}

@@ -1,0 +1,550 @@
+%%%% -*- LaTeX -*-
+\subsection{ボード下地左官仕上げ壁}
+\label{sec:board-plastered}
+
+伝統的壁構法の1つである土塗り壁は、断熱性能・調湿機能に優れ、日本の気
+候風土や居住環境に適した機能を有する構造体であるが、壁土の準備や乾燥の
+ために工期が長くなる、土を使うために壁そのものが重くなるなど不利な面も
+ある。これに対して、パネル工法の壁は、工期が短く、現行の規定においても、
+竹小舞下地の土塗り壁に比べて、同等あるいはより高い耐震性能を持つとされ
+ている。そのため、木造建物の被害の大きかった阪神・淡路大震災以来、パネ
+ル工法やパネル補強が注目されている。しかし、左官仕上げ壁には、単なる構
+造性能だけでは表せない温かみや魅力がある。
+%
+%一方で、壁の施工については、
+%大工、小舞下地を編む竹職人、左官と分業が進んでいるため、左官職人の側に
+%「壁は構造体である」という認識が不足しがちである。
+
+本研究では、既存の土塗り壁の良さを残しつつ、耐震補強を行う際の方法の一
+つとして、従来の荒壁の代わりに石膏ボードなどのパネルを下地に用い、表面
+を漆喰などの左官材料で仕上げた壁を製作し、これらについて、前節の土塗
+り壁と同様の静的載荷実験を行い、耐力と変形性能の関係を明らかにし、壁倍
+率や破壊性状などの耐震性能の評価を行う。また、パネル補強左官仕上げ壁の
+有効性を検証することを目的とする。
+
+
+\subsubsection{実験の概要}
+
+\paragraph{試験体}
+
+本実験で用いた試験体の種別を表\ref{tab:board-specimens}に示す。
+試験体は全部で10体である。パネ
+ルと左官仕上げ材料の組み合わせを5種類設定し、No.1〜No.5とした。それぞ
+れの種類の試験体を各2体ずつとし、仕上げを行う・行わないもの1体ずつに分
+類して、仕上げの有無による復元力特性や破壊性状の違いを調べた。仕上げを
+行わないものをa、仕上げを行ったものをbとして、以下では、No.1aのように
+表す。
+
+\begin{table}[htbp]
+  \begin{center}
+    \caption{試験体種別}\resizebox{\textwidth}{!}{
+    \begin{tabular}[b]{|c|c|c|c|c|c|c|c|}\hline
+      \multirow{2}{3zw}{\centering 試験体} & 
+      \multirow{2}{5zw}{\centering 柱・梁寸法} & 
+      \multirow{2}{4zw}{\centering 間柱寸法} & 
+      \multicolumn{2}{c|}{表(すべて真壁)} & 
+      \multicolumn{2}{c|}{裏(真壁もしくは大壁)} & 
+      \multirow{2}{2zw}{\centering 備考} \\\cline{4-7}
+      &&&ボード&仕上げ(塗り厚)&ボード&仕上げ(塗り厚)& \\\hline
+%
+      No.1a & 
+      \multirow{2}{5zw}{\centering 105×105} & 
+      \multirow{2}{5zw}{\centering 45×45} &
+      \multirow{2}{8zw}{\centering 石膏ボード(12mm)} & なし & 
+      \multirow{2}{8zw}{\centering 石膏ボード(12mm)} & なし&
+      \multirow{2}{4zw}{\centering 内壁仕様}
+      \\\cline{1-1}\cline{5-5}\cline{7-7}
+%
+      No.1b &  &  && ジュラク(3mm) & 
+       & ジュラク(3mm) & \\\hline
+%
+      No.2a & 
+      \multirow{2}{5zw}{\centering 105×105} & 
+      \multirow{2}{5zw}{\centering 45×45} &
+      \multirow{2}{8zw}{\centering ラスボード(7.5mm)} & なし & 
+      \multirow{2}{8zw}{\centering ラスボード(7.5mm)} & なし&
+      \multirow{2}{4zw}{\centering 内壁仕様}
+      \\\cline{1-1}\cline{5-5}\cline{7-7}
+%
+      No.2b &  &  && 
+      \parbox[t]{8zw}{石膏モルタル下塗+クリーム漆喰上塗
+      (8mm)} & 
+       & \parbox[t]{8zw}{石膏モルタル下塗+ジュラク上塗(8mm)} & \\\hline
+%
+      No.3a & 
+      \multirow{2}{5zw}{\centering 105×105} & 
+      \multirow{2}{5zw}{\centering 30×75} &
+      \multirow{2}{8zw}{\centering ラスボード(7.5mm)} & なし & 
+      \multirow{2}{8zw}{\centering 構造用合板(12mm)} & なし&
+      \multirow{2}{4zw}{\centering 外壁仕様}
+      \\\cline{1-1}\cline{5-5}\cline{7-7}
+%
+      No.3b &  &  && \parbox[t]{8zw}{石膏モルタル下塗+漆喰上塗
+      (8mm)} & 
+       & \parbox[t]{8zw}{ラスモルタル刷毛引(10mm)} & \\\hline
+%
+      No.4a & 
+      \multirow{2}{5zw}{\centering 105×105} & 
+      \multirow{2}{5zw}{\centering 30×75} &
+      \multirow{2}{8zw}{\centering 石膏ボード(12mm)} & なし & 
+      \multirow{2}{8zw}{\centering ラスカット板(7mm)} & なし&
+      \multirow{2}{4zw}{\centering 外壁仕様}
+      \\\cline{1-1}\cline{5-5}\cline{7-7}
+%
+      No.4b &  &  && \parbox[t]{8zw}{クリーム漆喰(3mm)} & 
+       & \parbox[t]{8zw}{モルタル刷毛引(9mm)} & \\\hline
+%
+      No.5a & 
+      \multirow{2}{5zw}{\centering 105×105} & 
+      \multirow{2}{5zw}{\centering 45×45} &
+      \multirow{2}{8zw}{\centering ラスボード(7.5mm)} & なし & 
+      \multirow{2}{8zw}{\centering 石膏ボード(12mm)} & なし&
+      \multirow{2}{4zw}{\centering 内壁仕様}
+      \\\cline{1-1}\cline{5-5}\cline{7-7}
+%
+      No.5b &  &  && \parbox[t]{8zw}{石膏モルタル下塗+漆喰上塗(8mm)} & 
+       & \parbox[t]{8zw}{ジュラク(3mm)} & \\\hline
+    \end{tabular}}
+    \label{tab:board-specimens}
+  \end{center}
+\end{table}
+
+
+%一例として、試験体No.1aの詳細を図1に示す。
+試験体の詳細を、図\ref{fig:board-No1}〜\ref{fig:board-No5}に示す。
+全試験体共通に、柱・横架材に
+は105角のベイマツ材を使用し、柱と横架材の接合部は、短ほぞでホールダウ
+ン金物(S-HD10、HD-10B)により緊結した。間柱にはスギ材を用いた。その寸法
+は表1に示す通りである。試験体No.1、No.2、及びNo.5は間仕切り壁として用
+いられる内壁仕様であり、
+No.3及びNo.4は外壁仕様である。
+
+\input{BearingWall/board/specimens.tex}
+
+柱・横架材の軸組は、既存の土塗り壁を外した後、パネル補強を行う状況を想
+定して、\ref{sec:mud-plastered}節で述べた竹小舞下地土塗り壁
+の実験で用いた試験体の軸組を再利用している。ただし、ホールダウン金物は、
+竹小舞下地土塗り壁の実験時に塑性変形しているため、同じもので新品に交換
+した。通常の工事では、間柱の取り付け、石膏ボードなどのパネルの取り付け
+までを大工が行い、左官仕上げのみを左官職人が行うが、本実験においては、
+間柱の取り付け以後の作業も、全て左官職人が行った。ボードを留める釘には、
+N38を用い、ピッチは特に指定しなかったが、およそ150mmである。左官作業は、
+1998年7月4日に下塗りを行い、7月8日に上塗り仕上げを行った(写真
+\ref{pho:board-shitanuri}、\ref{pho:board-uwanuri})。
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/board-shitanuri.eps}
+    \caption{下塗作業の状況}
+    \label{pho:board-shitanuri}
+  \end{center}
+\end{photo}
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/board-uwanuri.eps}
+    \caption{上塗り作業の状況}
+    \label{pho:board-uwanuri}
+  \end{center}
+\end{photo}
+
+\paragraph{載荷・計測方法}
+
+\ref{sec:mud-plastered}節と同様、載荷には容量10tonf、ストローク800mmの
+電動アクチュエータを用い、層間変形角が1/480, 1/240, 1/120, 1/60, 1/30,
+1/15, 1/10radとなる変形を最低2回経験するように繰り返し載荷を行った。載
+荷装置の全景を写真\ref{pho:board-equip}に示す。
+
+写真\ref{pho:board-keisoku}に示すように各計測器を取りつけ、
+載荷点での荷重、桁部の水平変位、土台の水平変位及び浮き上がり、柱・横架
+材接合部の抜け及び回転角を計測した。
+
+\begin{photo}[htbp]
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/experiment.eps}
+    \caption{載荷装置}
+    \label{pho:board-equip}
+  \end{center}
+\end{photo}
+\begin{photo}
+  \begin{center}
+    \subphoto[載荷荷重]{\includegraphics[height=.48\textwidth]{%
+        BearingWall/board/figs/board-keisoku-1.eps}}\hfill
+%    \subphoto[桁部の水平変位]{\includegraphics[width=.48\textwidth]{% 
+%        }}
+    \subphoto[土台の水平変位、浮き上がり]{%
+      \includegraphics[width=.48\textwidth]{%
+        BearingWall/board/figs/board-keisoku-3.eps}}
+    \subphoto[柱・横架材接合部]{%
+      \includegraphics[width=.48\textwidth]{%
+        BearingWall/board/figs/board-keisoku-4.eps}}
+    \caption{荷重・変形量の計測}
+    \label{pho:board-keisoku}
+  \end{center}
+\end{photo}
+
+\subsubsection{荷重と変形の関係、破壊状況}
+
+荷重と変形角の関係を図\ref{fig:P-d_No1}〜\ref{fig:P-d_No5}に示す。
+仕上げのある試験体(b)は、仕上げのな
+い試験体(a)に比べて、最大耐力が大きい。最大耐力時の変形角は、試験体
+No.1aの他は1/60〜1/30radである。また、仕上げの有無によらず、変形角が
+1/30radを越えるとパネルが脱落し始める、という傾向が共通に見られる。載
+荷途中の破壊状況により、最大層間変形角1/10radに至らなかった試験体がほ
+とんどである。試験体No.3a、No.4a、No.5aのみ、1/10rad変形まで載荷を行う
+ことができた。
+
+\input{BearingWall/board/kaju-henkei.tex}
+
+\paragraph{試験体No.1(両面石膏ボード張り)}
+
+荷重と変形角の関係を図\ref{fig:P-d_No1}に示す。
+仕上げのない試験体(a)は、石膏ボード間の
+隙間が大きい状態であったので、変形角が1/15radまで大きくなったときに、
+隙間がふさがって少し耐力の上昇が見られたが、それまでに石膏ボード自体が
+損傷していたため、程なくして、ボードが、裏側中段、裏側下段、表側中段、
+表側上段の順に脱落した。1/120rad変形時に、まず表側中段のボードの右下隅
+が圧壊した。以後、他の部分のボードでも、隅角部の圧壊が進み、特に辺縁部
+では釘が抜けてくるなどの破壊状況が顕著であった。
+
+仕上げのある試験体(b)では、変形角が1/240radを越えて1/120radへ向かう途
+中で、仕上げ材のジュラクが、ボードの継ぎ目部分で水平にひび割れた(写真
+\ref{pho:board-no1b-juraku-hibi})。以後
+は、変形角が1/120radに達する頃から、仕上げのジュラク、ボードの石膏等が
+隅角部や辺縁で圧壊して(写真\ref{pho:board-no1b-gukaku})、
+最終的には、1/15rad変形時に表側上段、表側中段
+の順に、続いて裏側の上段中段のボードが同時に脱落した(写真
+\ref{pho:board-no1b-board-fail})ので、載荷を終了し
+た。仕上げ材料だけが剥がれ落ちてくるということは、隅角部や周辺部以外で
+は見られなかった。最大耐
+力は、No.1aが1/15rad変形時に1042kgf、No.1bが1/60rad変形時に1482kgfであっ
+た。
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/board-no1b-juraku-hibi.eps}
+    \caption{試験体No.1b:ジュラクが水平にひび割れ}
+    \label{pho:board-no1b-juraku-hibi}
+  \end{center}
+\end{photo}
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/board-no1b-gukaku.eps}
+    \caption{試験体No.1b:隅角部での圧壊}
+    \label{pho:board-no1b-gukaku}
+  \end{center}
+\end{photo}
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/board-no1b-board-fail.eps}
+    \caption{試験体No.1b:ボードが脱落}
+    \label{pho:board-no1b-board-fail}
+  \end{center}
+\end{photo}
+
+\paragraph{試験体No.2(両面ラスボード)}
+
+荷重と変形角の関係を図\ref{fig:P-d_No2}に示す。
+試験体No.2aの場合、No.1aと同様、
+1/120rad変形時に、ラスボードの隅角部の圧壊が見られた。1/30rad変形時に、
+裏側下段、続いて表側下段のラスボードが座屈した(写真
+\ref{pho:board-no2a-rasuboard-zakutsu})。
+1/15rad変形時に、表側
+下段、裏側中段のラスボードが続けて脱落、裏側中段のボードはすでに座屈し
+ていた裏側下段のラスボードに刺さった。その後、$-$1/15rad変形時に表側中段
+のボードが脱落し、裏側上段のボードが座屈により折れた。2度目の$-$1/15rad
+変形時に、座屈した裏側上段のボードが脱落した時点で実験を終了した。釘留
+め部分のボードの損傷は、辺縁部ほど大きく、釘が抜けてくるものも見られた。
+
+試験体No.2bは、1/60rad変形時に、隅角部の漆喰やジュラクがひび割れて剥落
+し始めた。しかし、最初の$-$1/30rad変形に至る以前に、桁部分が折れてしまっ
+た(写真\ref{pho:board-no2b-keta-ore})ので実験を終了した。
+表側、裏側とも、ラスボードが脱落するまでには至らなかった。
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/board-no2a-rasuboard-zakutsu.eps}
+    \caption{試験体No.2a:表下段のラスボードが座屈}
+    \label{pho:board-no2a-rasuboard-zakutsu}
+  \end{center}
+\end{photo}
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/board-no2b-keta-ore.eps}
+    \caption{試験体No.2b:桁が折れたので実験終了}
+    \label{pho:board-no2b-keta-ore}
+  \end{center}
+\end{photo}
+
+\paragraph{試験体No.3(ラスボード+構造用合板)}
+
+荷重と変形角の関係を図\ref{fig:P-d_No3}に示す。
+試験体No.3aでは、変形角が1/60を越えると、ラスボードの隅角部の圧
+壊、釘の引き抜けが顕著であった。特に、釘の引き抜けはラスボード・構造用
+合板とも周辺部で大きい。まず、1/15rad変形時に、下段のラスボードが座屈
+し、中段の構造用合板が脱落した。1/15rad変形の後再び1/30rad変形をさせた
+が、その際、上段のラスボードが脱落した。続いて1/10radの変形をさせると、
+中段のラスボードが落下して、座屈していた下段のラスボードに刺さった。上
+段の構造用合板は、大壁で桁に約70mmピッチで釘留めされていたため、浮き上
+がりは見られたものの、脱落はしなかった。
+
+試験体No.3bでは、桁部の水平変位が約$-$18mmの時にラスモルタル面の左上部
+分が大きく浮き上がった。
+1/15rad変形に達する前に、それまでに浮き上がっていた上段、
+中段のラスボードが脱落し(写真\ref{pho:board-no3b-rasuboard-fail})、
+耐力が大きく減少した。その後、$-$1/15rad変形に至る前に実験を終了した。
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/board-no3b-rasuboard-fail.eps}
+    \caption{試験体No.3b:ラスボード脱落}
+    \label{pho:board-no3b-rasuboard-fail}
+  \end{center}
+\end{photo}
+
+\paragraph{試験体No.4(石膏ボード+ラスカット)}
+
+荷重と変形角の関係を図\ref{fig:P-d_No4}に示す。
+No4aの場合、1/240radを越える頃から、ラ
+スカット面で釘のきしみ音が始まる。1/60rad変形時には、石膏ボードの隅角
+部の圧壊やラスカットの周辺の浮き上がり
+(写真\ref{pho:board-no4a-rasucut})が見られる。
+1/30rad変形時に表側中段の石膏ボードが脱落した(写真
+\ref{pho:board-no4a-plasterboard-fail})。
+続けて載荷を行ったところ、最終的には、石膏
+ボードが上段、下段の順で、全て脱落した。
+
+No.4bでは、1/120rad変形時に、表側で隅角部の圧壊が始まる。1/60rad変形時
+には、表側に、ボードの継ぎ目に沿って水平のひび割れが生じる。更に、裏側
+では周辺部の釘の抜けが目に見えて大きくなってくる。変形角が$-$1/15radに達
+する前に、表側から見て右の柱が折れた。折れた部分は、胴貫のほぞ穴の近く
+であり、節も見られた。
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/board-no4a-rasucut.eps}
+    \caption{試験体No.4a:ラスカット周辺部の損傷}
+    \label{pho:board-no4a-rasucut}
+  \end{center}
+\end{photo}
+
+\begin{photo}
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/board-no4a-plasterboard-fail.eps}
+    \caption{試験体No.4a:中段石膏ボードが脱落}
+    \label{pho:board-no4a-plasterboard-fail}
+  \end{center}
+\end{photo}
+
+\paragraph{試験体No.5(ラスボード+石膏ボード)}
+
+荷重と変形角の関係を図\ref{fig:P-d_No5}に示す。
+No.5aは1/30rad変形以後も耐力を大きく低
+下することなく、1/10radまで変形することができたが、1/10rad変形時に、表
+側上段・中段のラスボード、裏側上段の石膏ボードが続けて脱落した後、わず
+かに耐力を低下し、再び1/10rad変形となったときに、裏側中段の石膏ボード
+が脱落した。
+
+No.5bでは、1/240rad変形を越えてすぐ、裏側で、石膏ボードの
+継ぎ目に沿った水平のひび割れを生じた。$-$1/30rad変形時には表側のラスボー
+ドが脱落し大きく耐力を減少した。その後、1/15rad変形まで載荷を行ったが、
+耐力は、$-$1/15rad変形時に210kgfまで低下した。
+
+\subsubsection{耐震性能評価}
+
+
+\paragraph{壁倍率の評価}
+
+次式により算定した、ボード下地左官仕上げ壁の壁倍率を図
+\ref{fig:borad-kabebairitsu}に示す。
+\begin{equation}
+  \label{eq:wall-coeff}
+  \alpha = \frac{3}{4}\times P\div 130
+\end{equation}
+ここで、$\alpha$は壁倍率、
+$P$は
+\begin{enumerate}
+\item 耐力壁の見かけの変形角が1/120rad時の抵抗力\label{p_1/120}
+\item 最大耐力の2/3\label{2/3Pmax}
+\item 最大耐力時の変形角の1/2の変形角時の耐力\label{gamma_1/2Pmax}
+\end{enumerate}
+の最小値(kgf/m)である\cite{hoyu-tairyoku}。
+全試験体について\ref{p_1/120}〜\ref{gamma_1/2Pmax}の各耐力、最大耐力
+(kgf/m)及び壁倍率などを表\ref{tab:borad-Pmax-etc}に示す。
+
+\input{BearingWall/board/kabebairitsu.tex}
+
+試験体は左右対称であるので、載荷方向による壁倍率の大きな違いは見られな
+い。試験体No.3bやNo.5bでは、正方向の載荷時の耐力が大きく、壁倍率にもそ
+の差が見られる。仕上げのない試験体(a)の場合、両面真壁(内壁仕様)である
+No.1a、No.2a、No.5aがほぼ等しい壁倍率となっており、1.1〜1.3である。片
+面が大壁(外壁仕様)であるNo.3a及びNo.4aでは、壁倍率は約2.0となっている。
+仕上げを施した試験体(b)の場合、仕上げのない試験体に比べて、2〜4倍の壁
+倍率となっている。内壁仕様のNo.1b、No.2b、No.5bでは、それぞれ3.0、4.4、
+3.7であり、仕上げをすることによって壁倍率が3〜4倍になっている。外壁仕
+様であるNo.3b、No.4bの壁倍率は、それぞれ5.2、3.8である。
+
+
+\paragraph{復元力特性に関する考察}
+
+最大荷重に至るまでの各試験体の荷重と変形の関係の包絡線をまとめて図
+\ref{fig:board-envelope}に示す。図\ref{fig:board-envelope-no-finish}は
+仕上げのない試験体、図\ref{fig:board-envelope-finish}は仕上げのある試
+験体である。図\ref{fig:board-envelope}の繰り返しになるが、5種類の試験
+体各々について、仕上げの有無による包絡線の違いを図
+\ref{fig:board-no1-ab}〜図\ref{fig:board-no5-ab}に示す。
+
+試験体は左右対称に製作されているので、包絡線は原点を中心に点対称になる
+はずであるが、約1/120radより大きな変形になると、正方向の載荷時に試験体
+が損傷を受けることにより、負方向の載荷時には耐力が低下するために、包絡
+線全体は点対称とならない。下地ボードの組み合わせが同じであれば、仕上げ
+がある場合には、最大耐力は1.8-3.7倍にまで上昇している。最大耐力の上昇
+は、ラスボード張りに石膏モルタルで下塗りを行った試験体No.2、No.3、No.5
+で大きく、それぞれ、3.7倍、2.5倍、3.0倍となっている。破壊要因は、留め
+釘によるボードの辺縁での損傷が支配的であり、仕上げの有無によらず、下地
+ボードの組み合わせが同じであれば、破壊により耐力が減少する変形角はほぼ
+等しい。
+%No.1試験体では、石膏ボード張りのみに対して、ジュラク仕上げした
+%ときの耐力の上昇が大きい。
+
+\begin{figure}[htbp]
+  \begin{center}
+    \subfigure[仕上げなし]{%
+      \includegraphics{BearingWall/board/figs/horakusen/1a-5a.eps}\label{fig:board-envelope-no-finish}}
+    \subfigure[仕上げあり]{%
+      \includegraphics{BearingWall/board/figs/horakusen/1b-5b.eps}\label{fig:board-envelope-finish}}
+    \caption{各試験体の復元力特性の包絡線}
+    \label{fig:board-envelope}
+  \end{center}
+\end{figure}
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/horakusen/1a-1b.eps}
+    \caption{仕上げの有無による包絡線の違い(試験体No.1)}
+    \label{fig:board-no1-ab}
+  \end{center}
+\end{figure}
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/horakusen/2a-2b.eps}    
+    \caption{仕上げの有無による包絡線の違い(試験体No.2)}
+    \label{fig:board-no2-ab}
+  \end{center}
+\end{figure}
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/horakusen/3a-3b.eps}
+    \caption{仕上げの有無による包絡線の違い(試験体No.3)}
+    \label{fig:board-no3-ab}
+  \end{center}
+\end{figure}
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/horakusen/4a-4b.eps}
+    \caption{仕上げの有無による包絡線の違い(試験体No.4)}
+    \label{fig:board-no4-ab}
+  \end{center}
+\end{figure}
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics{BearingWall/board/figs/horakusen/5a-5b.eps}
+    \caption{仕上げの有無による包絡線の違い(試験体No.5)}
+    \label{fig:board-no5-ab}
+  \end{center}
+\end{figure}
+
+
+%\paragraph{消費エネルギーについて}
+
+%各試験体について、最大耐力に至るまでに消費するエネルギーを次式により計
+%算した。
+%\begin{equation}
+%  \label{eq:CHE-board}
+%  E = \int P\Delta d\Delta
+%\end{equation}
+%ここで、$P$は桁部の水平変位が$\Delta$の時の耐力であり、実際の計算に際
+%しては、台形積分とした。
+
+%横軸を計測ステップ、縦軸をその時々の消費エネルギーとしたものを
+%図\ref{fig:CHE-board-no1}〜図\ref{fig:CHE-board-no5}に、
+%最大耐力に至るまでに消費したエネルギーを表\ref{tab:CHE-at-Pmax}に示す。
+
+%\begin{figure}[htbp]
+%  \begin{center}
+%    \includegraphics{BearingWall/board/exp-data/eps/No1a.eps}
+%    \includegraphics{BearingWall/board/exp-data/eps/No1b.eps}
+%    \caption{ボード張り壁の最大耐力に至るまでの消費エネルギーの変化
+%      (試験体No.1)}
+%    \label{fig:CHE-board-no1}
+%  \end{center}
+%\end{figure}
+%\begin{figure}[htbp]
+%  \begin{center}
+%    \includegraphics{BearingWall/board/exp-data/eps/No2a.eps}
+%    \includegraphics{BearingWall/board/exp-data/eps/No2b.eps}
+%    \caption{ボード張り壁の最大耐力に至るまでの消費エネルギーの変化
+%      (試験体No.2)}
+%    \label{fig:CHE-board-no2}
+%  \end{center}
+%\end{figure}
+%\begin{figure}[htbp]
+%  \begin{center}
+%    \includegraphics{BearingWall/board/exp-data/eps/No3a.eps}
+%    \includegraphics{BearingWall/board/exp-data/eps/No3b.eps}
+%    \caption{ボード張り壁の最大耐力に至るまでの消費エネルギーの変化
+%      (試験体No.3)}
+%    \label{fig:CHE-board-no3}
+%  \end{center}
+%\end{figure}
+%\begin{figure}[htbp]
+%  \begin{center}
+%    \includegraphics{BearingWall/board/exp-data/eps/No4a.eps}
+%    \includegraphics{BearingWall/board/exp-data/eps/No4b.eps}
+%    \caption{ボード張り壁の最大耐力に至るまでの消費エネルギーの変化
+%      (試験体No.4)}
+%    \label{fig:CHE-board-no4}
+%  \end{center}
+%\end{figure}
+%\begin{figure}[htbp]
+%  \begin{center}
+%    \includegraphics{BearingWall/board/exp-data/eps/No5a.eps}
+%    \includegraphics{BearingWall/board/exp-data/eps/No5b.eps}
+%    \caption{ボード張り壁の最大耐力に至るまでの消費エネルギーの変化
+%      (試験体No.5)}
+%    \label{fig:CHE-board-no5}
+%  \end{center}
+%\end{figure}
+%\begin{table}[htbp]
+%  \begin{center}
+%    \caption{最大耐力に至るまでに消費するエネルギー(tonf$\cdot$cm)}
+%    \label{tab:CHE-at-Pmax}
+%    \begin{tabular}{|c|c|c|}\hline
+%      試験体&a.仕上げなし&b.仕上げあり\\\hline
+%      \input{BearingWall/board/exp-data/che/che.tex}
+%    \end{tabular}
+%  \end{center}
+%\end{table}
+
+\subsubsection{まとめ}
+
+5種類のボード下地左官仕上げ壁の載荷実験を行い、壁倍率の評価及び仕上げ
+の有無による復元力特性の違いを調べた。ボード類による補強という観点から
+は、竹小舞土塗り壁よりも大きな耐力になるので、有利である。ただし、
+本実験で下地として用いたボード類
+は、土壁の性能の一つである吸放湿性という観点から見ると、それ自身は湿気
+に対して弱い材料であるので、実用に当たっては、吸放湿性をもつボード類の
+完成を待たねばならない。
+
+今後、下地ボードや仕上げ材料の違い、仕上げの有無による復元力特性の違い
+を明らかにするなど、結果を詳細に検討するとともに、パネル補強壁の復元力
+特性を解析的に検討\cite{ajaya1985}して、
+本実験で使用した各試験体の復元力特性を推定する必要がある。
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "paper"
+%%% End: 

@@ -1,0 +1,82 @@
+%実験結果から得られる復元力特性のスケルトンと、指針による折れ線との整合性
+%をチェックする。
+%
+破壊実験を行なった住宅の壁率およびそれから得られる水平耐力の推定値は表
+\ref{kaberitsu}、\ref{tairyoku}のようになる。
+\begin{table}[htbp]
+ \begin{center}
+  \caption{実験対象建物の壁率}
+  \begin{tabular}[t]{|l||r|r|r|r|}
+   \hline
+   ~ & \multicolumn{4}{@{}c|}{壁率~(cm/$\mbox{\rm m}^2$)}\\ \cline{2-5}
+   ~ & \multicolumn{2}{@{}c|}{1階}&\multicolumn{2}{c|}{2階}  \\
+   \cline{2-5}
+   ~ & \harima 方向&桁行方向 & \harima 方向&桁行方向\\ \hline
+   \七条邸 &9.10 &15.72 &8.42 &27.20  \\ \hline
+   \辻邸 &14.75 &16.35 &14.42 &29.67
+   \\ \hline
+   \田中邸 &36.51 &31.04 &23.01 &44.68 \\ \hline
+   \杉浦邸 &21.57 &18.69 &38.85 &32.28 \\ \hline
+  \end{tabular}
+  \label{kaberitsu}
+ \end{center}
+\end{table}
+
+\begin{table}[htbp]
+ \setlength{\tabcolsep}{0.05in}
+ \begin{center}
+  \label{tairyoku}
+  \caption{実験対象建物の水平耐力の推定値(単位:ton)}
+  \begin{minipage}[t]{0.45\textwidth}\centering
+   \parbox{1.0in}{a \七条邸}\vspace{-0.1in}
+   \begin{tabular}[t]{|l|c|c|c|c|}
+    \hline
+    ~&\multicolumn{2}{c|}{1階}& \multicolumn{2}{c|}{2階} \\ \cline{2-5}
+    ~ &{\small \harima 方向} &{\small 桁行方向} &{\small \harima 方向} &{\small 桁行方向}  \\ \hline
+    $P_{\mbox{\scriptsize\rm 1/200}}$&0.74 &1.28 &0.40 &1.28 \\ \hline
+    $P_{\mbox{\scriptsize\rm 1/120}}$&1.11 &1.91 &0.60 &1.11 \\ \hline
+    $P_{\mbox{\scriptsize\rm 1/60}}$&1.43 &2.47 &0.78 &2.47 \\ \hline
+    $P_{\mbox{\scriptsize\rm max}}$&3.91 &6.75 &2.13 &6.75 \\ \hline
+   \end{tabular}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.45\textwidth}\centering
+   \parbox{1.0in}{b \辻邸}\vspace{-0.1in}
+   \begin{tabular}[t]{|l|c|c|c|c|}
+    \hline
+    ~&\multicolumn{2}{c|}{1階}& \multicolumn{2}{c|}{2階} \\ \cline{2-5}
+    ~ &{\small \harima 方向} &{\small 桁行方向} &{\small \harima 方向} &{\small 桁行方向}  \\ \hline
+    $P_{\mbox{\scriptsize\rm 1/200}}$& & & & \\ \hline
+    $P_{\mbox{\scriptsize\rm 1/120}}$& & & & \\ \hline
+    $P_{\mbox{\scriptsize\rm 1/60}}$& & & & \\ \hline
+    $P_{\mbox{\scriptsize\rm max}}$& & & & \\ \hline
+   \end{tabular}
+  \end{minipage}\vspace{.2in}
+
+  \begin{minipage}[t]{0.45\textwidth}\centering
+   \parbox{1.0in}{c \田中邸}\vspace{-0.1in}
+   \begin{tabular}[t]{|l|c|c|c|c|}
+    \hline
+    ~&\multicolumn{2}{c|}{1階}& \multicolumn{2}{c|}{2階} \\ \cline{2-5}
+    ~ &{\small \harima 方向} &{\small 桁行方向} &{\small \harima 方向} &{\small 桁行方向}  \\ \hline
+    $P_{\mbox{\scriptsize\rm 1/200}}$& & & & \\ \hline
+    $P_{\mbox{\scriptsize\rm 1/120}}$& & & & \\ \hline
+    $P_{\mbox{\scriptsize\rm 1/60}}$& & & & \\ \hline
+    $P_{\mbox{\scriptsize\rm max}}$& & & & \\ \hline
+   \end{tabular}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.45\textwidth}\centering
+   \parbox{1.0in}{d \杉浦邸}\vspace{-0.1in}
+   \begin{tabular}[t]{|l|c|c|c|c|}
+    \hline
+    ~&\multicolumn{2}{c|}{1階}& \multicolumn{2}{c|}{2階} \\ \cline{2-5}
+    ~ &{\small \harima 方向} &{\small 桁行方向} &{\small \harima 方向} &{\small 桁行方向}  \\ \hline
+    $P_{\mbox{\scriptsize\rm 1/200}}$& & & & \\ \hline
+    $P_{\mbox{\scriptsize\rm 1/120}}$& & & & \\ \hline
+    $P_{\mbox{\scriptsize\rm 1/60}}$& & & & \\ \hline
+    $P_{\mbox{\scriptsize\rm max}}$& & & & \\ \hline
+   \end{tabular}
+  \end{minipage}\hfill
+ \end{center}
+\end{table}
+
+一方、実験結果から得られる荷重〜層間変位関係からは、

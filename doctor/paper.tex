@@ -1,0 +1,83 @@
+\documentclass[11pt,titlepage]{jarticle}
+\usepackage{overcite}
+%\usepackage[draft,hidescale]{graphicx}
+\usepackage[dvipdfmx]{graphicx}
+%\usepackage{times}
+%\usepackage{bigstrut}
+\usepackage{multirow}
+\usepackage{float,rotating,subfigure}
+\usepackage[isu]{caption}
+\usepackage{latexsym}
+\usepackage{ronbun}
+\usepackage{mystyle}
+
+\newcommand{\InExtWall}[2]{
+  \begin{tabular}[c]{rl}
+    内壁:&#1 \\
+    外壁:&#2 \\
+  \end{tabular}
+}
+
+\newcommand{\tmptab}[1]{\begin{tabular}{c}%
+    \renewcommand{\arraystretch}{0.}#1\end{tabular}}
+
+%各建物の名前はそれによって一意に判別できる程度の短さにする
+\newcommand{\Shichijo}{SI邸}
+\newcommand{\Tsuji}{TU邸}
+\newcommand{\Tanaka}{TA邸}
+\newcommand{\Sugiura}{SU邸}
+\newcommand{\Haumesse}{H棟}
+%
+%\setlength{\tabcolsep}{0.05in}
+\newcommand{\harima}{張間}
+%
+\title{木造建物の耐震性能評価に関する研究}
+\author{中~治　弘~行}
+\date{1999年4月}
+
+\newcommand{\bib}{\bibliographystyle{aij}\bibliography{my-reference}}
+
+\begin{document}
+\setlength{\baselineskip}{20pt}
+%\setlength{\captionmargin}{4zw}
+\renewcommand{\subfigtopskip}{0pt}
+\renewcommand{\subfigcapskip}{0pt}
+\renewcommand{\subfigbottomskip}{6pt}
+
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\include{prologue}
+
+\include{fullscale-test95}
+
+\include{wall-tests}
+
+\include{microtremor}
+
+%\include{fullscale-vibtest}
+
+\include{response}
+
+%\include{anti-seismic-design}
+
+\include{epilogue}
+
+\newpage
+\bib
+
+\include{papers}
+\include{shaji}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

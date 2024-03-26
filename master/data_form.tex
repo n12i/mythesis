@@ -1,0 +1,43 @@
+%\documentstyle[eclepsf]{jarticle}
+% データフォーマットを記述
+%\setlength{\oddsidemargin}{0in}
+%\setlength{\textwidth}{17cm}
+
+%\begin{document}
+\paragraph{データフォーマットの例}
+\paragraph{}
+
+{\tt
+==> ../experiment/data/shichijo/OUT1 <==}
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+Step & $P$ (ton) & $d_{2a}$ & $d_{1a}$ & $d_{0a}$ &
+$d_{2b}$ & $d_{1b}$ & $d_{0b}$ \\ \hline
+ 56 & 0.00 & 0.00 & 0.00 & -0.05 & 0.00 & 0.05 & 0.05 \\
+ 57 & 0.00 & 0.00 & 0.00 & -0.05 & 0.05 & 0.00 & 0.05 \\
+ 58 & 0.11 & 0.00 & -0.05 & 0.00 & -0.15 & 0.00 & 0.05 \\
+ 59 & 0.27 & 0.05 & 0.00 & 0.00 & -0.05 & 0.05 & 0.05 \\
+\end{tabular}
+\caption{荷重〜変位 ファイル名:../orig/shichijo.txt}
+\end{center}
+\end{table}
+
+{\tt ==> ../experiment/data/shichijo/OUT2 <==}
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+Step & $P$ & $u_{2a}$ & $u_{1a}$ & $u_{2b}$ & $u_{1b}$ &
+$u_2$ & $u_1$ & $\theta _2$ & $\theta _1$ \\ \hline
+ 56 & 0.00 & 0.00 & 0.05 & -0.05 & 0.00 & -0.03 & 0.03 & 0.0001 & 0.0001 \\
+ 57 & 0.00 & 0.00 & 0.05 & 0.05 & -0.05 & 0.03 & 0.00 & -0.0001 & 0.0002 \\
+ 58 & 0.11 & 0.05 & -0.05 & -0.15 & -0.05 & -0.05 & -0.05 & 0.0004 & 0.0000 \\
+ 59 & 0.27 & 0.05 & 0.00 & -0.10 & 0.00 & -0.03 & 0.00 & 0.0003 & 0.0000 \\
+\end{tabular}
+\caption{荷重〜層間変位＋ねじれ角}
+\end{center}
+\end{table}
+
+\input notation.tex
+
+%\end{document}

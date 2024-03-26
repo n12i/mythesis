@@ -1,0 +1,170 @@
+% section2.tex
+%
+\mbox{}\pagebreak
+\section{木造建物の実大実験}\label{sec2}
+既存木造建物の耐力と変形性能および振動特性を定量的に評価するため、
+  解体予定の実存木造建物4棟および実験用木造軸組1棟(表\ref{sites})につい
+て実験を行なった。各建物の平面図(\ハウメッセ については軸組
+図)を図\ref{sh_plan}--\ref{hau_plan}に示す。図中●、■はそれぞれ重心、剛
+心(付録\ref{app-B}参照)を表す。
+昭和初期に建てられた2棟(\七条邸 、\辻邸 %以下「古い住宅」
+)は、耐力
+壁に筋かいは入っておらず、壁率も現在の基準値を満たしていない。昭和30年代
+後半または昭和40年に建てられた住宅(\田中邸 、\杉浦邸 %以下「新しい住宅」
+)は、外壁がラスモルタルであり、筋かいも入っていて、壁率(第\ref{sec3}章で
+算定、表\ref{kaberitsu})の基準値を満たしている。\ハウメッセ は実験用に建
+設した軸組のみの2間×2間の2階建である。
+\input sites.tex
+\input plan
+%\begin{photo}[htbp]
+% \psfig{file=figs/photos/5.eps,height=1.5in}
+% \caption{\杉浦邸}
+%\end{photo}
+%\subsection{実験対象建物}
+%  実験を行なった建物を表\ref{sites}に挙げる。
+%実験対象住宅一覧表
+%
+%  \subsection{実験方法}
+    \subsection{引張破壊実験}
+
+小屋梁位置で隅柱部分を引っ張って静的な載荷を行ない、
+    載荷履歴に対する耐力と変形の関係を調べ、最大耐
+    力を越えて破壊に至るまでの挙動を調べた。
+
+    載荷には、容量約25tonf
+    のラフター型トラッククレーン(写真\ref{rufter})を用いて、ワイヤー
+    で2階天井部の柱--梁接合部分を引っ張り、1方向の繰り返し載荷を層間変形
+    角1/30--1/12rad程度まで行なった(図\ref{enload}%,\ref{enload_sec}
+)。
+    \ハウメッセ の実験では容量7tonfのトラッククレーン2台を用いて交互に引っ
+    張り、繰り返し載荷したのち荷重計および変位計を除去、倒壊するまで載荷
+    した。
+
+    2階に作用させた水平引張力は、容量20tonf(感度100$\times 10^{-6}$/mm)の
+    荷重計(写真\ref{loadsel})を1台用いて計測した。
+基礎、1層、2層の各変位は容量2500mmの巻き
+    込み型変位計(感度$2.0\times 10^{-6}$/mm)を6台用いて計測した%(図
+%    \ref{disp_meter})
+。また、
+    変位の実験時モニタ用に、測定範囲200〜1300mmの超音波式変位センサ(表示
+    分解能1mm、表示精度$\pm$1\%F.S.)を2台用いた。
+\begin{photo}[htbp]
+ \centering\leavevmode
+ \includegraphics[height=0.6\textheight]{figs/photos/rufter_vert.ps}
+ \caption{載荷に使用したトラッククレーン}
+ \label{rufter}
+\end{photo}
+\begin{photo}[htbp]
+ \centering\leavevmode
+ \includegraphics{figs/photos/loadsel.eps}
+ \caption{荷重計}
+ \label{loadsel}
+\end{photo}
+\begin{photo}[htbp]
+ \centering\leavevmode
+ \includegraphics{figs/photos/keisoku.eps}
+ \caption{引張破壊実験で使用した計測システム}\label{keisoku}
+\end{photo}
+    \begin{figure}[htbp]
+     \centering\leavevmode
+      \includegraphics[width=\textwidth]{figs/enload.eps}
+      \caption{載荷状況}
+     \label{enload}
+    \end{figure}
+%    \begin{figure}[htbp]
+%     \begin{center}
+%      \epsfile{file=figs/enload_sec.eps,width=\textwidth}
+%      \caption{載荷状況イメージ2}
+%     \label{enload_sec}
+%     \end{center}
+%    \end{figure}
+
+%    \begin{figure}[htbp]
+%     \begin{center}
+%      \epsfile{file=figs/disp_meter.eps,height=2.0in}
+%      \caption{変位計の取り付け位置}
+%     \label{disp_meter}
+%     \end{center}
+%    \end{figure}
+
+   \subsection{常時微動測定}
+在来構法木造建物の基本的な動力学特性を把握し、かつ、建物が損傷を受けるこ
+とにより生じる動特性の推移を明らかにするため、
+%   破壊実験前後の振動特性の変化を調べるため、
+建物および周辺地盤の常時微
+動測定を行なった。
+\辻邸 以外については破壊実験終了後にも常時微動測定を行なった。振動
+   の測定には携帯用振動計(東京測振(株)SPC-35F)を使用した。これは写真
+\ref{spc35},\ref{pickup}に示すように、サーボ型速度計のピックアップと、
+アンプ・A/D変換
+器・ノートパソコンをトランクの中に組み込んだポータブルタイプの本体から構
+成される。他の機器を接続することなしに計測結果をリアルタイムでコンピュー
+タ内蔵のハードディスクに格納することのできる非常に簡便な計測システムであ
+る。総合特性としては、速度について1Hzないし20Hzの間でフラットな特性を持っ
+ていることを確認した。
+\begin{photo}[htbp]
+\centering\leavevmode
+\includegraphics{figs/photos/spc35.eps}
+\caption{携帯用振動計 SPC-35E}\label{spc35}\par\vspace{.2in}
+\centering\leavevmode
+\includegraphics{figs/photos/pickup.eps}
+\caption{サーボ型速度計}\label{pickup}
+\end{photo}
+
+計測は、地表面、建物の1階、2階の床面および小屋梁の4点もしくは、
+地表面、建物の2階の床面および小屋梁の3点の同時計測とし、
+桁行方向および\harima 方向のそれぞれについて3〜10分間計測した。
+各建物の実際の振動計の配置と計測時間を表\ref{table_bido}に示す。
+
+%   各サイトの振動計の配置、
+%   計測時間等を表\ref{table_bido}および図\ref{sh_plan}--\ref{hau_plan}に
+%   示す。
+   \begin{table}[htbp]
+    \begin{center}
+     \caption{常時微動測定概要}
+     \label{table_bido}
+     \input table_bido
+    \end{center}
+   \end{table}
+   \ハウメッセ では、ねじれが大きく出ることを考慮に入れて2階床に図
+   \ref{haumesse}のように振動計を設置した。
+   \begin{figure}[htbp]
+    \centering\leavevmode
+     \includegraphics[height=0.45\textheight]{figs/haumesse.eps}
+     \caption{\ハウメッセ での速度計の配置}
+     \label{haumesse}
+   \end{figure}
+
+   \subsection{自由振動実験}
+小屋梁位置にかけたワイヤーを斜め下方に引っ張り初期変位を与えた後、瞬時に
+力を解放することによって建物を自由振動させて弾性域での比較的大きな変形時
+の振動測定を調べた。常時微動測定と同じ計測装置を用い、速度応
+答を建物内部で4点(表\ref{free})測定した。
+\begin{table}[htbp]
+ \begin{center}
+  \caption{自由振動実験時の振動計の配置位置}
+  \label{free}
+  \begin{tabular}[t]{|l|c|c|c|c|}
+   \hline
+   &1ch &2ch &3ch &4ch  \\ \hline
+   \七条邸 &2階床西側 &2階床東側 &小屋梁東側 &小屋梁西側
+   \\ \hline
+   \辻邸 &2階床西側 &2階床東側 &小屋梁東側 &小屋梁西側  \\ \hline
+   \田中邸 &1階床 &2階床西側 &2階床東側 &小屋梁 \\ \hline
+   \杉浦邸 &1階床 &2階床西側 &2階床東側 &小屋梁 \\ \hline
+   \ハウメッセ &2階床東側 &2階床西 &小屋梁 &-- \\ \hline
+  \end{tabular}
+ \end{center}
+\end{table}
+
+\pagebreak
+%自由振動を計測した場合の速度計の配置位置を
+%%平面図(図\ref{si_plan}--\ref{hau_plan})に示す。
+%図\ref{velmeter}に示す。
+%\begin{figure}[htbp]
+% \begin{center}
+%  \epsfile{figs/velmeter.eps}
+%  \caption{自由振動計測時の速度計の配置}
+%  \label{velmeter}
+% \end{center}
+%\end{figure}
